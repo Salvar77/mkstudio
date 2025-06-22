@@ -7,7 +7,11 @@ export default function Home() {
     <main>
       <section id="hero" className={classes.hero}>
         <div className={classes.hero__box}>
-          <Image src={logo} className={classes.hero__boxImg} />
+          <Image
+            src={logo}
+            className={classes.hero__boxImg}
+            alt="MKStudio logo"
+          />
         </div>
       </section>
     </main>

@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Ukryj mobilne menu na desktopie */
+@media (min-width: 992px) {
+  .mobileMenu {
+    display: none;
+  }
+}

@@ -1,0 +1,134 @@
+@import "../../styles/colors";
+
+.navbar {
+  position: relative;
+  background: $new-black;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      &:hover {
+        color: $red-main;
+      }
+    }
+  }
+
+  .ctaButton {
+    background: #e21c3d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 100%, 0 100%);
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .navGroup {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: $white-smooth;
+  }
+
+  .mobileMenu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    // width: 100vw;
+    background: $new-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 0.35s ease;
+
+    li {
+      list-style: none;
+      margin-bottom: 1rem;
+      color: $white-smooth;
+      font-size: 1.8rem;
+    }
+
+    &.open {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .spacer {
+    height: 0;
+    transition: height 0.35s ease;
+  }
+  .spacer.open {
+    /* wysokość menu ≈ suma li + padding (np. 5 items * 2rem + 2rem padding) */
+    height: calc(5 * 2rem + 2rem);
+    /* dostosuj 2rem→padding .mobileMenu oraz 2rem→margin li */
+  }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    .links {
+      display: none;
+    }
+    .hamburgerContainer {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    .links {
+      li {
+        font-size: 1.9rem;
+      }
+    }
+  }
+  .navGroup {
+    .links {
+      display: flex;
+      gap: 2rem;
+    }
+    .ctaButton {
+      display: inline-block;
+    }
+  }
+  .burgerContainer {
+    display: none;
+  }
+  .mobileMenu {
+    display: none;
+  }
+  .spacer {
+    display: none;
+  }
+}
