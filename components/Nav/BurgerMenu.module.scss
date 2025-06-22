@@ -34,7 +34,7 @@
 .hamburger.isActive .hamburgerInner,
 .hamburger.isActive .hamburgerInner::before,
 .hamburger.isActive .hamburgerInner::after {
-  background-color: $new-red;
+  background-color: $gold-main;
 }
 
 .hamburgerBox {
@@ -51,7 +51,7 @@
   position: absolute;
   left: 0;
   height: 4px;
-  background-color: darken($new-red, 15%);
+  background-color: $gold-main;
   border-radius: 4px;
   transition: transform 0.15s ease, width 0.15s ease;
 }
