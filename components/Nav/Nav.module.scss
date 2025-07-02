@@ -2,9 +2,11 @@
 
 .navbar {
   position: relative;
-  background: $new-black;
+  background: transparent;
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  background-color: $new-black;
 
   .inner {
     display: flex;
@@ -28,19 +30,19 @@
     }
   }
 
-  .ctaButton {
-    background: #e21c3d;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.6rem 1.4rem;
-    cursor: pointer;
-    transition: opacity 0.2s;
-    clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 100%, 0 100%);
-    &:hover {
-      opacity: 0.9;
-    }
-  }
+  // .ctaButton {
+  //   background: #e21c3d;
+  //   color: #fff;
+  //   text-decoration: none;
+  //   font-weight: 500;
+  //   padding: 0.6rem 1.4rem;
+  //   cursor: pointer;
+  //   transition: opacity 0.2s;
+  //   clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 100%, 0 100%);
+  //   &:hover {
+  //     opacity: 0.9;
+  //   }
+  // }
 
   .navGroup {
     display: flex;
@@ -80,9 +82,7 @@
     transition: height 0.35s ease;
   }
   .spacer.open {
-    /* wysokość menu ≈ suma li + padding (np. 5 items * 2rem + 2rem padding) */
     height: calc(5 * 2rem + 2rem);
-    /* dostosuj 2rem→padding .mobileMenu oraz 2rem→margin li */
   }
 }
 
@@ -107,6 +107,7 @@
 
 @media (min-width: 992px) {
   .navbar {
+    background-color: transparent;
     .links {
       li {
         font-size: 1.9rem;

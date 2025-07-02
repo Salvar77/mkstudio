@@ -1,0 +1,137 @@
+@import "../../styles/colors";
+
+.contact {
+  padding: 4rem 1rem;
+  background-color: $new-black;
+}
+
+.contact__container {
+  display: flex;
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Usuń tło obu kolumn: */
+.contact__info,
+.contact__form {
+  flex: 1;
+  background: transparent;
+  box-shadow: none;
+  padding: 2rem;
+}
+
+/* separator */
+.contact__separator {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  width: 1rem;
+  background: $gold-main;
+  transform: translateX(-50%);
+}
+
+/* Dane kontaktowe (lewa kolumna) */
+.contact__info {
+  margin-right: 2rem;
+  color: $white-smooth;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  a {
+    color: $gold-main;
+    text-decoration: none;
+  }
+  .contact__divider {
+    border: none;
+    border-bottom: 1px solid $gold-main;
+    margin: 1.5rem 0;
+  }
+  .contact__hours {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.25rem 0;
+      .contact__day {
+        font-weight: bold;
+      }
+      .contact__time {
+        color: $gold-main;
+      }
+    }
+  }
+}
+
+/* Formularz (prawa kolumna) */
+.contact__form {
+  margin-left: 2rem;
+  h2 {
+    margin-bottom: 1rem;
+    color: $white-smooth;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* tylko podkreślenie, bez tła czy obramowania */
+  input,
+  textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $white-smooth;
+    border-radius: 0;
+    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: $white-smooth;
+    &::placeholder {
+      color: darken($white-smooth, 20%);
+    }
+  }
+
+  .contact__checkbox {
+    font-size: 0.85rem;
+    color: $white-smooth;
+    margin-bottom: 1.5rem;
+    input {
+      margin-right: 0.5rem;
+    }
+  }
+
+  button {
+    align-self: flex-start;
+    padding: 0.8rem 1.6rem;
+    background: $gold-main;
+    color: $white-smooth;
+    border: none;
+    border-radius: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+    &:hover {
+      background: darken($dark-smooth, 10%);
+    }
+  }
+}
+
+/* responsywność */
+@media (max-width: 992px) {
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__separator {
+    display: none;
+  }
+  .contact__info,
+  .contact__form {
+    margin: 1rem 0;
+    padding: 1.5rem;
+  }
+}

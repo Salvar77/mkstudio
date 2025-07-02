@@ -40,7 +40,7 @@ export default function LayoutClient({ children }) {
       <header>
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
       </header>
-      <div className="container">
+      <div>
         <main>{children}</main>
       </div>
       <Footer />

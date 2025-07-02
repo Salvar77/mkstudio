@@ -1,18 +1,18 @@
 import classes from "./page.module.scss";
-import Image from "next/image";
-import logo from "../assets/image/logo2.jpg";
+import Hero from "@/components/Main/Hero";
+import Services from "@/components/Main/Services";
+import Pricelist from "@/components/Main/Pricelist";
+import Contact from "@/components/Main/Contact";
 
 export default function Home() {
   return (
     <main>
       <section id="hero" className={classes.hero}>
-        <div className={classes.hero__box}>
-          <Image
-            src={logo}
-            className={classes.hero__boxImg}
-            alt="MKStudio logo"
-          />
-        </div>
+        {" "}
+        <Hero />
+        <Services />
+        <Pricelist />
+        <Contact />
       </section>
     </main>
   );

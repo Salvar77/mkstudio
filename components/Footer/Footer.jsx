@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={classes.footer__container}>
         <div className={classes.footer__text}>
           <p className={classes.footer__textInfo}>
-            &copy;{currentYear} MK Studio
+            &copy;{currentYear} MK Studio Auto detailing
           </p>
         </div>
       </div>
