@@ -8,6 +8,13 @@
   z-index: 100;
   background-color: $new-black;
 
+  &.solid {
+    /* gdy mamy klasę .solid → od desktopa czarne tło */
+    @media (min-width: 992px) {
+      background-color: $new-black;
+    }
+  }
+
   .inner {
     display: flex;
     align-items: center;

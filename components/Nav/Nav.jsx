@@ -6,16 +6,21 @@ import Logo from "./Logo";
 import BurgerMenu from "./BurgerMenu";
 import classes from "./Nav.module.scss";
 import AnimatedButton from "../More/AnimatedButton";
+import { usePathname } from "next/navigation";
 
 export default function Nav({ isOpen, toggleNav }) {
+  const pathname = usePathname();
   const [isDesktop, setIsDesktop] = useState(false);
   const items = [
-    { href: "#about", label: "O mnie" },
-    { href: "#pricing", label: "Cennik" },
-    { href: "#services", label: "Usługi" },
-    { href: "#reviews", label: "Opinie" },
-    { href: "#contact", label: "Kontakt" },
+    { href: "/cennik", label: "Cennik" },
+    { href: "/oferta", label: "Oferta" },
+    { href: "/blog", label: "Blog" },
+    { href: "/recenzje", label: "Recenzje" },
+    { href: "/galeria", label: "Galeria" },
+    { href: "/kontakt", label: "Kontakt" },
   ];
+
+  const solidNav = pathname !== "/" && isDesktop;
 
   useEffect(() => {
     const onResize = () => {
@@ -28,7 +33,9 @@ export default function Nav({ isOpen, toggleNav }) {
   }, [isOpen, toggleNav]);
 
   return (
-    <nav className={classes.navbar}>
+    <nav
+      className={`${classes.navbar}` + (solidNav ? ` ${classes.solid}` : "")}
+    >
       <div className={classes.container}>
         {/* logo zawsze */}
         <Logo />
@@ -43,9 +50,9 @@ export default function Nav({ isOpen, toggleNav }) {
             ))}
           </ul>
           <AnimatedButton
-            onClick={() => (window.location.href = "tel:+48881325631")}
+            onClick={() => (window.location.href = "tel:+48690570800")}
           >
-            +48 881 325 631
+            +48 690 570 800
           </AnimatedButton>
         </div>
 

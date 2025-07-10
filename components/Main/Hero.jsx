@@ -4,8 +4,8 @@ import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import classes from "./Hero.module.scss";
-import HeroImageMobile from "../../assets/image/logo2.jpg";
-import HeroImageDesktop from "../../assets/image/logo2.jpg";
+import HeroImageMobile from "../../public/logo2.jpg";
+import HeroImageDesktop from "../../public/logo2.jpg";
 
 const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
@@ -34,7 +34,11 @@ const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
               <span className={classes.hero__titleWhite}> Auto detailing</span>
             </h1>
             <p className={classes.hero__description}>{description}</p>
-            <a href="#galeria" className={classes.button}>
+            <a
+              href="tel:+48690570800"
+              className={classes.button}
+              aria-label="Zadzwoń do MK Studio"
+            >
               Zadzwoń →
             </a>
           </div>

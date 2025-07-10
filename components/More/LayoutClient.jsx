@@ -1,24 +1,13 @@
-// components/More/LayoutClient.js
 "use client";
-
 import React, { useState, useEffect } from "react";
-import Nav from "@/components/Nav/Nav";
-import BurgerMenu from "@/components/Nav/BurgerMenu";
-import Logo from "@/components/Nav/Logo";
-import Footer from "@/components/Footer/Footer";
+import { usePathname } from "next/navigation";
+import Nav from "../Nav/Nav";
+import Footer from "../Footer/Footer";
 import classes from "./LayoutClient.module.scss";
 
 export default function LayoutClient({ children }) {
-  console.log(
-    "Nav:",
-    Nav,
-    "BurgerMenu:",
-    BurgerMenu,
-    "Logo:",
-    Logo,
-    "Footer:",
-    Footer
-  );
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   const [isOpen, setIsOpen] = useState(false);
   const [showLogo, setShowLogo] = useState(true);
@@ -40,9 +29,16 @@ export default function LayoutClient({ children }) {
       <header>
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
       </header>
-      <div>
+
+      {/* jeżeli to nie strona główna, owijamy content wrapperem */}
+      {isHome ? (
         <main>{children}</main>
-      </div>
+      ) : (
+        <div className={`${classes.content} ${isOpen ? classes.offset : ""}`}>
+          <main>{children}</main>
+        </div>
+      )}
+
       <Footer />
     </>
   );

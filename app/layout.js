@@ -1,5 +1,5 @@
-import "@/app/globals.scss";
-import LayoutClient from "@/components/More/LayoutClient";
+import "./globals.scss";
+import LayoutClient from "../components/More/LayoutClient";
 
 export const metadata = {
   title: "MKStudio Detailing",

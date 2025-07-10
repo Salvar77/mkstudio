@@ -37,19 +37,19 @@ const Contact = () => {
         <div className={classes.contact__info}>
           <h2>Kontakt</h2>
           <p>
-            <strong>MK Studio</strong>
+            <strong>MK Studio Auto Detailing</strong>
             <br />
-            Pranie tapicerki samochodowej
+            Auto Detailing Opole
             <br />
             Opole
           </p>
           <p>
-            Ulica: Generała Emila Fieldorfa 12
+            Ulica: Częstochowska 44
             <br />
-            Miasto: 45-273 Opole
+            Miasto: 45-020 Opole
           </p>
           <p>
-            📞 <a href="tel:+48881325631">881 325 631</a>
+            📞 <a href="tel:+48881325631">690 570 800</a>
             <br />
             ✉️ <a href="mailto:kabetint@gmail.com">kabetint@gmail.com</a>
           </p>
@@ -119,6 +119,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <div className={classes.whiteBlockWrapper}></div>
     </section>
   );
 };

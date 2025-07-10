@@ -1,9 +1,11 @@
 @import "../../styles/colors";
 
 .footer {
+  position: relative;
   background-color: $new-black;
   color: $white-smooth;
   text-shadow: 0.3rem 0.3rem 0.6rem rgba($dark-smooth, 0.9);
+  font-size: 2rem;
 
   &__text {
     display: flex;
@@ -34,6 +36,8 @@
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
   padding: 2rem;
   text-align: center;
+
+  // background: linear-gradient(20deg, $new-black, $new-black, $grey-smooth);
 
   &__link {
     text-decoration: none;

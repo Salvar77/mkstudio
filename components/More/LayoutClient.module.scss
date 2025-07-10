@@ -1,3 +1,5 @@
+@import "../../styles/colors";
+
 .header {
   display: flex;
   align-items: center;
@@ -23,9 +25,22 @@
   }
 }
 
-/* Ukryj mobilne menu na desktopie */
+$content-offset: 10rem;
+
+.content {
+  background-color: $new-black;
+  &.offset {
+    padding-top: $content-offset;
+  }
+}
+
 @media (min-width: 992px) {
   .mobileMenu {
     display: none;
+  }
+
+  .content {
+    padding-top: 2rem;
+    background-color: 0;
   }
 }
