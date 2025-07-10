@@ -33,7 +33,7 @@ export default function AboutMe() {
           variants={textVariant(0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           O mnie
         </motion.h2>
