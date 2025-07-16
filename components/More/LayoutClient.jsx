@@ -30,7 +30,6 @@ export default function LayoutClient({ children }) {
         <Nav isOpen={isOpen} toggleNav={toggleNav} />
       </header>
 
-      {/* jeżeli to nie strona główna, owijamy content wrapperem */}
       {isHome ? (
         <main>{children}</main>
       ) : (

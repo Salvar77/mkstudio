@@ -24,7 +24,6 @@ const Contact = () => {
       alert("Proszę wyrazić zgodę na przetwarzanie danych.");
       return;
     }
-    // tutaj możesz dodać wysyłkę maila, np. przez fetch do API
     console.log("Form data:", form);
     alert("Dziękujemy! Twoja wiadomość została wysłana.");
     setForm({ name: "", email: "", message: "", consent: false });
@@ -33,7 +32,6 @@ const Contact = () => {
   return (
     <section className={classes.contact}>
       <div className={classes.contact__container}>
-        {/* Lewa kolumna: dane kontaktowe */}
         <div className={classes.contact__info}>
           <h2>Kontakt</h2>
           <p>
@@ -49,9 +47,12 @@ const Contact = () => {
             Miasto: 45-020 Opole
           </p>
           <p>
-            📞 <a href="tel:+48881325631">690 570 800</a>
+            📞 <a href="tel:+48690570800">690 570 800</a>
             <br />
-            ✉️ <a href="mailto:kabetint@gmail.com">kabetint@gmail.com</a>
+            ✉️{" "}
+            <a href="mailto:mkstudio.opole@gmail.com">
+              mkstudio.opole@gmail.com
+            </a>
           </p>
 
           <hr className={classes.contact__divider} />
@@ -75,10 +76,8 @@ const Contact = () => {
           </ul>
         </div>
 
-        {/* Pionowa linia */}
         <div className={classes.contact__separator} />
 
-        {/* Prawa kolumna: formularz */}
         <div className={classes.contact__form}>
           <h2>Wyślij mi wiadomość</h2>
           <form onSubmit={handleSubmit}>

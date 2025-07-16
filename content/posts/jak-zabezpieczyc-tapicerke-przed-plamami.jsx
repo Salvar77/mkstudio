@@ -1,5 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import {
+  Wrench,
+  Droplet,
+  PhoneCall as Phone,
+  Mail,
+  MapPin,
+  Clock,
+} from "lucide-react";
 
 export const meta = {
   id: 1,
@@ -88,28 +96,50 @@ export default function PreventStainsPost() {
       <h2>Opinie klientów</h2>
       <blockquote>
         <p>
-          „MK Studio przywróciło mojej tapicerce świetny wygląd. Szybko i
-          profesjonalnie!”
+          „Zdecydowanie polecam MK Studio ! Profesjonalna obsługa i skuteczne
+          usługi. Mój samochód niczym nowy po wizycie u was :) Dzięki !”
         </p>
-        <cite>– Anna Kowalska</cite>
+        <cite>– Łukasz Kuś</cite>
       </blockquote>
       <blockquote>
         <p>
-          „Zabezpieczenie działa rewelacyjnie – po trzech miesiącach nie widać
-          żadnych śladów użycia!”
+          „Oddałam zakupiony samochód do czyszczenia. Panowie kontaktowali się i
+          informowali co i jak, sprawdzili każde miejsce w samochodzie. W
+          momencie sprawdzania bagażnika, okazało się, że w miejscu koła
+          zapasowego stoi woda a na elementach tapicerki zrobił się grzyb 🤦‍♀️
+          bagażnika nie dało się wcześniej otworzyć. Ekipa dołożyła wszelkich
+          starań aby wszystko dokładnie wyczyścić, aby było bezpiecznie dla
+          zdrowia. Auto wygląda prawie jak nowe 😎 jestem bardzo zadowolona z
+          efektu , panowie włożyli dużo czasu i wysiłku . Dziękuję 🙂”
         </p>
-        <cite>– Marcin Nowak</cite>
+        <cite>– Dominika Suchodolska</cite>
       </blockquote>
-
-      <h2>Masz pytania? Skontaktuj się ze mną!</h2>
-      <p>
-        <Link href="/kontakt">
-          <div className="cta-button">Zamów bezpłatną wycenę</div>
-        </Link>{" "}
-        lub zadzwoń:
-        <br />
-        <strong>690 570 800</strong>
+      <h2>Masz pytania? Skontaktuj się ze mną</h2>
+      <p className="contact-info">
+        Jeśli potrzebujesz indywidualnej wyceny lub masz dodatkowe pytania,
+        skontaktuj się ze mną:
       </p>
+      <div className="contact-details">
+        <div className="contact-item">
+          <Phone className="icon-down-p" />{" "}
+          <a href="tel:+48690570800">690 570 800</a>
+        </div>
+        <div className="contact-item">
+          <Mail className="icon-down-p" />{" "}
+          <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
+        </div>
+        <div className="contact-item">
+          <MapPin className="icon-down" /> ul. Częstochowskiej 44, 45-020 Opole
+        </div>
+        <div className="contact-item">
+          <Clock className="icon-down" /> Pon–Pt: 07:00–20:00, Sob: 08:00–18:00
+        </div>
+      </div>
+      <div className="ctaWrapper">
+        <Link href="/kontakt">
+          <span className="cta-button">Przejdź do formularza kontaktowego</span>
+        </Link>
+      </div>
     </>
   );
 }

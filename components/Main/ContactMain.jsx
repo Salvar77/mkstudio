@@ -27,7 +27,7 @@ const ContactMain = () => {
         <p className={classes.address}>ul. Częstochowska 44</p>
         <p className={classes.addressTwo}>45-020 Opole</p>
         <p className={classes.phone}>Tel: 690 570 800</p>
-        <p className={classes.email}>kabetint@gmail.com</p>
+        <p className={classes.email}>mkstudio.opole@gmail.com</p>
         <p className={classes.hours}>Godziny otwarcia:</p>
         <p className={classes.hoursDetails}>pon. - pt. 07:00 - 20:00</p>
         <p className={classes.hoursDetails}>sob. 08:00 - 18:00</p>
@@ -37,7 +37,7 @@ const ContactMain = () => {
         <div className={classes.logoBlock}>
           <Image
             src={Logo}
-            alt="Logo firmy KabeTintLeather - pranie tapicerki, czyszczenie samochodów"
+            alt="Logo firmy MK Studio Auto Detailing - auto detailing, pranie tapicerki, czyszczenie samochodów"
             className={classes.logo}
             width={350}
             height={250}
@@ -105,39 +105,6 @@ const ContactMain = () => {
             >
               <FontAwesomeIcon icon={faFacebookF} size="lg" />
               <span className="sr-only">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/kabetintleather_autodetailing/#"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Odwiedź mnie na Instagramie"
-            >
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
-              <span className="sr-only">Instagram</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.tiktok.com/@kabetintleather"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Odwiedź mnie na TikToku"
-            >
-              <FontAwesomeIcon icon={faTiktok} size="lg" />
-              <span className="sr-only">TikTok</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/@KabeTintLeather"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Odwiedź mnie na YouTube"
-            >
-              <FontAwesomeIcon icon={faYoutube} size="lg" />
-              <span className="sr-only">YouTube</span>
             </a>
           </li>
         </ul>

@@ -5,6 +5,7 @@ import classes from "./page.module.scss";
 const Kontakt = () => {
   return (
     <div className={classes.contact}>
+      <h1>Kontakt</h1>
       <Contact />
     </div>
   );

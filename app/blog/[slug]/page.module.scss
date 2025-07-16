@@ -50,7 +50,7 @@
     color: $gold-main;
     font-weight: 700;
     line-height: 1.3;
-    padding: 1rem;
+    padding: 0.6rem;
     border-bottom: 2px solid $white-smooth;
   }
 
@@ -84,16 +84,20 @@
     margin: 0 auto 1.25rem;
     padding: 0.9rem 1.25rem;
     background-color: $gold-main;
+    text-align: center;
     color: $white-smooth;
     align-self: center;
     margin: 1.25rem auto 0;
     border-radius: 0.8rem;
     text-decoration: none;
     width: 15.5rem;
-    transition: background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
 
     &:hover {
-      background-color: darken($color: $gold-main, $amount: 10%);
+      background-color: darken($new-black, 10%);
+      color: $gold-main;
     }
   }
 

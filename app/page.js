@@ -6,7 +6,7 @@ import Contact from "../components/Main/Contact";
 import AboutMe from "../components/Main/AboutMe";
 import Blog from "../components/Main/Blog";
 import ElfsightLazyWrapper from "../components/More/ElfsightLazyWrapper";
-// import ElfsightWidget from "@/components/More/ElfsightWidget";
+import SliderSection from "../components/SliderSection/SliderSection";
 
 export default function Home() {
   return (

@@ -37,10 +37,8 @@ export default function Nav({ isOpen, toggleNav }) {
       className={`${classes.navbar}` + (solidNav ? ` ${classes.solid}` : "")}
     >
       <div className={classes.container}>
-        {/* logo zawsze */}
         <Logo />
 
-        {/* linki + CTA w jednym flex‐wrapperze */}
         <div className={classes.navGroup}>
           <ul className={classes.links}>
             {items.map((it) => (
@@ -56,13 +54,11 @@ export default function Nav({ isOpen, toggleNav }) {
           </AnimatedButton>
         </div>
 
-        {/* hamburger zawsze, ale na desktopie ukryjemy go w CSS */}
         <div className={classes.burgerContainer}>
           <BurgerMenu isOpen={isOpen} handleOpen={toggleNav} />
         </div>
       </div>
 
-      {/* mobile dropdown */}
       <ul className={`${classes.mobileMenu} ${isOpen ? classes.open : ""}`}>
         {items.map((it) => (
           <li key={it.href}>

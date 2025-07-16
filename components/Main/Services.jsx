@@ -22,7 +22,6 @@ const Services = () => {
               whileInView="show"
               viewport={{ amount: 0.3 }}
             >
-              {/* >> nowy układ kafla */}
               <div className={classes.card}>
                 <div className={classes.card__image}>
                   <Image
@@ -41,7 +40,6 @@ const Services = () => {
                     ))}
                   </div>
 
-                  {/* cienka linia */}
                   <hr className={classes.card__divider} />
                   {service.additionalInfo && (
                     <div

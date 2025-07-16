@@ -19,7 +19,6 @@ export default function CtaSection() {
           </div>
           <Link href="/contact" passHref>
             <div className={classes.button}>
-              {/* Car + envelope icon */}
               <svg
                 className={classes.icon}
                 viewBox="0 0 64 64"

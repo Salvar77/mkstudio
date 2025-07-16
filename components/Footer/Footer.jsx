@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <div className={classes.policy}>
         <Link
-          href="/obszary-naszej-dzialalnosci"
+          href="/obszary-mojej-dzialalnosci"
           className={classes.policy__link}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
