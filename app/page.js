@@ -7,18 +7,29 @@ import AboutMe from "../components/Main/AboutMe";
 import Blog from "../components/Main/Blog";
 import ElfsightLazyWrapper from "../components/More/ElfsightLazyWrapper";
 import SliderSection from "../components/SliderSection/SliderSection";
-import SEO from "../components/Main/SEO";
+
+export const metadata = {
+  title:
+    "MK Studio Auto Detailing Opole – korekta lakieru, folia PPF, powłoka ceramiczna",
+  description:
+    "MK Studio specjalizuje się w kompleksowym autodetailingu: korekta lakieru, folia PPF, powłoki ceramiczne i pranie tapicerki w Opolu.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    url: "/",
+    images: [
+      {
+        url: "/og/logo2.jpg",
+        width: 1200,
+        height: 630,
+        alt: "MK Studio Auto Detailing – realizacje i oferta",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
     <>
-      <SEO
-        title="MK Studio Auto Detailing Opole – korekta lakieru, folia PPF, powłoka ceramiczna"
-        description="MK Studio specjalizuje się w auto detailingu: kompleksowa korekta lakieru, aplikacja folii PPF i powłok ceramicznych, a także profesjonalne pranie tapicerki w Opolu."
-        url="https://www.mkstudio.opole.pl/"
-        image="https://www.mkstudio.opole.pl/logo-mkstudio-auto-detailing-opole.jpg"
-      />
-
       <main>
         {" "}
         <Hero />
