@@ -1,12 +1,23 @@
 import Logo2 from "../assets/image/logo2.jpg";
+import autodetailing from "../assets/image/auto-detailing-mk-studio-opole-produkty.jpg";
+import autodetailing2 from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-17.jpg";
+import leatherrenovation from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-32.jpg";
+import paintcorrection from "../assets/image/galeria-korekta-lakieru-1.jpg";
+import ppf from "../assets/image/ppf2.jpg";
+import ceramic from "../assets/image/galeria-powloka-ceramiczna-1.jpg";
+import upholstery from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg";
+import blogPost from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-18.jpg";
+import blogPost2 from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-25.jpg";
+import blogPost3 from "../assets/image/galeria-korekta-lakieru-2.jpg";
+import blogPost4 from "../assets/image/ppf4.jpeg";
+import blogPost5 from "../assets/image/galeria-powloka-ceramiczna-3.jpg";
 
 export const servicesData = [
   {
     id: "oferta/auto-detailing",
     title: "Auto Detailing",
-    image: Logo2,
-    largeImage: Logo2,
-    largeImageWidth: 1920,
+    image: autodetailing,
+
     description: "Sprawdź",
     gradient: "linear-gradient(rgba(63,59,59,.5), rgba(40,31,31,.5))",
     additionalInfo:
@@ -16,9 +27,8 @@ export const servicesData = [
   {
     id: "oferta/renowacja-i-czyszczenie-skor",
     title: "Renowacja i czyszczenie skór",
-    image: Logo2,
-    largeImage: Logo2,
-    largeImageWidth: 1920,
+    image: leatherrenovation,
+
     description: "Sprawdź",
     gradient: "linear-gradient(rgba(90,42,42,.5), rgba(0,0,0,.5))",
     additionalInfo:
@@ -28,9 +38,8 @@ export const servicesData = [
   {
     id: "oferta/korekta-lakieru",
     title: "Korekta lakieru",
-    image: Logo2,
-    largeImage: Logo2,
-    largeImageWidth: 1920,
+    image: paintcorrection,
+
     description: "Sprawdź",
     gradient: "linear-gradient(rgba(63,59,59,.5), rgba(40,31,31,.5))",
     additionalInfo:
@@ -40,9 +49,7 @@ export const servicesData = [
   {
     id: "oferta/folia-ppf-ochrona-lakieru",
     title: "Folia PPF",
-    image: Logo2,
-    largeImage: Logo2,
-    largeImageWidth: 1920,
+    image: ppf,
     description: "Sprawdź",
     gradient: "linear-gradient(rgba(63,59,59,.5), rgba(40,31,31,.5))",
     additionalInfo:
@@ -52,9 +59,7 @@ export const servicesData = [
   {
     id: "oferta/powloka-ceramiczna",
     title: "Powłoka ceramiczna",
-    image: Logo2,
-    largeImage: Logo2,
-    largeImageWidth: 1920,
+    image: ceramic,
     description: "Sprawdź",
     gradient: "linear-gradient(rgba(63,59,59,.5), rgba(40,31,31,.5))",
     additionalInfo:
@@ -64,9 +69,7 @@ export const servicesData = [
   {
     id: "oferta/pranie-tapicerki",
     title: "Pranie tapicerki",
-    image: Logo2,
-    largeImage: Logo2,
-    largeImageWidth: 1920,
+    image: upholstery,
     description: "Sprawdź",
     gradient: "linear-gradient(rgba(63,59,59,.5), rgba(40,31,31,.5))",
     additionalInfo:
@@ -203,7 +206,7 @@ export const blogPosts = [
     description:
       "Zapewnij swojemu samochodowi kompleksową pielęgnację: pranie tapicerki, renowację skóry, korektę lakieru, aplikację folii PPF i powłoki ceramicznej. Dowiedz się, na czym polega pełny detailing.",
     link: "/auto-detailing-opole",
-    image: Logo2,
+    image: autodetailing2,
   },
   {
     id: 1,
@@ -213,7 +216,7 @@ export const blogPosts = [
     description:
       "Uniknij uciążliwych zabrudzeń — poznaj sprawdzone metody zabezpieczania i konserwacji tapicerki samochodowej. Dowiedz się, jak stosować impregnaty i odplamiacze, by cieszyć się czystym wnętrzem na dłużej.",
     link: "/jak-zabezpieczyc-tapicerke-przed-plamami",
-    image: Logo2,
+    image: blogPost,
   },
   {
     id: 2,
@@ -224,7 +227,7 @@ export const blogPosts = [
     description:
       "Poznaj zaawansowane metody głębokiego prania tapicerki w Opolu, które skutecznie usuwają nawet najbardziej uporczywe zabrudzenia i przywracają wnętrzu auta świeżość oraz higienę na długi czas.",
     link: "/glebokie-pranie-tapicerki-opole",
-    image: Logo2,
+    image: upholstery,
   },
   {
     id: 3,
@@ -235,7 +238,7 @@ export const blogPosts = [
     description:
       "Profesjonalne zabiegi renowacyjne i czyszczące skórzaną tapicerkę samochodową – dowiedz się, jak usunąć zarysowania, odżywić skórę i przedłużyć jej żywotność.",
     link: "/renowacja-i-czyszczenie-skorzanej-tapicerki-opole",
-    image: Logo2,
+    image: blogPost2,
   },
   {
     id: 4,
@@ -245,20 +248,11 @@ export const blogPosts = [
     description:
       "Zaawansowane techniki korekty lakieru pozwolą na wygładzenie powierzchni, usunięcie rys i przywrócenie głębi koloru. Zobacz, jak przebiega proces polerowania w profesjonalnym studiu auto detailingu.",
     link: "/korekta-lakieru-opole",
-    image: Logo2,
+    image: blogPost3,
   },
+
   {
     id: 5,
-    title: "Folia PPF w Opolu – ochrona lakieru przed uszkodzeniami",
-    subtitle: "FOLIA OCHRONNA PPF",
-    date: "2025-06-15",
-    description:
-      "Poznaj zalety folii PPF chroniącej lakier przed kamieniami, zarysowaniami i działaniem czynników atmosferycznych. Dowiedz się, jak dbać o folię i jakie są jej rodzaje.",
-    link: "/folia-ppf-opole",
-    image: Logo2,
-  },
-  {
-    id: 6,
     title:
       "Powłoka ceramiczna samochodu w Opolu – trwała ochrona i głęboki połysk",
     subtitle: "POWŁOKA CERAMICZNA",
@@ -266,6 +260,16 @@ export const blogPosts = [
     description:
       "Odkryj, jak powłoka ceramiczna zwiększa odporność lakieru na zabrudzenia, promieniowanie UV i ułatwia jego mycie. Sprawdź etapy aplikacji oraz korzyści z długotrwałej ochrony.",
     link: "/powloka-ceramiczna-opole",
-    image: Logo2,
+    image: blogPost5,
+  },
+  {
+    id: 6,
+    title: "Folia PPF w Opolu – ochrona lakieru przed uszkodzeniami",
+    subtitle: "FOLIA OCHRONNA PPF",
+    date: "2025-06-15",
+    description:
+      "Poznaj zalety folii PPF chroniącej lakier przed kamieniami, zarysowaniami i działaniem czynników atmosferycznych. Dowiedz się, jak dbać o folię i jakie są jej rodzaje.",
+    link: "/folia-ppf-opole",
+    image: blogPost4,
   },
 ];

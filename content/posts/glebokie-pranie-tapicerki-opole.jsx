@@ -17,8 +17,13 @@ export const meta = {
   subtitle: "PROFESJONALNE PRANIE TAPICERKI SAMOCHODOWEJ",
   date: "2025-07-10",
   image: "logo2.jpg",
-  dynamicImage: "/logo2.jpg",
-  images: ["/logo2.jpg", "/logo2.jpg", "/logo2.jpg", "/logo2.jpg"],
+  dynamicImage: "/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg",
+  images: [
+    "/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-25.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-15.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
+  ],
   description:
     "Poznaj zaawansowane metody głębokiego prania tapicerki w Opolu, które skutecznie usuwają nawet najbardziej uporczywe zabrudzenia i przywracają wnętrzu auta świeżość oraz higienę na długi czas.",
 };

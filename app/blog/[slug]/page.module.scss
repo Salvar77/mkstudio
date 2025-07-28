@@ -28,14 +28,6 @@
     }
   }
 
-  &__image {
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 5rem;
-    }
-  }
-
   img {
     padding: 1rem;
     width: 100%;
@@ -255,7 +247,7 @@
       img {
         width: 100%;
         height: auto;
-        max-height: 30rem;
+        max-height: 70rem;
         object-fit: cover;
         border-radius: 5rem;
       }

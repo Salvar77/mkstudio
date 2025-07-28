@@ -34,6 +34,7 @@ export default function Home() {
         {" "}
         <Hero />
         <Services />
+        <SliderSection />
         <Pricelist />
         <AboutMe />
         <Blog />

@@ -32,20 +32,20 @@ const SliderSection = ({
     {
       beforeImage: BeforeImage4,
       afterImage: AfterImage4,
-      altBefore: "Stan tapicerki przed czyszczeniem - liczne plamy",
-      altAfter: "Efekt czyszczenia - tapicerka jak nowa",
+      altBefore: "Stan tapicerki przed czyszczeniem – liczne plamy",
+      altAfter: "Efekt czyszczenia – tapicerka jak nowa",
     },
     {
       beforeImage: BeforeImage3,
       afterImage: AfterImage3,
-      altBefore: "Skórzana tapicerka przed renowacją - widoczne uszkodzenia",
-      altAfter: "Skórzana tapicerka po renowacji - pełne odświeżenie",
+      altBefore: "Skórzana tapicerka przed renowacją – widoczne uszkodzenia",
+      altAfter: "Skórzana tapicerka po renowacji – pełne odświeżenie",
     },
     {
       beforeImage: BeforeImage2,
       afterImage: AfterImage2,
-      altBefore: "Wnętrze auta przed praniem - widoczne zabrudzenia",
-      altAfter: "Wnętrze auta po praniu - świeżość i czystość",
+      altBefore: "Wnętrze auta przed praniem – widoczne zabrudzenia",
+      altAfter: "Wnętrze auta po praniu – świeżość i czystość",
     },
   ];
 
@@ -57,11 +57,20 @@ const SliderSection = ({
       id="galeria"
       className={
         `${classes.sliderSection}` +
-        (customBgColor ? ` ${classes.customBgColor}` : ``) +
-        (additionalClass ? ` ${additionalClass}` : ``)
+        (customBgColor ? ` ${classes.customBgColor}` : "") +
+        (additionalClass ? ` ${additionalClass}` : "")
       }
+      style={style}
     >
-      {showTitle && <span className={classes.titleSlide}>Galeria</span>}
+      {showTitle && <h2 className={classes.titleSlide}>Moje realizacje</h2>}
+
+      <p className={classes.sliderDescription}>
+        Przesuń suwak, aby porównać efekt <strong>przed</strong> i&nbsp;
+        <strong>po</strong> profesjonalnych zabiegach: ekstrakcyjnym praniu
+        tapicerki, renowacji elementów skórzanych oraz jednokrokowej korekcie
+        lakieru. Tak&nbsp;przywracamy fabryczną świeżość, głębię koloru i wysoki
+        połysk.
+      </p>
       <div className={`${classes.sliderGrid} ${gridClass}`}>
         {images
           .slice(0, maxImagesToShow)
@@ -84,11 +93,11 @@ const SliderSection = ({
       {showButton && (
         <div className={classes.buttonContainer}>
           <Link
-            href="/realizacje"
+            href="/galeria"
             className={classes.realizationButton}
-            aria-label="Zobacz wszystkie realizacje"
+            aria-label="Zobacz realizacje MK Studio Auto Detailing w galerii"
           >
-            Realizacje
+            Galeria
           </Link>
         </div>
       )}

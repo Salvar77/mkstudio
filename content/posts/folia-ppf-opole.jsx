@@ -16,8 +16,8 @@ export const meta = {
   subtitle: "FOLIA OCHRONNA PPF",
   date: "2025-06-15",
   image: "logo2.jpg",
-  dynamicImage: "/logo2.jpg",
-  images: ["/logo2.jpg", "/logo2.jpg", "/logo2.jpg", "/logo2.jpg"],
+  dynamicImage: "/ppf3.jpg",
+  images: ["/ppf1.webp", "/ppf2.jpg", "/ppf.webp", "/ppf2.jpg"],
   description:
     "Poznaj zalety folii PPF chroniącej lakier przed kamieniami, zarysowaniami i działaniem czynników atmosferycznych. Dowiedz się, jak dbać o folię i jakie są jej rodzaje.",
 };

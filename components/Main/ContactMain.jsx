@@ -23,7 +23,9 @@ const ContactMain = () => {
     <section id="kontakt-główny" className={classes.contactMain}>
       <div className={classes.column}>
         <h2 className={classes.heading}>Dane kontaktowe:</h2>
-        <p>MK Studio Auto Detailing</p>
+        <p>
+          MK Studio Auto Detailing <br />- Pranie tapicerki - Korekta lakieru
+        </p>
         <p className={classes.address}>ul. Częstochowska 44</p>
         <p className={classes.addressTwo}>45-020 Opole</p>
         <p className={classes.phone}>Tel: 690 570 800</p>
@@ -122,7 +124,7 @@ const ContactMain = () => {
           <h3 className={classes.modalTitle}>Usługi:</h3>
           <ul className={classes.servicesList}>
             <li>
-              <Link href="/oferta/pranie-tapicerki" onClick={toggleServices}>
+              <Link href="/oferta/auto-detailing" onClick={toggleServices}>
                 Auto Detailing
               </Link>
             </li>

@@ -3,13 +3,15 @@ import Contact from "../../components/Main/Contact";
 import classes from "./Cennik.module.scss";
 
 export const metadata = {
-  title: "Cennik usług | MK Studio Auto Detailing Opole",
+  title:
+    "Cennik usług | MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru Opole",
   description:
     "Sprawdź aktualne ceny korekty lakieru, folii PPF, powłok ceramicznych, prania tapicerki i pozostałych usług detailingu w MK Studio (Opole).",
   alternates: { canonical: "/cennik" },
   openGraph: {
     url: "/cennik",
-    title: "Cennik usług | MK Studio Auto Detailing Opole",
+    title:
+      "Cennik usług | MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru Opole",
     description:
       "Poznaj szczegółowy cennik naszych usług: mycie detailingowe, korekta lakieru, ochrona folią PPF, powłoki ceramiczne i więcej.",
     images: [

@@ -31,7 +31,10 @@ const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
           <div className={classes.textOverlay}>
             <h1 className={classes.hero__title}>
               <span className={classes.hero__titleGold}>MK Studio</span>
-              <span className={classes.hero__titleWhite}> Auto detailing</span>
+              <span className={classes.hero__titleWhite}>
+                {" "}
+                Auto detailing - Pranie tapicerki - Korekta lakieru
+              </span>
             </h1>
             <p className={classes.hero__description}>{description}</p>
             <a

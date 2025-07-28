@@ -1,5 +1,4 @@
 "use client";
-
 import { useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -55,6 +54,7 @@ export default function BlogPostClient({ slugFromParent }) {
                   alt={`${title} ${i + 1}`}
                   width={800}
                   height={450}
+                  objectFit="cover"
                 />
               ))}
             </div>

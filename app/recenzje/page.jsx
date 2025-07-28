@@ -2,13 +2,15 @@ import ElfsightLazyWrapper from "../../components/More/ElfsightLazyWrapper";
 import classes from "./page.module.scss";
 
 export const metadata = {
-  title: "Opinie klientów | MK Studio Auto Detailing Opole",
+  title:
+    "Opinie klientów | MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru Opole",
   description:
     "Sprawdź recenzje i oceny klientów MK Studio Auto Detailing w Opolu. Zobacz, dlaczego warto nam zaufać.",
   alternates: { canonical: "/recenzje" },
   openGraph: {
     url: "/recenzje",
-    title: "Opinie klientów | MK Studio Auto Detailing Opole",
+    title:
+      "Opinie klientów | MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru Opole",
     description:
       "Autentyczne opinie kierowców korzystających z korekty lakieru, folii PPF, powłok ceramicznych i prania tapicerki w MK Studio.",
     images: [

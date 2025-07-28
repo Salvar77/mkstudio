@@ -35,7 +35,9 @@ const Contact = () => {
         <div className={classes.contact__info}>
           <h2>Kontakt</h2>
           <p>
-            <strong>MK Studio Auto Detailing</strong>
+            <strong>
+              MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru
+            </strong>
             <br />
             Auto Detailing Opole
             <br />

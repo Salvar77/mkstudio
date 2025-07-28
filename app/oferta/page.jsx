@@ -3,7 +3,8 @@ import Services from "../../components/Main/Services";
 import classes from "./Oferta.module.scss";
 
 export const metadata = {
-  title: "Oferta usług | MK Studio Auto Detailing Opole",
+  title:
+    "Oferta usług | MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru Opole",
   description:
     "Pełen zakres auto detailingu w Opolu: korekta lakieru, folia PPF, powłoka ceramiczna, pranie tapicerki i więcej.",
   alternates: { canonical: "/oferta" },
@@ -14,7 +15,7 @@ export const metadata = {
         url: "/og/logo2.jpg",
         width: 1200,
         height: 630,
-        alt: "Oferta usług MK Studio Auto Detailing",
+        alt: "Oferta usług MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru Opole",
       },
     ],
   },

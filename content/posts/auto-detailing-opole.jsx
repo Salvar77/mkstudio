@@ -17,9 +17,14 @@ export const meta = {
     "Kompleksowe usługi auto detailingu w Opolu – od prania po korektę lakieru",
   subtitle: "AUTO DETAILING",
   date: "2025-06-01",
-  image: "logo2.jpg",
-  dynamicImage: "/logo2.jpg",
-  images: ["/logo2.jpg", "/logo2.jpg", "/logo2.jpg", "/logo2.jpg"],
+  image: "/auto-detailing-mk-studio-opole-produkty.jpg",
+  dynamicImage: "/auto-detailing-mk-studio-opole-produkty.jpg",
+  images: [
+    "/auto-detailing-mk-studio-opole-produkty.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-5.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-16.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
+  ],
   description:
     "Zapewnij swojemu samochodowi kompleksową pielęgnację: pranie tapicerki, renowację skóry, korektę lakieru, aplikację folii PPF i powłoki ceramicznej. Dowiedz się, na czym polega pełny detailing.",
 };

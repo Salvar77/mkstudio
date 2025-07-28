@@ -2,13 +2,15 @@ import BlogComponent from "../../components/Main/Blog";
 import classes from "./page.module.scss";
 
 export const metadata = {
-  title: "Blog | MK Studio Auto Detailing Opole",
+  title:
+    "Blog | MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru Opole",
   description:
     "Porady z zakresu auto detailingu, studium przypadków i realizacje MK Studio w Opolu. Dowiedz się, jak dbać o lakier, tapicerkę i folię PPF.",
   alternates: { canonical: "/blog" },
   openGraph: {
     url: "/blog",
-    title: "Blog | MK Studio Auto Detailing Opole",
+    title:
+      "Blog | MK Studio Auto Detailing - Pranie tapicerki - Korekta lakieru Opole",
     description:
       "Sprawdzone techniki detailingu, recenzje produktów i efekty naszych realizacji – wszystko w jednym miejscu.",
     images: [

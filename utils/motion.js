@@ -138,6 +138,40 @@ export const slideRotate = (delay, duration) => {
   };
 };
 
+export const slideRotateY = (
+  delay,
+  duration,
+  index,
+  initialOffset = 100,
+  finalOffset = 30,
+  applyOffset = true
+) => {
+  let startY = 0;
+  let endY = 0;
+
+  if (applyOffset) {
+    startY = index % 2 === 0 ? -initialOffset : initialOffset;
+    endY = index % 2 === 0 ? -finalOffset : finalOffset;
+  }
+
+  return {
+    hidden: { opacity: 0, y: startY, rotate: -5 },
+    show: {
+      opacity: 1,
+      y: endY,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+        stiffness: 80,
+        damping: 8,
+      },
+    },
+  };
+};
+
 export const blurUp = (delay, duration) => {
   return {
     hidden: { opacity: 0, y: 20, filter: "blur(2px)" },

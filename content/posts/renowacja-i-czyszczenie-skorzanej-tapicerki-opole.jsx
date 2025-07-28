@@ -17,8 +17,13 @@ export const meta = {
   subtitle: "RENOWACJA I CZYSZCZENIE SKÓRZANEJ TAPICERKI",
   date: "2025-07-14",
   image: "logo2.jpg",
-  dynamicImage: "/logo2.jpg",
-  images: ["/logo2.jpg", "/logo2.jpg", "/logo2.jpg", "/logo2.jpg"],
+  dynamicImage: "/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg",
+  images: [
+    "/wlasciciel-mk-studio-kamil-auto-detailing-32.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-5.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-19.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
+  ],
   description:
     "Dowiedz się, jak profesjonalnie odnawiamy i czyścimy skórzaną tapicerkę samochodową w Opolu – usuwamy zarysowania, odżywiamy skórę i zabezpieczamy ją na kolejne lata.",
 };
@@ -28,10 +33,10 @@ export default function LeatherRenewalPost() {
     <>
       <h2>Kim jestem i dlaczego warto mi zaufać?</h2>
       <p>
-        Nazywam się <strong>MK Studio Auto Detailing</strong> i od ponad 10 lat
-        specjalizuję się w renowacji i czyszczeniu skóry samochodowej. Dzięki
-        precyzyjnym technikom usuwam zarysowania, przywracam naturalny kolor i
-        elastyczność skóry, korzystając z profesjonalnych preparatów
+        Nazywam się Kamil z <strong>MK Studio Auto Detailing</strong> i od ponad
+        10 lat specjalizuję się w renowacji i czyszczeniu skóry samochodowej.
+        Dzięki precyzyjnym technikom usuwam zarysowania, przywracam naturalny
+        kolor i elastyczność skóry, korzystając z profesjonalnych preparatów
         renomowanych marek.
       </p>
 

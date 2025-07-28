@@ -17,8 +17,13 @@ export const meta = {
   subtitle: "PROFESJONALNA KOREKTA LAKIERU",
   date: "2025-06-25",
   image: "logo2.jpg",
-  dynamicImage: "/logo2.jpg",
-  images: ["/logo2.jpg", "/logo2.jpg", "/logo2.jpg", "/logo2.jpg"],
+  dynamicImage: "/galeria-korekta-lakieru-1.jpg",
+  images: [
+    "/galeria-korekta-lakieru-1.jpg",
+    "/galeria-korekta-lakieru-2.jpg",
+    "/galeria-korekta-lakieru-3.jpg",
+    "/galeria-korekta-lakieru-1.jpg",
+  ],
   description:
     "Dowiedz się, jak w MK Studio Auto Detailing w Opolu stosujemy zaawansowaną korektę lakieru, by usunąć rysy, hologramy i przywrócić głębię koloru Twojego samochodu.",
 };

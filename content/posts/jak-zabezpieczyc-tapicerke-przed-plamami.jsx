@@ -16,8 +16,13 @@ export const meta = {
   subtitle: "OCHRONA I PIELĘGNACJA TAPICERKI",
   date: "2025-07-08",
   image: "logo2.jpg",
-  dynamicImage: "/logo2.jpg",
-  images: ["/logo2.jpg", "/logo2.jpg", "/logo2.jpg", "/logo2.jpg"],
+  dynamicImage: "/wlasciciel-mk-studio-kamil-auto-detailing-32.jpg",
+  images: [
+    "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-15.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-25.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-20.jpg",
+  ],
   description:
     "Uniknij trwałych plam na tapicerce samochodowej dzięki profesjonalnym technikom ochrony i pielęgnacji. Poznaj metody przedłużające świeżość i wartość wnętrza auta.",
 };

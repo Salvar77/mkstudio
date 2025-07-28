@@ -17,8 +17,13 @@ export const meta = {
   subtitle: "CERAMICZNA POWŁOKA OCHRONNA",
   date: "2025-06-15",
   image: "logo2.jpg",
-  dynamicImage: "/logo2.jpg",
-  images: ["/logo2.jpg", "/logo2.jpg", "/logo2.jpg", "/logo2.jpg"],
+  dynamicImage: "/galeria-powloka-ceramiczna-1.jpg",
+  images: [
+    "/galeria-powloka-ceramiczna-1.jpg",
+    "/galeria-powloka-ceramiczna-2.jpg",
+    "/galeria-powloka-ceramiczna-3.jpg",
+    "/galeria-powloka-ceramiczna-1.jpg",
+  ],
   description:
     "Odkryj zalety powłoki ceramicznej w Opolu: długotrwała ochrona lakieru, odporność na zabrudzenia i promieniowanie UV oraz efekt głębokiego połysku.",
 };

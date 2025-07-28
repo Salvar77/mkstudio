@@ -10,14 +10,14 @@ export default function CtaSection() {
           <div className={classes.content}>
             <h2 className={classes.title}>
               <IoMdHelpCircleOutline className={classes.iconQuestion} />
-              Masz pytania lub chcesz skorzystać z usługi?
+              Umów się na Profesjonalny Auto Detailing w Opolu!
             </h2>
             <p className={classes.text}>
-              Wypełnij formularz kontaktowy, a nasz zespół detailerów szybko się
-              z Tobą skontaktuje!
+              Wypełnij formularz kontaktowy, a ja, Kamil, skontaktuję się z Tobą
+              najszybciej, jak to możliwe!
             </p>
           </div>
-          <Link href="/contact" passHref>
+          <Link href="/kontakt" passHref>
             <div className={classes.button}>
               <svg
                 className={classes.icon}

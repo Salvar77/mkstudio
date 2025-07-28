@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { servicesData } from "../../../constants/index";
-import classes from "./page.module.scss";
+import { servicesData } from "../../../constants";
+import OfertaClient from "./OfertaClient";
 
 export async function generateStaticParams() {
   return servicesData.map(({ id }) => ({
@@ -8,30 +8,40 @@ export async function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
+export async function generateMetadata({ params }) {
   const svc = servicesData.find((s) => s.id === `oferta/${params.slug}`);
   if (!svc) return notFound();
 
+  let mod = null;
+  try {
+    mod = await import(`../../../content/services/${params.slug}.jsx`);
+  } catch {}
+
+  const title = mod?.meta?.title ?? svc.title;
+  const description =
+    mod?.meta?.lead ?? svc.additionalInfo.replace(/<[^>]+>/g, "");
+
+  const heroMeta =
+    typeof mod?.meta?.hero === "string" ? mod.meta.hero : mod?.meta?.hero?.src;
+  const heroSvc =
+    typeof svc.largeImage === "string" ? svc.largeImage : svc.largeImage?.src;
+  const ogImage = heroMeta ?? heroSvc ?? "/logo2.jpg";
+
   const url = `/oferta/${params.slug}`;
-  const description = svc.additionalInfo.replace(/<[^>]+>/g, ""); // tekst bez HTML
 
   return {
-    title: svc.title, // → „Korekta lakieru | MK Studio…”
+    title,
     description,
     alternates: { canonical: url },
-    openGraph: { url },
+    openGraph: {
+      url,
+      title,
+      description,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
   };
 }
 
 export default function OfertaStrona({ params }) {
-  const service = servicesData.find((s) => s.id === `oferta/${params.slug}`);
-
-  if (!service) return notFound();
-
-  return (
-    <article className={classes.offer}>
-      <h1>{service.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: service.additionalInfo }} />
-    </article>
-  );
+  return <OfertaClient slugFromParent={params.slug} />;
 }
