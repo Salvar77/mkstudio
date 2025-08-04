@@ -3,7 +3,6 @@ import Hero from "../components/Main/Hero";
 import Services from "../components/Main/Services";
 import Pricelist from "../components/Main/Pricelist";
 import Contact from "../components/Main/Contact";
-import AboutMe from "../components/Main/AboutMe";
 import Blog from "../components/Main/Blog";
 import ElfsightLazyWrapper from "../components/More/ElfsightLazyWrapper";
 import SliderSection from "../components/SliderSection/SliderSection";
@@ -27,6 +26,11 @@ export const metadata = {
   },
 };
 
+const DynamicAboutMe = dynamic(() => import("../components/Main/AboutMe"), {
+  ssr: false,
+  loading: () => <p>Ładowanie sekcji...</p>,
+});
+
 export default function Home() {
   return (
     <>
@@ -36,7 +40,7 @@ export default function Home() {
         <Services />
         <SliderSection />
         <Pricelist />
-        <AboutMe />
+        <DynamicAboutMe />
         <Blog />
         <ElfsightLazyWrapper />
         <Contact />
