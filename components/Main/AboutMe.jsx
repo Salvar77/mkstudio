@@ -56,7 +56,7 @@ export default function AboutMe() {
             <motion.li
               key={i}
               className={classes.about__item}
-              variants={fadeIn("up", "tween", 0.4 + i * 0.1, 0.6)}
+              variants={fadeIn("up", "tween", 0.4 + i * 0.1, 0.8)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.3 }}
