@@ -1,4 +1,3 @@
-// src/components/AboutMe/AboutMe.jsx
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -27,6 +26,11 @@ const features = [
 
 export default function AboutMe() {
   const router = useRouter();
+
+  // Obliczam opóźnienie dla przycisku dynamicznie
+  const lastFeatureDelay = 0.4 + (features.length - 1) * 0.1;
+  const lastFeatureDuration = 0.8;
+  const buttonDelay = lastFeatureDelay + lastFeatureDuration + 0.1; // Dodaję małe opóźnienie, aby przycisk pojawił się po zakończeniu animacji listy
 
   return (
     <section className={classes.about}>
@@ -68,7 +72,8 @@ export default function AboutMe() {
         </ul>
 
         <motion.div
-          variants={fadeIn("up", "tween", 1.0, 0.6)}
+          // Tutaj używam nowo obliczonego opóźnienia
+          variants={fadeIn("up", "tween", buttonDelay, 0.6)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
