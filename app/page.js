@@ -6,6 +6,7 @@ import Contact from "../components/Main/Contact";
 import Blog from "../components/Main/Blog";
 import ElfsightLazyWrapper from "../components/More/ElfsightLazyWrapper";
 import SliderSection from "../components/SliderSection/SliderSection";
+import dynamic from "next/dynamic";
 
 export const metadata = {
   title:
