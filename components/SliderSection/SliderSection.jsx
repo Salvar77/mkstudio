@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 import SliderTrue from "./SliderTrue";
 import BeforeImage1 from "../../assets/image/logo2.jpg";
@@ -68,7 +67,7 @@ const SliderSection = ({
         Przesuń suwak, aby porównać efekt <strong>przed</strong> i&nbsp;
         <strong>po</strong> profesjonalnych zabiegach: ekstrakcyjnym praniu
         tapicerki, renowacji elementów skórzanych oraz jednokrokowej korekcie
-        lakieru. Tak&nbsp;przywracamy fabryczną świeżość, głębię koloru i wysoki
+        lakieru. Tak&nbsp;przywracam fabryczną świeżość, głębię koloru i wysoki
         połysk.
       </p>
       <div className={`${classes.sliderGrid} ${gridClass}`}>

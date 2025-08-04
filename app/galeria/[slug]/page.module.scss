@@ -76,12 +76,12 @@
 
 .resetButton {
   position: relative;
-  color: $gold-main;
+  color: $new-black;
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
   padding: 1rem 1.5rem;
-  border: 0.2rem solid $gold-main;
+  border: 0.2rem solid $new-black;
   border-radius: 0.4rem;
   display: inline-block;
   margin-bottom: 1rem;
@@ -116,20 +116,20 @@
 
   &:hover {
     border: 1px solid transparent;
-    color: $gold-main;
+    color: $new-black;
   }
 
   &:hover::after {
     bottom: 0.3rem;
     left: 0.4rem;
-    border-bottom: 4px solid $gold-main;
-    border-right: 4px solid $gold-main;
+    border-bottom: 4px solid $new-black;
+    border-right: 4px solid $new-black;
   }
 
   &:hover::before {
     top: 0.3rem;
     right: 0.4rem;
-    border-top: 4px solid $gold-main;
-    border-left: 4px solid $gold-main;
+    border-top: 4px solid $new-black;
+    border-left: 4px solid $new-black;
   }
 }

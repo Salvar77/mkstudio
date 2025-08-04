@@ -5,12 +5,12 @@ import GaleriaClient from "./GaleriaClient";
 export async function generateStaticParams() {
   if (!realizationsData || !Array.isArray(realizationsData)) {
     console.error(
-      "realizationsData is not an array or is undefined in generateStaticParams"
+      "realizationsData nie jest tablicą lub jest niezdefiniowane w generateStaticParams"
     );
     return [];
   }
   console.log(
-    "generateStaticParams - realizationsData IDs:",
+    "generateStaticParams - identyfikatory realizacji:",
     realizationsData.map((r) => r.id)
   );
 
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
   const { slug } = params;
 
   if (!slug) {
-    console.log("generateMetadata - slug is undefined.");
+    console.log("generateMetadata - slug jest niezdefiniowany.");
     return {
       title: "Nie znaleziono strony",
       description: "Brak identyfikatora realizacji.",
@@ -35,7 +35,9 @@ export async function generateMetadata({ params }) {
   );
 
   if (!realization) {
-    console.log(`generateMetadata - Realization not found for slug: ${slug}`);
+    console.log(
+      `generateMetadata - Nie znaleziono realizacji dla sluga: ${slug}`
+    );
     return {
       title: "Nie znaleziono strony",
       description: "Strona, której szukasz, nie istnieje.",
@@ -79,7 +81,9 @@ export default function GaleriaStronaPage({ params }) {
   const { slug } = params;
 
   if (!slug) {
-    console.log("GaleriaStronaPage - slug is undefined, calling notFound().");
+    console.log(
+      "GaleriaStronaPage - slug jest niezdefiniowany, wywołuję notFound()."
+    );
     notFound();
   }
 
@@ -89,7 +93,7 @@ export default function GaleriaStronaPage({ params }) {
 
   if (!realization) {
     console.log(
-      `GaleriaStronaPage - Realization not found for slug: ${slug}, calling notFound().`
+      `GaleriaStronaPage - Nie znaleziono realizacji dla sluga: ${slug}, wywołuję notFound().`
     );
     notFound();
   }

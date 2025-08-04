@@ -4,7 +4,7 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 export const meta = {
   title:
     "Powłoka Ceramiczna w Opolu – Długotrwała Ochrona Lakieru | MK Studio Detailing",
-  hero: "/logo2.jpg", // Ścieżka do obrazka hero
+  hero: "/logo2.jpg",
   lead: "Zabezpiecz lakier swojego samochodu powłoką ceramiczną w MK Studio Detailing w Opolu. Oferuję profesjonalną aplikację, która zapewnia wieloletnią ochronę przed rysami, brudem, promieniami UV i ułatwia pielęgnację. Nadaj swojemu autu niezrównany blask i trwałość.",
   slug: "powloka-ceramiczna",
 };
@@ -12,9 +12,7 @@ export const meta = {
 export default function PowlokaCeramicznaPage() {
   return (
     <>
-      {/* Pierwsza sekcja contentSection - zawiera okręgi */}
       <section className={classes.contentSection}>
-        {/* Okręgi dla tej sekcji - umieszczone tylko tutaj */}
         <div className={classes.circleContainer1}></div>
         <div className={classes.circleContainer2}></div>
         <div className={classes.circleContainer3}></div>

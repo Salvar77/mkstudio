@@ -21,8 +21,8 @@ const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
             <Image
               src={isMobile ? HeroImageMobile : HeroImageDesktop}
               alt="Hero Background"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               // objectPosition={isMobile ? "center" : "80% 20%"}
               priority
             />

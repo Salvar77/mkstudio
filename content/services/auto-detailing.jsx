@@ -5,7 +5,6 @@ export const meta = {
   title:
     "Auto Detailing w Opolu – Kompleksowa Metamorfoza Auta | MK Studio Detailing",
   hero: "/logo2.jpg",
-
   lead: "Oferuję profesjonalny auto detailing w Opolu – od precyzyjnej dekontaminacji lakieru i wieloetapowej korekty, po impregnację powłoką ceramiczną i ozonowanie wnętrza. Przywracam samochodom salonowy blask i długotrwałą ochronę. Zaufaj 10-letniemu doświadczeniu Kamilowi z  MK Studio.",
   slug: "auto-detailing",
 };

@@ -27,6 +27,45 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
+      <link
+        rel="preload"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        as="style"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        media="print"
+        onLoad="this.media='all'"
+      />
+      <noscript>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+      </noscript>
+
+      <link
+        rel="preload"
+        href="/fonts/ChakraPetch-Regular.ttf"
+        as="font"
+        type="font/ttf"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="/fonts/ChakraPetch-Light.ttf"
+        as="font"
+        type="font/ttf"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="/fonts/ChakraPetch-Bold.ttf"
+        as="font"
+        type="font/ttf"
+        crossOrigin="anonymous"
+      />
       <body>
         <LayoutClient>{children}</LayoutClient>
       </body>
