@@ -9,6 +9,7 @@ import { FaCar, FaShieldAlt, FaCouch } from "react-icons/fa";
 import { MdBlurOn, MdBathroom } from "react-icons/md";
 import { IoMdBrush } from "react-icons/io";
 import { RiShining2Fill } from "react-icons/ri";
+import { GiVacuumCleaner } from "react-icons/gi";
 import AnimatedButton from "../More/AnimatedButton";
 import classes from "./AboutMe.module.scss";
 import AboutImage from "../../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-2.jpg";
@@ -19,6 +20,7 @@ const features = [
   { Icon: MdBlurOn, text: "Powłoka na szyby (niewidzialna wycieraczka)" },
   { Icon: IoMdBrush, text: "Detailing wnętrza" },
   { Icon: FaCouch, text: "Renowacja i impregnacja skór" },
+  { Icon: GiVacuumCleaner, text: "Dokładne czyszczenie każdego zakamarka" },
   { Icon: MdBathroom, text: "Pranie tapicerki" },
   { Icon: RiShining2Fill, text: "Polerowanie lakieru" },
 ];
@@ -54,7 +56,7 @@ export default function AboutMe() {
             <motion.li
               key={i}
               className={classes.about__item}
-              variants={fadeIn("up", "tween", 0.4 + i * 0.05, 0.6)}
+              variants={fadeIn("up", "tween", 0.4 + i * 0.1, 0.6)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.3 }}
