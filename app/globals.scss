@@ -61,7 +61,7 @@ a {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid rgba($white-smooth, 0.2);
-  color: rgba($white-smooth, 0.8);
+  color: $white-smooth;
   text-align: center;
 }
 
@@ -83,7 +83,7 @@ a {
 .contact-item {
   display: flex;
   align-items: center;
-  color: rgba($white-smooth, 0.9);
+  color: $white-smooth;
   font-weight: bold;
   margin-bottom: 1rem;
 
@@ -94,8 +94,12 @@ a {
   }
 
   a {
-    color: $gold-main;
-    text-shadow: 0.2rem 0.2rem 0.4rem $new-black;
+    color: $new-black;
+
+    @media screen and (min-width: 992px) {
+      color: $gold-main;
+      text-shadow: 0.2rem 0.2rem 0.4rem $new-black;
+    }
     &:hover {
       text-decoration: underline;
     }

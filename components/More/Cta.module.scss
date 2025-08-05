@@ -6,6 +6,7 @@
   padding: 6rem 1rem;
   display: flex;
   justify-content: center;
+  z-index: 0;
 
   &::before,
   &::after {
@@ -13,6 +14,7 @@
     position: absolute;
     font-size: 7rem;
     color: rgba($gold-main, 0.9);
+    z-index: 1;
   }
   &::before {
     top: -1rem;
