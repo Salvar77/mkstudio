@@ -68,7 +68,6 @@
   }
 }
 
-/* Formularz (prawa kolumna) */
 .contact__form {
   margin-left: 2rem;
   h2 {
@@ -81,7 +80,6 @@
     flex-direction: column;
   }
 
-  /* tylko podkreślenie, bez tła czy obramowania */
   input,
   textarea {
     background: transparent;
@@ -90,19 +88,27 @@
     border-radius: 0;
     padding: 0.5rem 0;
     margin-bottom: 1.5rem;
-    font-size: 1rem;
     color: $white-smooth;
     &::placeholder {
       color: darken($white-smooth, 20%);
     }
   }
 
+  textarea {
+    resize: vertical;
+  }
+
   .contact__checkbox {
+    display: flex;
+    align-items: flex-start;
     font-size: 0.85rem;
     color: $white-smooth;
     margin-bottom: 1.5rem;
+
     input {
-      margin-right: 0.5rem;
+      flex-shrink: 0;
+      margin-right: 0.75rem;
+      margin-top: 0.25rem;
     }
   }
 
@@ -126,7 +132,6 @@
   }
 }
 
-/* responsywność */
 @media (max-width: 992px) {
   .contact__container {
     flex-direction: column;

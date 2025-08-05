@@ -72,7 +72,11 @@ const Contact = () => {
             ].map(([day, hours]) => (
               <li key={day}>
                 <span className={classes.contact__day}>{day}:</span>
-                <span className={classes.contact__time}>{hours}</span>
+                {hours === "Zamknięte" ? (
+                  <span className={classes.contact__time_closed}>{hours}</span>
+                ) : (
+                  <span className={classes.contact__time}>{hours}</span>
+                )}
               </li>
             ))}
           </ul>
@@ -114,7 +118,11 @@ const Contact = () => {
                 checked={form.consent}
                 onChange={handleChange}
               />
-              Wyrażam zgodę na przetwarzanie danych osobowych...
+              Wyrażam zgodę na przetwarzanie moich danych osobowych przez MK
+              Studio Auto Detailing w celu realizacji zapytania. Dane są
+              podawane dobrowolnie, jednak są niezbędne do jego przetworzenia.
+              Zostałem poinformowany o przysługującym mi prawie dostępu do moich
+              danych, ich poprawiania oraz żądania zaprzestania przetwarzania.
             </label>
             <button type="submit">Wyślij</button>
           </form>

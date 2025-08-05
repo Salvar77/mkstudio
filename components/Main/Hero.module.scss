@@ -53,7 +53,7 @@
 
   &__title {
     color: $gold-main;
-    font-size: 4.6rem;
+    font-size: 3.7rem;
     text-shadow: 0.5rem 0.5rem 0.5rem $dark-smooth;
 
     &Gold {
@@ -66,7 +66,7 @@
 
   &__description,
   p {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-shadow: 0.5rem 0.5rem 0.5rem $dark-smooth;
     color: $white-smooth;
   }
@@ -221,6 +221,7 @@
     }
 
     &__title {
+      font-size: 4.6rem;
       text-shadow: 0.3rem 0.3rem 0.6rem rgba($dark-smooth, 0.9);
     }
 

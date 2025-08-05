@@ -90,11 +90,11 @@
   text-align: center;
   padding: 1.8rem 2.2rem;
   transform: translateY(16rem);
-  color: rgba($white-smooth, 0.95);
+  color: $white-smooth;
   border-bottom-right-radius: 2px solid rgba($gold-main, 0.45);
-
+  background-color: rgba(0, 0, 0, 0.2);
   line-height: 2;
-  text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.95);
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba($dark-smooth, 0.95);
   box-shadow: -6px 6px 14px rgba($dark-smooth, 0.25),
     6px -6px 14px rgba($gold-main, 0.2);
   backdrop-filter: blur(4px);
