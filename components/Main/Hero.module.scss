@@ -105,6 +105,7 @@
   gap: 2rem;
   transition: filter 1s ease-out;
   padding-top: 4rem;
+  z-index: 10;
 
   p {
     color: $white-smooth;
@@ -119,7 +120,6 @@
     align-self: center;
     padding: 0.8rem 1.6rem;
     box-shadow: 0 0.4rem 0.8rem rgba($dark-smooth, 0.6);
-    z-index: 2;
   }
 }
 
@@ -134,7 +134,6 @@
   box-shadow: 0.2rem 0.4rem 0.6rem rgba(56, 201, 34, 0.2);
   text-decoration: none;
   transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
-  z-index: 200;
 
   &:hover {
     color: $gold-main;
