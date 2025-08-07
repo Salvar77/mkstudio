@@ -4,7 +4,7 @@ import autodetailing2 from "../assets/image/wlasciciel-mk-studio-kamil-auto-deta
 import leatherrenovation from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-32.jpg";
 import paintcorrection from "../assets/image/galeria-korekta-lakieru-1.jpg";
 import ppf from "../assets/image/ppf2.jpg";
-import ceramic from "../assets/image/galeria-powloka-ceramiczna-1.jpg";
+import ceramic from "../assets/image/galeria-powloka-ceramiczna-3.jpg";
 import upholstery from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg";
 import blogPost from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-18.jpg";
 import blogPost2 from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-25.jpg";
@@ -23,6 +23,8 @@ export const servicesData = [
     additionalInfo:
       "<strong>Auto Detailing</strong> – wewnętrzna metamorfoza Twojego auta: ekstrakcyjne pranie tapicerki, parowe doczyszczanie zakamarków, ozonowanie dla krystalicznego powietrza i hydrofobowa impregnacja tkanin. ",
     relatedBlogPost: "/auto-detailing-opole",
+    altText:
+      "Zdjęcie z usługi auto detailingu wnętrza samochodu, profesjonalne czyszczenie i pranie tapicerki w Opolu.",
   },
   {
     id: "oferta/renowacja-i-czyszczenie-skor",
@@ -34,6 +36,8 @@ export const servicesData = [
     additionalInfo:
       "<strong>Renowacja i czyszczenie skór</strong> – luksusowe spa dla Twoich foteli: system <strong>Colourlock</strong> usuwa zabrudzenia, przywraca kolor, nawilża i długotrwale chroni skórę przed pękaniem.",
     relatedBlogPost: "/glebokie-pranie-tapicerki-opole",
+    altText:
+      "Renowacja i czyszczenie skórzanej tapicerki. Luksusowe spa dla foteli w MK Studio Opole.",
   },
   {
     id: "oferta/korekta-lakieru",
@@ -45,6 +49,8 @@ export const servicesData = [
     additionalInfo:
       "<strong>Korekta lakieru</strong> w MK Studio Auto Detailing – jednokrokowa korekta polerska, która usuwa drobne zmatowienia i przywraca szklisty połysk karoserii, realizowana przez eksperta z ponad dekadą praktyki.",
     relatedBlogPost: "/korekta-lakieru-opole",
+    altText:
+      "Zdjęcie przedstawiające korektę lakieru, polerowanie i usuwanie zarysowań z karoserii samochodu w Opolu.",
   },
   {
     id: "oferta/folia-ppf-ochrona-lakieru",
@@ -55,6 +61,8 @@ export const servicesData = [
     additionalInfo:
       "Profesjonalna aplikacja <strong>folii PPF</strong> w MK Studio Auto Detailing to gwarancja trwałej, nawet 10‑letniej ochrony przed zarysowaniami, odpryskami i promieniowaniem UV.",
     relatedBlogPost: "/folia-ppf-opole",
+    altText:
+      "Aplikacja folii PPF na lakier samochodowy. Trwała ochrona przed zarysowaniami i odpryskami w MK Studio Opole.",
   },
   {
     id: "oferta/powloka-ceramiczna",
@@ -65,6 +73,8 @@ export const servicesData = [
     additionalInfo:
       "<strong>Powłoka ceramiczna</strong> łączy trwałą ochronę z estetyką: nadaje lakierowi głęboki, szklisty połysk oraz zapewnia hydrofobowe odpychanie brudu.",
     relatedBlogPost: "/powloka-ceramiczna-opole",
+    altText:
+      "Zdjęcie samochodu z nałożoną powłoką ceramiczną. Hydrofobowy efekt i wysoki połysk lakieru.",
   },
   {
     id: "oferta/pranie-tapicerki",
@@ -75,6 +85,8 @@ export const servicesData = [
     additionalInfo:
       "Profesjonalna usługa <strong>prania tapicerki</strong> to doskonały sposób na przywrócenie czystości i świeżości Twojej tapicerce.",
     relatedBlogPost: "/jak-zabezpieczyc-tapicerke-przed-plamami",
+    altText:
+      "Profesjonalne pranie tapicerki samochodowej. Wnętrze auta z czystymi fotelami i odświeżoną tapicerką.",
   },
 ];
 

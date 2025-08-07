@@ -22,17 +22,30 @@
     strong {
       color: $gold-main;
       font-weight: 700;
-      // background-color: rgba($gold-main, 0.1);
       padding: 0.2rem 0.4rem;
       border-radius: 0.25rem;
+    }
+  }
+
+  &__imageWrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: 50% 50%;
+
+      border-radius: 2rem;
+      padding: 1rem;
     }
   }
 
   img {
     padding: 1rem;
     width: 100%;
-    max-height: 100%;
-    object-fit: cover;
     border-radius: 5rem;
   }
 
@@ -49,13 +62,14 @@
   h2 {
     padding: 0.5rem;
     border-bottom: 2px solid $white-smooth;
+    text-shadow: 0.15rem 0.15rem 0.2rem $dark-smooth;
   }
 
   p {
     padding: 2rem;
     // border-bottom: 2px solid $white-smooth;
     box-shadow: 0.2rem 0.2rem 0.4rem $grey-smooth;
-    text-shadow: 0.2rem 0.2rem 0.4rem $dark-smooth;
+    text-shadow: 0.15rem 0.15rem 0.25rem $dark-smooth;
 
     & > strong {
       display: inline;
@@ -93,11 +107,12 @@
     }
   }
 
-  .imageGrid {
+  &__imageGrid {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: center;
+    align-items: center;
     margin-top: 1rem;
 
     img {
@@ -110,8 +125,8 @@
       }
 
       &:hover {
-        transform: scale(1.01);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transform: scale(1.015);
+        box-shadow: 0.1rem 0.4rem 1.5rem rgba($new-black, 0.7);
       }
     }
   }
@@ -243,18 +258,43 @@
       font-size: 2.8rem;
     }
 
-    &__image {
+    &__imageWrapper {
+      position: relative;
+      width: 100%;
+      // overflow: hidden;
+      margin-bottom: 2rem;
+
       img {
-        width: 100%;
-        height: auto;
-        max-height: 70rem;
-        object-fit: cover;
-        border-radius: 5rem;
+        height: 60rem;
       }
 
       &.specialImage {
         img {
-          object-position: 25% 75%;
+          object-position: 75% 25%;
+        }
+      }
+
+      &.anotherSpecialImage {
+        img {
+          object-position: 50% 55%;
+        }
+      }
+
+      &.specialImage2 {
+        img {
+          object-position: 75% 45%;
+        }
+      }
+
+      &.styleThree {
+        img {
+          object-position: 70% 79.7%;
+        }
+      }
+
+      &.styleFour {
+        img {
+          object-position: 70% 50%;
         }
       }
 

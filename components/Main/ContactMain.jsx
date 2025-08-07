@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/image/logo2.jpg";
+import Logo from "../../assets/image/logo-mkstudio-auto-detailing-opole.jpg";
 import classes from "./ContactMain.module.scss";
 import Link from "next/link";
 import Image from "next/image";
@@ -31,15 +31,20 @@ const ContactMain = () => {
         <p className={classes.phone}>Tel: 690 570 800</p>
         <p className={classes.email}>mkstudio.opole@gmail.com</p>
         <p className={classes.hours}>Godziny otwarcia:</p>
-        <p className={classes.hoursDetails}>pon. - pt. 07:00 - 20:00</p>
-        <p className={classes.hoursDetails}>sob. 08:00 - 18:00</p>
+        <p className={classes.hoursDetails}>
+          pon. - pt.{" "}
+          <span className={classes.hoursDetailsSpan}>07:00 - 20:00</span>
+        </p>
+        <p className={classes.hoursDetails}>
+          sob. <span className={classes.hoursDetailsSpan}>08:00 - 18:00</span>
+        </p>
       </div>
 
       <div className={classes.column}>
         <div className={classes.logoBlock}>
           <Image
             src={Logo}
-            alt="Logo firmy MK Studio Auto Detailing - auto detailing, pranie tapicerki, czyszczenie samochodów"
+            alt="Logo firmy MK Studio Auto Detailing - auto detailing, pranie tapicerki, korekta lakieru"
             className={classes.logo}
             width={350}
             height={250}

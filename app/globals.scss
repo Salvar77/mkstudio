@@ -75,7 +75,6 @@ a {
   @media screen and (min-width: 992px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // gap: 1rem 2rem;
     margin: 1rem 0;
   }
 }
@@ -96,10 +95,6 @@ a {
   a {
     color: $new-black;
 
-    @media screen and (min-width: 992px) {
-      color: $gold-main;
-      text-shadow: 0.2rem 0.2rem 0.4rem $new-black;
-    }
     &:hover {
       text-decoration: underline;
     }

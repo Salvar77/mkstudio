@@ -26,11 +26,9 @@ const features = [
 
 export default function AboutMe() {
   const router = useRouter();
-
-  // Obliczam opóźnienie dla przycisku dynamicznie
   const lastFeatureDelay = 0.4 + (features.length - 1) * 0.1;
   const lastFeatureDuration = 0.8;
-  const buttonDelay = lastFeatureDelay + lastFeatureDuration + 0.1; // Dodaję małe opóźnienie, aby przycisk pojawił się po zakończeniu animacji listy
+  const buttonDelay = lastFeatureDelay + lastFeatureDuration + 0.1;
 
   return (
     <section className={classes.about}>
@@ -72,7 +70,6 @@ export default function AboutMe() {
         </ul>
 
         <motion.div
-          // Tutaj używam nowo obliczonego opóźnienia
           variants={fadeIn("up", "tween", buttonDelay, 0.6)}
           initial="hidden"
           whileInView="show"
@@ -90,7 +87,7 @@ export default function AboutMe() {
       <div className={classes.about__image}>
         <Image
           src={AboutImage}
-          alt="Auto detailing - realizacja"
+          alt="Właściciel MK Studio, Kamil. Profesjonalny Auto Detailing Opole: pranie tapicerki i korekta lakieru."
           fill
           style={{ objectFit: "cover" }}
           priority

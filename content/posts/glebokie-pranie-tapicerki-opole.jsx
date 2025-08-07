@@ -16,13 +16,21 @@ export const meta = {
     "Głębokie pranie tapicerki w Opolu – usuń uporczywe plamy i nieprzyjemne zapachy",
   subtitle: "PROFESJONALNE PRANIE TAPICERKI SAMOCHODOWEJ",
   date: "2025-07-10",
-  image: "logo2.jpg",
+  image: "/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg",
   dynamicImage: "/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg",
+  mainImageAltText:
+    "Właściciel MK Studio Auto Detailing, Kamil, w trakcie profesjonalnego, głębokiego prania tapicerki w samochodzie w Opolu.",
   images: [
     "/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-25.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-15.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
+  ],
+  imagesAltText: [
+    "Pranie tapicerki samochodowej w Opolu. Usuwanie uporczywych plam z fotela.",
+    "Głębokie czyszczenie tapicerki w MK Studio Auto Detailing. Widok na czysty fotel po praniu.",
+    "Wnętrze samochodu w trakcie prania tapicerki. Auto detailing w Opolu, widoczne czyste i pachnące fotele.",
+    "Proces profesjonalnego prania tapicerki samochodowej. Użycie specjalistycznych urządzeń do odświeżania wnętrza.",
   ],
   description:
     "Poznaj zaawansowane metody głębokiego prania tapicerki w Opolu, które skutecznie usuwają nawet najbardziej uporczywe zabrudzenia i przywracają wnętrzu auta świeżość oraz higienę na długi czas.",

@@ -4,7 +4,9 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 export const meta = {
   title:
     "Renowacja i Czyszczenie Skór w Opolu – Przywróć Blask Tapicerce | MK Studio Detailing",
-  hero: "/logo2.jpg",
+  hero: "/logo-mkstudio-auto-detailing-opole.jpg",
+  heroAltText:
+    "Renowacja i czyszczenie skór w Opolu. Logo MK Studio Detailing.",
   lead: "Oferuję profesjonalną renowację i czyszczenie tapicerki skórzanej w Opolu. Od dogłębnego czyszczenia i odżywiania po usuwanie przetarć i przywracanie koloru. Przywróć wnętrzu swojego auta luksusowy wygląd i świeżość. Zaufaj 10-letniemu doświadczeniu Kamila z MK Studio.",
   slug: "renowacja-i-czyszczenie-skor",
 };

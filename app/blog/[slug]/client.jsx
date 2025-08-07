@@ -11,6 +11,7 @@ export default function BlogPostClient({ slugFromParent }) {
 
   const [meta, setMeta] = useState(undefined);
   const [Content, setContent] = useState(null);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     let mounted = true;
@@ -23,20 +24,58 @@ export default function BlogPostClient({ slugFromParent }) {
       })
       .catch(() => mounted && setMeta(null));
 
-    return () => (mounted = false);
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 992);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      mounted = false;
+      window.removeEventListener("resize", handleResize);
+    };
   }, [slug]);
 
   if (meta === null) return <p>Wpis nie znaleziony.</p>;
   if (meta === undefined || !Content) return <p>Ładowanie wpisu...</p>;
 
-  const { title, date, dynamicImage, image, images } = meta;
-  const imageSrc = dynamicImage || `/images/${image}`;
+  const { title, date, images } = meta;
+  const defaultImage = meta.dynamicImage || `/images/${meta.image}`;
+
+  let imageSrc;
+  if (slug === "powloka-ceramiczna-opole") {
+    imageSrc = isDesktop
+      ? "/galeria-powloka-ceramiczna-3.jpg"
+      : "/galeria-powloka-ceramiczna-1.jpg";
+  } else {
+    imageSrc = defaultImage;
+  }
+
+  const imageStyles = {
+    "jak-zabezpieczyc-tapicerke-przed-plamami": "specialImage2",
+    "glebokie-pranie-tapicerki-opole": "specialImage",
+    "renowacja-i-czyszczenie-skorzanej-tapicerki-opole": "specialImage",
+    "folia-ppf-opole": "styleThree",
+    "korekta-lakieru-opole": "anotherSpecialImage",
+    "powloka-ceramiczna-opole": "styleFour",
+  };
+  const customImageClass = imageStyles[slug] || "";
 
   return (
     <main className={classes.blogPost__container}>
       <article className={classes.blogPost}>
-        <div className={classes.blogPost__imageWrapper}>
-          <Image src={imageSrc} alt={title} width={1200} height={600} />
+        <div
+          className={`${classes.blogPost__imageWrapper} ${
+            customImageClass ? classes[customImageClass] : ""
+          }`}
+        >
+          <Image
+            src={imageSrc}
+            alt={meta.mainImageAltText || title}
+            width={1200}
+            height={600}
+            style={{ objectFit: "cover" }}
+          />
         </div>
 
         <div className={classes.blogPost__box}>
@@ -51,7 +90,7 @@ export default function BlogPostClient({ slugFromParent }) {
                 <Image
                   key={i}
                   src={src}
-                  alt={`${title} ${i + 1}`}
+                  alt={meta.imagesAltText?.[i] || `${title} ${i + 1}`}
                   width={800}
                   height={450}
                   objectFit="cover"

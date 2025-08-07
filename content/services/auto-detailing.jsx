@@ -4,8 +4,10 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 export const meta = {
   title:
     "Auto Detailing w Opolu – Kompleksowa Metamorfoza Auta | MK Studio Detailing",
-  hero: "/logo2.jpg",
-  lead: "Oferuję profesjonalny auto detailing w Opolu – od precyzyjnej dekontaminacji lakieru i wieloetapowej korekty, po impregnację powłoką ceramiczną i ozonowanie wnętrza. Przywracam samochodom salonowy blask i długotrwałą ochronę. Zaufaj 10-letniemu doświadczeniu Kamilowi z  MK Studio.",
+  hero: "/logo-mkstudio-auto-detailing-opole.jpg",
+  heroAltText:
+    "Profesjonalny auto detailing w Opolu. Logo MK Studio Auto Detailing.",
+  lead: "Oferuję profesjonalny auto detailing w Opolu – od precyzyjnej dekontaminacji lakieru i wieloetapowej korekty, po impregnację powłoką ceramiczną i ozonowanie wnętrza. Przywracam samochodom salonowy blask i długotrwałą ochronę. Zaufaj 10-letniemu doświadczeniu Kamilowi z MK Studio.",
   slug: "auto-detailing",
 };
 
@@ -146,7 +148,7 @@ export default function AutoDetailingPage() {
         <div className={classes.contentSection__image}>
           <Image
             src="/wlasciciel-mk-studio-kamil-auto-detailing-3.jpg"
-            alt="Kamil, właściciel MK Studio Detailing, podczas pracy"
+            alt="Kamil, właściciel MK Studio Auto Detailing, podczas pracy"
             width={600}
             height={400}
             layout="responsive"

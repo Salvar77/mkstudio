@@ -16,18 +16,25 @@ export const meta = {
     "Korekta lakieru samochodowego w Opolu – usuń rysy i przywróć głębię koloru",
   subtitle: "PROFESJONALNA KOREKTA LAKIERU",
   date: "2025-06-25",
-  image: "logo2.jpg",
+  image: "/galeria-korekta-lakieru-1.jpg",
   dynamicImage: "/galeria-korekta-lakieru-1.jpg",
+  mainImageAltText:
+    "Głęboka korekta lakieru w MK Studio Auto Detailing . Zdjęcie przedstawiające polerowanie samochodu, które usuwa rysy i przywraca głębię koloru.",
   images: [
     "/galeria-korekta-lakieru-1.jpg",
     "/galeria-korekta-lakieru-2.jpg",
     "/galeria-korekta-lakieru-3.jpg",
     "/galeria-korekta-lakieru-1.jpg",
   ],
+  imagesAltText: [
+    "Zdjęcie po korekcie lakieru. Zdjęcie w warsztacie w Opolu pokazujące różnicę w głębi koloru.",
+    "Zabezpieczone auto w studiu detailingowym po korekcie lakieru. Efekt końcowy pracy w MK Studio Opole.",
+    "Samochód w studiu detailingowym po zabiegu korekty lakieru. Widoczna głębia i szklisty połysk koloru.",
+    "Efekt końcowy korekty lakieru. Lśniące auto bez zarysowań, gotowe do odbioru przez klienta w Opolu.",
+  ],
   description:
-    "Dowiedz się, jak w MK Studio Auto Detailing w Opolu stosujemy zaawansowaną korektę lakieru, by usunąć rysy, hologramy i przywrócić głębię koloru Twojego samochodu.",
+    "Dowiedz się, jak w MK Studio Auto Detailing w Opolu stosuję zaawansowaną korektę lakieru, by usunąć rysy, hologramy i przywrócić głębię koloru Twojego samochodu.",
 };
-
 export default function PaintCorrectionPost() {
   return (
     <>

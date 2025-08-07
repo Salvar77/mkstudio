@@ -19,11 +19,19 @@ export const meta = {
   date: "2025-06-01",
   image: "/auto-detailing-mk-studio-opole-produkty.jpg",
   dynamicImage: "/auto-detailing-mk-studio-opole-produkty.jpg",
+  mainImageAltText:
+    "Wnętrze samochodu po profesjonalnym auto detailingu. Produkty do czyszczenia wnętrza i prania tapicerki w MK Studio Auto Detailing Opole.",
   images: [
-    "/auto-detailing-mk-studio-opole-produkty.jpg",
-    "/wlasciciel-mk-studio-kamil-auto-detailing-5.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-16.jpg",
+    "/auto-detailing-mk-studio-opole-produkty.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-5.jpg",
+  ],
+  imagesAltText: [
+    "Właściciel MK Studio, Kamil, podczas pracy nad autem w warsztacie auto detailingu w Opolu.",
+    "Profesjonalne produkty do auto detailingu i prania tapicerki w MK Studio Opole.",
+    "Ekspert od auto detailingu w Opolu. Przygotowanie do końcowego etapu prania tapicerki.",
+    "Auto Detailing Opole - profesjonalna pielęgnacja samochodu, odświeżanie wnętrza i renowacja lakieru.",
   ],
   description:
     "Zapewnij swojemu samochodowi kompleksową pielęgnację: pranie tapicerki, renowację skóry, korektę lakieru, aplikację folii PPF i powłoki ceramicznej. Dowiedz się, na czym polega pełny detailing.",

@@ -59,7 +59,7 @@ export default function OfertaClient({ slugFromParent }) {
     return <p>Ładowanie usługi...</p>;
   }
 
-  const { title, hero, lead } = meta;
+  const { title, hero, lead, heroAltText } = meta;
   const heroSrc = typeof hero === "string" ? hero : hero?.src ?? "/logo2.jpg";
 
   return (
@@ -67,7 +67,7 @@ export default function OfertaClient({ slugFromParent }) {
       <header className={classes.hero}>
         <Image
           src={heroSrc}
-          alt={title || "Hero zdjęcie"}
+          alt={heroAltText || title || "Hero zdjęcie"}
           className={classes.hero__bg}
           fill
           style={{ objectFit: "cover" }}

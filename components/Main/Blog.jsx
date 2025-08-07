@@ -5,7 +5,7 @@ import Link from "next/link";
 import classes from "./Blog.module.scss";
 import { blogPosts } from "../../constants/index";
 
-const Blog = () => {
+const Blog = ({ showReadMoreLink = false }) => {
   return (
     <section id="blog-główna" className={classes.blog}>
       <h2 className={classes.blog__header}>Dowiedz się więcej</h2>
@@ -15,7 +15,7 @@ const Blog = () => {
             <div className={classes.blog__image}>
               <Image
                 src={post.image}
-                alt={`${post.title} - pranie tapicerki, czyszczenie samochodu, czyszczenie tapicerki`}
+                alt={`${post.title} - auto detailing, pranie tapicerki, korekta lakieru`}
                 width={500}
                 height={300}
               />
@@ -49,9 +49,11 @@ const Blog = () => {
           </div>
         ))}
       </div>
-      <Link href="/blog" className={classes.readMoreLink}>
-        Przeczytaj więcej na blogu
-      </Link>
+      {showReadMoreLink && (
+        <Link href="/blog" className={classes.readMoreLink}>
+          Przeczytaj więcej na blogu
+        </Link>
+      )}
     </section>
   );
 };

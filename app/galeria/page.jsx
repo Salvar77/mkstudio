@@ -49,7 +49,7 @@ const Galeria = () => {
               >
                 <Image
                   src={realization.image}
-                  alt={`Realizacja - ${realization.description} - profesjonalny auto detailing, czyszczenie samochodu`}
+                  alt={`Realizacja w Opolu- ${realization.description} - profesjonalny auto detailing, czyszczenie samochodu`}
                   width={400}
                   height={300}
                 />

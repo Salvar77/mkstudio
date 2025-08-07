@@ -15,9 +15,16 @@ export const meta = {
   title: "Folia PPF w Opolu – ochrona lakieru przed uszkodzeniami",
   subtitle: "FOLIA OCHRONNA PPF",
   date: "2025-06-15",
-  image: "logo2.jpg",
+  image: "ppf2.jpg",
+  images: ["/ppf.webp", "/ppf2.jpg", "/ppf1.webp"],
+  mainImageAltText:
+    "Folia PPF na reflektorach. Profesjonalna aplikacja folii chroniącej lakier w samochodzie w MK Studio Auto Detailing Opole.",
   dynamicImage: "/ppf3.jpg",
-  images: ["/ppf1.webp", "/ppf2.jpg", "/ppf.webp", "/ppf2.jpg"],
+  imagesAltText: [
+    "Aplikacja folii PPF na lusterka samochodowe. Zabezpieczenie lakieru przed uszkodzeniami i odpryskami.",
+    "Proces nakładania folii PPF na reflektory auta. Przygotowanie do ochrony lamp przed zarysowaniami.",
+    "Infografika prezentująca różne rodzaje folii PPF. Schemat z oznaczeniami i opisem zastosowania folii ochronnej na samochodzie sportowym.",
+  ],
   description:
     "Poznaj zalety folii PPF chroniącej lakier przed kamieniami, zarysowaniami i działaniem czynników atmosferycznych. Dowiedz się, jak dbać o folię i jakie są jej rodzaje.",
 };

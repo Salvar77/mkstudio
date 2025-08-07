@@ -18,7 +18,7 @@ export const metadata = {
     url: "/",
     images: [
       {
-        url: "/og/logo2.jpg",
+        url: "/og/logo-mkstudio-auto-detailing-opole.jpg",
         width: 1200,
         height: 630,
         alt: "MK Studio Auto Detailing – realizacje i oferta",
@@ -37,7 +37,7 @@ export default function Home() {
         <SliderSection />
         <Pricelist />
         <AboutMe />
-        <Blog />
+        <Blog showReadMoreLink={true} />
         <ElfsightLazyWrapper />
         <Contact />
       </main>

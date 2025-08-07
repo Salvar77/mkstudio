@@ -47,7 +47,7 @@ export async function generateMetadata({ params }) {
   const ogImageSrc =
     typeof realization.image === "object" && realization.image !== null
       ? realization.image.src
-      : realization.image || "/logo2.jpg";
+      : realization.image || "/logo-mkstudio-auto-detailing-opole.jpg";
 
   const ogImageWidth =
     typeof realization.image === "object" && realization.image !== null
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }) {
       ? realization.image.height || 630
       : 630;
 
-  const title = `Galeria: ${realization.description} | MK Studio Detailing - Pranie tapicerki - Korektka lakieru`;
+  const title = `Galeria: ${realization.description} | MK Studio Auto Detailing Opole`;
   const description = `Szczegółowa galeria zdjęć z realizacji usługi: ${realization.description} w MK Studio Detailing w Opolu.`;
 
   const url = `/galeria/${slug}`;
@@ -72,7 +72,14 @@ export async function generateMetadata({ params }) {
       url,
       title,
       description,
-      images: [{ url: ogImageSrc, width: ogImageWidth, height: ogImageHeight }],
+      images: [
+        {
+          url: ogImageSrc,
+          width: ogImageWidth,
+          height: ogImageHeight,
+          alt: `Galeria zdjęć z realizacji usługi: ${realization.description}`,
+        },
+      ],
     },
   };
 }

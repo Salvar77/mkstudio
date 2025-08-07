@@ -4,8 +4,8 @@ import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import classes from "./Hero.module.scss";
-import HeroImageMobile from "../../public/logo2.jpg";
-import HeroImageDesktop from "../../public/logo2.jpg";
+import HeroImageMobile from "../../assets/image/logo-mkstudio-auto-detailing-opole.jpg";
+import HeroImageDesktop from "../../assets/image/logo-mkstudio-auto-detailing-opole.jpg";
 
 const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
@@ -20,7 +20,7 @@ const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
           <div className={classes.imageWrapper}>
             <Image
               src={isMobile ? HeroImageMobile : HeroImageDesktop}
-              alt="Hero Background"
+              alt="Główny baner MK Studio Auto Detailing - profesjonalny auto detailing Opole, pranie tapicerki i korekta lakieru"
               fill
               style={{ objectFit: "cover" }}
               // objectPosition={isMobile ? "center" : "80% 20%"}

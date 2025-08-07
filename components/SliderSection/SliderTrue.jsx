@@ -31,7 +31,7 @@ const SliderTrue = (props) => {
       <div className={classes.sliderContainer}>
         <Image
           src={props.beforeImage}
-          alt="zdjęcie przed"
+          alt={props.alt}
           style={imageStyles}
           className={classes.imageBefore}
           width={260}
@@ -41,7 +41,7 @@ const SliderTrue = (props) => {
         />
         <Image
           src={props.afterImage}
-          alt="zdjęcie po"
+          alt={props.alt}
           className={classes.imageAfter}
           style={{
             clipPath: `inset(0 ${100 - sliderValue}% 0 0)`,

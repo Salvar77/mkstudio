@@ -4,7 +4,9 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 export const meta = {
   title:
     "Korekta Lakieru w Opolu – Usuwanie Rys i Hologramów | MK Studio Detailing",
-  hero: "/logo2.jpg",
+  hero: "/logo-mkstudio-auto-detailing-opole.jpg",
+  heroAltText:
+    "Logo MK Studio Auto Detailing. Profesjonalna korekta lakieru w Opolu.",
   lead: "Oferuję profesjonalną jedno- i wieloetapową korektę lakieru w Opolu. Skutecznie usuwam rysy, hologramy i zmatowienia, przywracając karoserii idealną gładkość i głębię koloru. Zabezpiecz swój lakier na lata z MK Studio Detailing.",
   slug: "korekta-lakieru",
 };
@@ -143,7 +145,7 @@ export default function KorektaLakieruPage() {
         <div className={classes.contentSection__image}>
           <Image
             src="/galeria-korekta-lakieru-3.jpg"
-            alt="Kamil z MK Studio Detailing podczas korekty lakieru"
+            alt="Kamil z MK Studio Auto Detailing podczas korekty lakieru"
             width={600}
             height={400}
             layout="responsive"

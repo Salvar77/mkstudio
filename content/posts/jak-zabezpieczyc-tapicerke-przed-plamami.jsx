@@ -15,13 +15,21 @@ export const meta = {
   title: "Jak zabezpieczyć tapicerkę samochodową przed trwałymi plamami?",
   subtitle: "OCHRONA I PIELĘGNACJA TAPICERKI",
   date: "2025-07-08",
-  image: "logo2.jpg",
+  image: "/wlasciciel-mk-studio-kamil-auto-detailing-32.jpg",
   dynamicImage: "/wlasciciel-mk-studio-kamil-auto-detailing-32.jpg",
+  mainImageAltText:
+    "Właściciel MK Studio Auto Detailing, Kamil, nakłada impregnację na tapicerkę samochodową. Zabezpieczenie tapicerki przed plamami i brudem.",
   images: [
-    "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-15.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-25.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-20.jpg",
+    "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
+  ],
+  imagesAltText: [
+    "Detailing wnętrza samochodu. Profesjonalne pranie i czyszczenie tapicerki w Opolu.",
+    "Czyszczenie tapicerki samochodowej w MK Studio Auto Detailing. Ekspert pracuje nad odświeżeniem wnętrza auta.",
+    "Zabezpieczanie tapicerki. Końcowy etap auto detailingu wnętrza, po praniu i czyszczeniu.",
+    "Pranie tapicerki w samochodzie. Szybki i skuteczny sposób na odświeżenie wnętrza.",
   ],
   description:
     "Uniknij trwałych plam na tapicerce samochodowej dzięki profesjonalnym technikom ochrony i pielęgnacji. Poznaj metody przedłużające świeżość i wartość wnętrza auta.",

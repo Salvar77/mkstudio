@@ -26,7 +26,7 @@ const Services = () => {
                 <div className={classes.card__image}>
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={service.altText}
                     fill
                     style={{ objectFit: "cover" }}
                   />

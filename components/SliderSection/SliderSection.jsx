@@ -84,7 +84,7 @@ const SliderSection = ({
               <SliderTrue
                 beforeImage={beforeImage}
                 afterImage={afterImage}
-                alt={`Zdjęcie: ${altBefore} oraz ${altAfter}`}
+                alt={`Zdjęcie po i przed: ${altBefore} | ${altAfter}. Usługa: Auto Detailing Opole, Pranie tapicerki, Korekta lakieru`}
               />
             </motion.div>
           ))}

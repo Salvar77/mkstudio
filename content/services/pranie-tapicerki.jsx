@@ -4,7 +4,9 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 export const meta = {
   title:
     "Pranie Tapicerki i Detailing Wnętrza w Opolu – Świeżość i Czystość | MK Studio Detailing",
-  hero: "/logo2.jpg",
+  hero: "/logo-mkstudio-auto-detailing-opole.jpg",
+  heroAltText:
+    "Pranie tapicerki i detailing wnętrza w Opolu. Logo MK Studio Detailing.",
   lead: "Oferuję profesjonalne pranie tapicerki samochodowej i kompleksowy detailing wnętrza w Opolu. Usuwam plamy, nieprzyjemne zapachy i bakterie, przywracając świeżość i higienę. Zadbaj o komfort i zdrowie w swoim aucie z MK Studio Detailing.",
   slug: "pranie-tapicerki",
 };

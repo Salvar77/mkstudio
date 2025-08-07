@@ -16,16 +16,24 @@ export const meta = {
     "Renowacja i czyszczenie skórzanej tapicerki w Opolu – przywróć jej blask",
   subtitle: "RENOWACJA I CZYSZCZENIE SKÓRZANEJ TAPICERKI",
   date: "2025-07-14",
-  image: "logo2.jpg",
+  image: "/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg",
   dynamicImage: "/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg",
+  mainImageAltText:
+    "Profesjonalne czyszczenie i renowacja skórzanej tapicerki. Wnętrze samochodu po zabiegach w MK Studio Auto Detailing Opole.",
   images: [
     "/wlasciciel-mk-studio-kamil-auto-detailing-32.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-5.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-19.jpg",
     "/wlasciciel-mk-studio-kamil-auto-detailing-23.jpg",
   ],
+  imagesAltText: [
+    "Praca nad renowacją skóry. Nakładanie preparatu na fotel samochodowy. Renowacja i czyszczenie skóry w Opolu.",
+    "Zabezpieczanie skórzanej tapicerki w samochodzie po czyszczeniu. Użycie profesjonalnych preparatów.",
+    "Detailing wnętrza auta. Przygotowanie do renowacji skórzanych elementów.",
+    "Właściciel MK Studio, Kamil, podczas pracy nad autem w warsztacie auto detailingu w Opolu.",
+  ],
   description:
-    "Dowiedz się, jak profesjonalnie odnawiamy i czyścimy skórzaną tapicerkę samochodową w Opolu – usuwamy zarysowania, odżywiamy skórę i zabezpieczamy ją na kolejne lata.",
+    "Dowiedz się, jak profesjonalnie odnawiam i czyszczę skórzaną tapicerkę samochodową w Opolu – usuwam zarysowania, odżywiam skórę i zabezpieczam ją na kolejne lata.",
 };
 
 export default function LeatherRenewalPost() {

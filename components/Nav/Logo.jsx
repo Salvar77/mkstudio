@@ -8,7 +8,7 @@ const Logo = () => (
     <Link href="/">
       <Image
         src={MKStudioLogo}
-        alt="MK Studio Auto Detailing Logo"
+        alt="Logo MK Studio Auto Detailing"
         width={100}
         height={70}
       />

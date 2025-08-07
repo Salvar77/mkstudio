@@ -16,13 +16,21 @@ export const meta = {
     "Powłoka ceramiczna samochodu w Opolu – trwała ochrona i głęboki połysk",
   subtitle: "CERAMICZNA POWŁOKA OCHRONNA",
   date: "2025-06-15",
-  image: "logo2.jpg",
-  dynamicImage: "/galeria-powloka-ceramiczna-1.jpg",
+  image: "/galeria-powloka-ceramiczna-3.jpg",
+  dynamicImage: "/galeria-powloka-ceramiczna-3.jpg",
+  mainImageAltText:
+    "Główny obraz bloga. Dwa samochody, BMW E30 i nowoczesny SUV, z nałożoną powłoką ceramiczną, prezentujące głęboki połysk w studiu detailingowym w Opolu.",
   images: [
     "/galeria-powloka-ceramiczna-1.jpg",
     "/galeria-powloka-ceramiczna-2.jpg",
-    "/galeria-powloka-ceramiczna-3.jpg",
     "/galeria-powloka-ceramiczna-1.jpg",
+    "/galeria-powloka-ceramiczna-3.jpg",
+  ],
+  imagesAltText: [
+    "Samochód Skoda Superb z nałożoną powłoką ceramiczną. Widoczny głęboki połysk lakieru i efekt odbicia światła w MK Studio Opole.",
+    "Powłoka ceramiczna na lakierze czarnego sedana. Zdjęcie z góry ukazujące hydrofobowy efekt i ochronę przed brudem.",
+    "BMW po nałożeniu powłoki ceramicznej. Zdjęcie przedstawia lśniący lakier, bez zarysowań, gotowy do jazdy.",
+    "Efekt finalny po nałożeniu powłoki ceramicznej. Skoda z lśniącym lakierem, zabezpieczone na lata.",
   ],
   description:
     "Odkryj zalety powłoki ceramicznej w Opolu: długotrwała ochrona lakieru, odporność na zabrudzenia i promieniowanie UV oraz efekt głębokiego połysku.",

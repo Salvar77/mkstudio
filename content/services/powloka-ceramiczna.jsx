@@ -4,7 +4,8 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 export const meta = {
   title:
     "Powłoka Ceramiczna w Opolu – Długotrwała Ochrona Lakieru | MK Studio Detailing",
-  hero: "/logo2.jpg",
+  hero: "/logo-mkstudio-auto-detailing-opole.jpg",
+  heroAltText: "Powłoka ceramiczna w Opolu. Logo MK Studio Auto Detailing.",
   lead: "Zabezpiecz lakier swojego samochodu powłoką ceramiczną w MK Studio Detailing w Opolu. Oferuję profesjonalną aplikację, która zapewnia wieloletnią ochronę przed rysami, brudem, promieniami UV i ułatwia pielęgnację. Nadaj swojemu autu niezrównany blask i trwałość.",
   slug: "powloka-ceramiczna",
 };

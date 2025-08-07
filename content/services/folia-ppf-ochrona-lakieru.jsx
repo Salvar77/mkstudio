@@ -3,7 +3,8 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 
 export const meta = {
   title: "Folia PPF w Opolu – Najlepsza Ochrona Lakieru | MK Studio Detailing",
-  hero: "/logo2.jpg",
+  hero: "/logo-mkstudio-auto-detailing-opole.jpg",
+  heroAltText: "Folia PPF w Opolu. Logo MK Studio Detailing.",
   lead: "Zabezpiecz lakier swojego samochodu folią PPF (Paint Protection Film) w MK Studio Detailing w Opolu. Oferuję profesjonalny montaż bezbarwnej folii ochronnej, która skutecznie chroni przed zarysowaniami, odpryskami, promieniami UV i drobnymi uszkodzeniami. Długotrwała ochrona i nieskazitelny wygląd Twojego auta.",
   slug: "folia-ppf-ochrona-lakieru",
 };

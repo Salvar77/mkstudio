@@ -41,6 +41,10 @@
 .hoursDetails {
   margin-left: 1rem;
   color: $white-smooth;
+
+  &Span {
+    color: $gold-main;
+  }
 }
 
 .nav {
@@ -173,13 +177,14 @@
     flex-direction: row;
     gap: 2rem;
     background: linear-gradient(
-      345deg,
-      $new-black 0%,
-      darken($new-black, 8%) 10%,
-      $grey-smooth 35%,
-      lighten($grey-smooth, 12%),
+      to right,
+      $new-black 2%,
+      darken($new-black, 8%) 35%,
+      $grey-smooth 60%,
+      lighten($grey-smooth, 12%) 85%,
       $white-smooth 100%
     );
+    font-weight: bold;
   }
 
   .logoBlack {
