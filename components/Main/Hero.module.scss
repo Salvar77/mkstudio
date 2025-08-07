@@ -134,6 +134,7 @@
   box-shadow: 0.2rem 0.4rem 0.6rem rgba(56, 201, 34, 0.2);
   text-decoration: none;
   transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  z-index: 200;
 
   &:hover {
     color: $gold-main;
