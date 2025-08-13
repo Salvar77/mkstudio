@@ -42,8 +42,11 @@ export default function LeatherRenewalPost() {
       <h2>Kim jestem i dlaczego warto mi zaufać?</h2>
       <p>
         Nazywam się Kamil z <strong>MK Studio Auto Detailing</strong> i od ponad
-        10 lat specjalizuję się w renowacji i czyszczeniu skóry samochodowej.
-        Dzięki precyzyjnym technikom usuwam zarysowania, przywracam naturalny
+        dekady specjalizuję się w{" "}
+        <Link href="/oferta/renowacja-i-czyszczenie-skor">
+          renowacji i czyszczeniu skóry samochodowej
+        </Link>
+        . Dzięki precyzyjnym technikom usuwam zarysowania, przywracam naturalny
         kolor i elastyczność skóry, korzystając z profesjonalnych preparatów
         renomowanych marek.
       </p>
@@ -51,9 +54,10 @@ export default function LeatherRenewalPost() {
       <h2>Dlaczego skóra wymaga renowacji?</h2>
       <p>
         Skórzana tapicerka pod wpływem promieni UV, ciepła i zabrudzeń traci
-        oleje naturalne, blaknie i pęka. Regularna renowacja przywraca jej
-        miękkość, chroni przed dalszym uszkodzeniem i utrzymuje elegancki wygląd
-        wnętrza na lata.
+        oleje naturalne, blaknie i pęka. Regularna{" "}
+        <Link href="/oferta/renowacja-i-czyszczenie-skor">renowacja</Link>{" "}
+        tapicerki przywraca jej miękkość, chroni przed dalszym uszkodzeniem i
+        utrzymuje elegancki wygląd wnętrza na lata.
       </p>
 
       <h2>Proces profesjonalnej renowacji i czyszczenia</h2>
@@ -72,7 +76,7 @@ export default function LeatherRenewalPost() {
         </li>
         <li>
           <strong>Naprawa uszkodzeń</strong> – wypełniam rysy i pęknięcia,
-          wyrównując powierzchnię tapicerki.
+          wyrównując powierzchnię tapicerki samochodowej.
         </li>
         <li>
           <strong>Impregnacja ochronna</strong> – zabezpieczam skórę przed
@@ -92,9 +96,10 @@ export default function LeatherRenewalPost() {
 
       <h2>Gdzie działam?</h2>
       <p>
-        Usługi renowacji skóry wykonuję w Opolu i okolicach: Ozimek, Prószków,
-        Komprachcice, Lubniany oraz w dzielnicach Zaodrze, Wrzoski, Malina i
-        Półwieś.
+        Usługi{" "}
+        <Link href="/oferta/renowacja-i-czyszczenie-skor">renowacji skóry</Link>{" "}
+        wykonuję w Opolu i okolicach: Ozimek, Prószków, Komprachcice, Lubniany
+        oraz w dzielnicach Zaodrze, Wrzoski, Malina i Półwieś.
       </p>
 
       <h2>Opinie klientów</h2>
@@ -127,13 +132,14 @@ export default function LeatherRenewalPost() {
 
       <h2>Masz pytania? Skontaktuj się ze mną</h2>
       <p className="contact-info">
-        Jeśli chcesz dowiedzieć się więcej lub umówić usługę renowacji skóry,
-        skontaktuj się ze mną:
+        Jeśli chcesz dowiedzieć się więcej lub umówić usługę{" "}
+        <Link href="/oferta/renowacja-i-czyszczenie-skor">renowacji skóry</Link>
+        , skontaktuj się ze mną:
       </p>
       <div className="contact-details">
         <div className="contact-item">
           <Phone className="icon-down-p" />{" "}
-          <a href="tel:+48690570800">690 570 800</a>
+          <a href="tel:+48690570800">690 570 800</a>
         </div>
         <div className="contact-item">
           <Mail className="icon-down-p" />{" "}

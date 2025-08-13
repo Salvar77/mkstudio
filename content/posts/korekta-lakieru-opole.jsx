@@ -35,35 +35,38 @@ export const meta = {
   description:
     "Dowiedz się, jak w MK Studio Auto Detailing w Opolu stosuję zaawansowaną korektę lakieru, by usunąć rysy, hologramy i przywrócić głębię koloru Twojego samochodu.",
 };
+
 export default function PaintCorrectionPost() {
   return (
     <>
       <h2>Dlaczego warto zainwestować w korektę lakieru?</h2>
       <p>
         Nawet minimalne zarysowania i matowe wykończenie obniżają estetykę auta
-        i jego wartość rynkową. W <strong>MK Studio Auto Detailing</strong>{" "}
-        stosuję precyzyjne techniki polerowania, aby wyrównać powierzchnię,
-        usunąć hologramy i przywrócić fabryczny połysk.
+        i jego wartość rynkową. W **MK Studio Auto Detailing** stosuję
+        precyzyjne techniki{" "}
+        <Link href="/oferta/korekta-lakieru">polerowania</Link>, aby wyrównać
+        powierzchnię, usunąć hologramy i przywrócić fabryczny połysk lakierowi.
       </p>
 
       <h2>Proces korekty – krok po kroku</h2>
       <ul>
         <li>
-          <Wrench className="icon" /> <strong>Analiza lakieru</strong> – badam
-          grubość powłoki, rodzaj defektów i optymalizuję dobór past.
+          <Wrench className="icon" /> **Analiza lakieru** – badam grubość
+          powłoki, rodzaj defektów i optymalizuję dobór past.
         </li>
         <li>
-          <Droplet className="icon" /> <strong>Oczyszczanie</strong> – usuwam
-          zabrudzenia i stare powłoki ochronne.
+          <Droplet className="icon" /> **Oczyszczanie** – usuwam zabrudzenia i
+          stare powłoki ochronne.
         </li>
         <li>
-          <Wrench className="icon" />{" "}
-          <strong>Polerowanie wielostopniowe</strong> – od grubych past
-          ściernych do ultrajemnych, by uzyskać gładką taflę.
+          <Wrench className="icon" /> **
+          <Link href="/oferta/korekta-lakieru">Polerowanie wielostopniowe</Link>
+          ** – od grubych past ściernych do ultrajemnych, by uzyskać gładką
+          taflę.
         </li>
         <li>
-          <Droplet className="icon" /> <strong>Wykończenie</strong> – nadanie
-          głębokiego połysku i usunięcie mikrorys.
+          <Droplet className="icon" /> **Wykończenie** – nadanie głębokiego
+          połysku i usunięcie mikrorys na lakierze.
         </li>
       </ul>
 
@@ -80,7 +83,7 @@ export default function PaintCorrectionPost() {
       <h2>Gdzie wykonuję usługę?</h2>
       <p>
         Studio MK Studio Auto Detailing znajduje się w Opolu przy ul.
-        Częstochowskiej 44. Dojeżdżam również do Ozimka, Prószkowa, Komprachcic,
+        Częstochowskiej 44. Dojeżdżam również do Ozimka, Prószkowa, Komprachcic,
         Lubnian i okolic.
       </p>
 
@@ -105,7 +108,10 @@ export default function PaintCorrectionPost() {
 
       <h2>Masz pytania? Skontaktuj się ze mną</h2>
       <p className="contact-info">
-        Zapraszam do kontaktu w celu omówienia szczegółów i wyceny usługi:
+        Jeśli chcesz uzyskać indywidualną wycenę{" "}
+        <Link href="/oferta/korekta-lakieru">korekty lakieru</Link> lub masz
+        dodatkowe pytania, zapraszam do kontaktu w celu omówienia szczegółów i
+        wyceny usługi:
       </p>
       <div className="contact-details">
         <div className="contact-item">

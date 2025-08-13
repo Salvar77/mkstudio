@@ -39,65 +39,100 @@ export const meta = {
 export default function DeepCleanPost() {
   return (
     <>
-      <h2>Dlaczego warto wybrać głębokie pranie tapicerki?</h2>
+      <h2>
+        Głębokie pranie tapicerki w Opolu: Twoje auto zasługuje na czyste i
+        zdrowe wnętrze
+      </h2>
       <p>
-        Głębokie pranie tapicerki usuwa zabrudzenia z głębokich warstw włókien,
-        eliminując nie tylko plamy, ale także alergeny i nieprzyjemne zapachy.
-        Dzięki tej metodzie wnętrze samochodu staje się zdrowsze i bardziej
-        komfortowe.
+        W MK Studio Auto Detailing w Opolu doskonale wiem, że{" "}
+        <Link href="/oferta/pranie-tapicerki">głębokie pranie tapicerki</Link>{" "}
+        to klucz do utrzymania higieny i komfortu w Twoim pojeździe. Jako
+        doświadczony specjalista, oferuję usługę, która idzie znacznie dalej niż
+        standardowe odkurzanie. Dzięki zastosowaniu profesjonalnych metod i
+        sprzętu, usuwam nie tylko widoczne plamy, ale także głęboko osadzone
+        zabrudzenia, alergeny i nieprzyjemne zapachy.
       </p>
 
-      <h2>Proces profesjonalnego prania</h2>
+      <h2>
+        Mój profesjonalny proces prania tapicerki – technologia i precyzja
+      </h2>
+      <p>
+        Każdy etap mojej pracy jest starannie zaplanowany, aby zapewnić
+        maksymalną skuteczność oraz bezpieczeństwo dla materiałów w Twoim aucie.
+      </p>
       <ul>
         <li>
-          <strong>Odkurzanie i przygotowanie</strong> – usuwam luźne
-          zanieczyszczenia, kurz i piasek.
+          <Wrench className="icon" />
+          <strong>Dokładne odkurzanie i przygotowanie</strong> – zaczynam od
+          usunięcia wszelkich luźnych zanieczyszczeń, kurzu i piasku, aby
+          ułatwić dostęp do głębszych warstw tapicerki samochodowej.
         </li>
         <li>
-          <strong>Pre-spray</strong> – aplikacja środka, który rozbija tłuste
-          plamy i głęboko wnika w zabrudzenia.
+          <Droplet className="icon" />
+          <strong>Pre-spray</strong> – aplikuję specjalistyczny, bezpieczny dla
+          tkanin środek, który wnika głęboko w zabrudzenia, rozbijając tłuste
+          plamy, osady z jedzenia i inne trudne do usunięcia zanieczyszczenia.
         </li>
         <li>
-          <strong>Pranie ekstrakcyjne</strong> – maszyna wysokociśnieniowa
-          wypłukuje brud i środki czyszczące.
+          <Wrench className="icon" />
+          <strong>Pranie ekstrakcyjne</strong> – używam profesjonalnej maszyny
+          ekstrakcyjnej, która pod wysokim ciśnieniem wtryskuje roztwór
+          czyszczący, a następnie natychmiast go odsysa wraz z rozpuszczonym
+          brudem. To najskuteczniejsza metoda prania tapicerki, która
+          minimalizuje ryzyko przemoczenia.
         </li>
         <li>
-          <strong>Suszenie</strong> – szybkoschnące metody zapobiegają
-          powstawaniu pleśni.
+          <Droplet className="icon" />
+          <strong>Skuteczne suszenie</strong> – po praniu, stosuję metody, które
+          znacznie skracają czas schnięcia tapicerki, co zapobiega powstawaniu
+          pleśni i nieprzyjemnych, stęchłych zapachów.
         </li>
         <li>
-          <strong>Impregnacja końcowa</strong> – zabezpieczenie tkanin przed
-          kolejnymi zabrudzeniami.
+          <Wrench className="icon" />
+          <strong>Końcowa impregnacja (opcjonalnie)</strong> – po wyschnięciu
+          mogę zabezpieczyć tkaniny specjalnym preparatem, który tworzy barierę
+          chroniącą przed kolejnymi zabrudzeniami.
         </li>
       </ul>
 
-      <h2>Korzyści dla Twojego auta</h2>
+      <h2>Jakie korzyści zyskujesz, wybierając moje usługi?</h2>
       <p>
-        - Usunięcie nawet najstarszych plam po kawie, oleju czy błocie.
+        Wybór profesjonalnego{" "}
+        <Link href="/oferta/pranie-tapicerki">prania tapicerki</Link> w MK
+        Studio to inwestycja, która się opłaca.
         <br />
-        - Elastyczność i odświeżenie włókien tapicerki.
+        - Usunięcie nawet najbardziej uporczywych plam po kawie, oleju, czy też
+        błocie.
         <br />
-        - Redukcja alergenów i bakterii, dzięki czemu wnętrze staje się
-        zdrowsze.
-        <br />- Przywrócenie naturalnego koloru i wyglądu tapicerki.
+        - Przywrócenie elastyczności i naturalnego wyglądu włókien tapicerki
+        samochodowej.
+        <br />
+        - Redukcja alergenów, bakterii i roztoczy, co czyni wnętrze zdrowszym i
+        bardziej przyjaznym.
+        <br />
+        - Eliminacja nieprzyjemnych zapachów (np. dymu papierosowego).
+        <br />- Zwiększenie komfortu i wartości Twojego samochodu.
       </p>
 
-      <h2>Gdzie pracuję?</h2>
+      <h2>Obszar działania: Opole i okolice – Dojazd do klienta</h2>
       <p>
-        Działam głównie w Opolu i okolicach: Ozimek, Prószków, Komprachcice,
-        Lubniany oraz w dzielnicach Zaodrze, Wrzoski, Malina i Półwieś.
+        Działam głównie w Opolu i jego okolicach: **Ozimek, Prószków,
+        Komprachcice, Lubniany**. Oferuję również usługę mobilną, dzięki czemu
+        mogę dojechać z pełnym profesjonalnym wyposażeniem do dzielnic takich
+        jak **Zaodrze, Wrzoski, Malina i Półwieś**. Wygodnie i bez konieczności
+        ruszania się z domu!
       </p>
 
-      <h2>Opinie klientów</h2>
+      <h2>Zaufanie klientów jest moim priorytetem</h2>
       <blockquote>
         <p>
           „Firma MK Studio Opole oferuje kompleksowe czyszczenie samochodu, w
-          tym pranie tapicerki, na najwyższym poziomie. Ich usługi
-          charakteryzują się profesjonalizmem, dokładnością i użyciem
-          nowoczesnych technologii. Po wizycie u nich mój samochód wyglądał jak
-          nowy – tapicerka była idealnie czysta, a wnętrze odświeżone.
-          Zdecydowanie polecam MK Studio Opole każdemu, kto chce zadbać o swoje
-          auto.”
+          tym <Link href="/oferta/pranie-tapicerki">pranie tapicerki</Link>, na
+          najwyższym poziomie. Ich usługi charakteryzują się profesjonalizmem,
+          dokładnością i użyciem nowoczesnych technologii. Po wizycie u nich mój
+          samochód wyglądał jak nowy – tapicerka była idealnie czysta, a wnętrze
+          odświeżone. Zdecydowanie polecam MK Studio Opole każdemu, kto chce
+          zadbać o swoje auto.”
         </p>
         <cite>– Tuśkq T</cite>
       </blockquote>
@@ -112,25 +147,30 @@ export default function DeepCleanPost() {
         <cite>– Tomasz Mazur</cite>
       </blockquote>
 
-      <h2>Masz pytania? Skontaktuj się ze mną</h2>
+      <h2>
+        Chcesz odświeżyć wnętrze swojego samochodu? Skontaktuj się ze mną!
+      </h2>
       <p className="contact-info">
-        Jeśli potrzebujesz indywidualnej wyceny lub masz dodatkowe pytania,
-        skontaktuj się ze mną:
+        Jeśli masz pytania, potrzebujesz indywidualnej wyceny lub chcesz umówić
+        się na <Link href="/oferta/pranie-tapicerki">pranie tapicerki</Link>,
+        zapraszam do kontaktu.
       </p>
       <div className="contact-details">
         <div className="contact-item">
           <Phone className="icon-down-p" />{" "}
-          <a href="tel:+48690570800">690 570 800</a>
+          <a href="tel:+48690570800">690 570 800</a>
         </div>
         <div className="contact-item">
           <Mail className="icon-down-p" />{" "}
           <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
         </div>
         <div className="contact-item">
-          <MapPin className="icon-down" /> ul. Częstochowskiej 44, 45-020 Opole
+          <MapPin className="icon-down-p" /> ul. Częstochowskiej 44, 45-020
+          Opole
         </div>
         <div className="contact-item">
-          <Clock className="icon-down" /> Pon–Pt: 07:00–20:00, Sob: 08:00–18:00
+          <Clock className="icon-down-p" /> Pon–Pt: 07:00–20:00, Sob:
+          08:00–18:00
         </div>
       </div>
       <div className="ctaWrapper">

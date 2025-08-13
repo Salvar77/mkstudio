@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export const meta = {
-  id: 5,
+  id: 6, // Zmiana ID, aby nie kolidowało z poprzednim wpisem
   slug: "folia-ppf-opole",
   title: "Folia PPF w Opolu – ochrona lakieru przed uszkodzeniami",
   subtitle: "FOLIA OCHRONNA PPF",
@@ -32,42 +32,95 @@ export const meta = {
 export default function PpfProtectionPost() {
   return (
     <>
-      <h2>Dlaczego warto zainwestować w folię PPF?</h2>
+      <h1>
+        Folia PPF w Opolu: Niewidzialna ochrona, która zachowuje wartość Twojego
+        samochodu
+      </h1>
       <p>
-        Folia PPF (Paint Protection Film) to przezroczysta warstwa ochronna,
-        która amortyzuje uderzenia kamieni, zabezpiecza przed zarysowaniami i
-        utrzymuje lakier w idealnym stanie przez lata.
+        Jako Kamil z <strong>MK Studio Auto Detailing</strong>, wiem, że lakier
+        to jeden z najcenniejszych elementów zewnętrznych każdego pojazdu. To on
+        jest najbardziej narażony na uszkodzenia mechaniczne – odpryski od
+        kamieni, rysy, otarcia czy działanie agresywnych środków chemicznych.
+        Dlatego postawiłem na kompleksową ochronę, oferując profesjonalny montaż{" "}
+        <strong>
+          <Link href="/oferta/folia-ppf-ochrona-lakieru">
+            folii PPF (Paint Protection Film)
+          </Link>
+        </strong>
+        . To przezroczysta, poliuretanowa warstwa, która działa jak tarcza,
+        skutecznie chroniąc lakier, a jednocześnie pozostając niemal
+        niewidoczna.
       </p>
 
-      <h2>Rodzaje folii i etapy montażu</h2>
+      <h2>Proces montażu folii PPF w MK Studio – precyzja, która chroni</h2>
+      <p>
+        Montaż folii PPF to sztuka wymagająca nie tylko precyzji, doświadczenia
+        ale i odpowiednich warunków. W moim studio w Opolu dbam o każdy
+        szczegół, aby folia idealnie przylegała do powierzchni, bez pęcherzyków
+        powietrza czy zagięć.
+      </p>
       <ul>
         <li>
-          <Shield className="icon" /> <strong>Standardowa folia PPF</strong> –
-          ochrona przed drobnymi uszkodzeniami.
+          <Shield className="icon" /> <strong>Przygotowanie lakieru</strong> –
+          Przed aplikacją, lakier musi być absolutnie czysty oraz wolny od
+          wszelkich defektów. Przeprowadzam dokładne mycie, dekontaminację
+          chemiczną i mechaniczną, a w razie potrzeby również{" "}
+          <Link href="/oferta/korekta-lakieru">delikatną korektę lakieru</Link>,
+          aby folia była nakładana na perfekcyjnie gładką powierzchnię.
         </li>
         <li>
           <Scissors className="icon" />{" "}
-          <strong>Folia matowa / błyszcząca</strong> – dodatkowy efekt
-          kosmetyczny.
+          <strong>Dopasowanie i cięcie folii</strong> – Korzystam z precyzyjnych
+          szablonów dopasowanych do konkretnego modelu samochodu. Folia jest
+          wycinana komputerowo, co gwarantuje idealne pasowanie do każdego
+          elementu – od maski i błotników, po zderzaki i lusterka.
         </li>
         <li>
-          <Shield className="icon" /> <strong>Folia samoregenerująca</strong> –
-          drobne rysy znikają pod wpływem ciepła.
+          <Shield className="icon" /> <strong>Profesjonalna aplikacja</strong> –
+          Montaż odbywa się w kontrolowanych warunkach, z użyciem specjalnych
+          płynów i narzędzi, które pozwalają na idealne ułożenie folii na
+          karoserii. Dbamy o to, aby krawędzie były niewidoczne, a folia
+          tworzyła jednolitą, gładką powłokę.
+        </li>
+        <li>
+          <Shield className="icon" />{" "}
+          <strong>Wykończenie i kontrola jakości</strong> – Po montażu, każdy
+          element jest dokładnie sprawdzany, aby upewnić się, że folia jest
+          idealnie ułożona i nie ma żadnych niedoskonałości.
         </li>
       </ul>
 
-      <h2>Zalety folii PPF</h2>
+      <h2>Dlaczego folia PPF to najlepsza inwestycja w ochronę?</h2>
       <p>
-        - Ochrona przed uszkodzeniami mechanicz
-        <br />- Odporność na czynniki atmosferyczne i UV
-        <br />- Łatwiejsze utrzymanie czystości lakieru
-        <br />- Zachowanie fabrycznego połysku i koloru
+        Aplikacja folii PPF w MK Studio to gwarancja długotrwałej ochrony.
+        Kluczowe zalety to:
+        <br />- <strong>Samoregenerująca powłoka</strong>: Folie nowej generacji
+        posiadają zdolność do samoregeneracji – drobne rysy i zarysowania
+        znikają pod wpływem ciepła, np. słońca lub ciepłej wody.
+        <br />- <strong>Ochrona przed uszkodzeniami mechanicznymi</strong>:
+        Folia absorbuje uderzenia kamieni, chroni przed drobnymi stłuczkami i
+        zarysowaniami parkingowymi.
+        <br />- <strong>Odporność na czynniki atmosferyczne</strong>: Skutecznie
+        zabezpiecza lakier przed szkodliwym promieniowaniem UV, kwaśnymi
+        deszczami i agresywną chemią.
+        <br />- <strong>Niezmienna estetyka</strong>: Folia jest przezroczysta,
+        nie zmienia koloru lakieru, a nawet może nadać mu głębszy połysk (wersja
+        błyszcząca) lub nowoczesny, matowy wygląd (wersja matowa).
+        <br />- <strong>Łatwiejsze utrzymanie w czystości</strong>: Powierzchnia
+        folii jest hydrofobowa, co ułatwia mycie i pielęgnację.
       </p>
 
-      <h2>Gdzie montuję folię PPF?</h2>
+      <h2>Gdzie świadczę usługę montażu folii PPF?</h2>
       <p>
-        W MK Studio Auto Detailing w Opolu oraz okolicach realizuję kompleksowy
-        montaż folii PPF na maskę, błotniki, zderzaki i lusterka.
+        Kompleksowy montaż{" "}
+        <Link href="/oferta/folia-ppf-ochrona-lakieru">
+          folii ochronnej PPF
+        </Link>{" "}
+        realizuję w moim studio w Opolu przy ul. Częstochowskiej 44. Działam
+        również mobilnie w okolicach Opola, takich jak Ozimek, Prószków,
+        Komprachcice i Lubniany, ale w przypadku tak precyzyjnej usługi, jak
+        montaż folii, polecam wizytę w moim studio, by zapewnić optymalne
+        warunki.
       </p>
 
       <h2>Opinie klientów</h2>
@@ -82,26 +135,27 @@ export default function PpfProtectionPost() {
         <cite>– krzysiek feliks</cite>
       </blockquote>
 
-      <h2>Masz pytania? Skontaktuj się ze mną</h2>
+      <h2>Chcesz zabezpieczyć swój samochód na lata? Skontaktuj się ze mną!</h2>
       <p className="contactInfo">
-        Zapraszam do kontaktu w celu omówienia szczegółów i wyceny montażu folii
-        PPF:
+        Jeśli chcesz dowiedzieć się więcej o folii PPF, omówić opcje jej montażu
+        lub uzyskać indywidualną wycenę dla swojego samochodu, zapraszam do
+        kontaktu.
       </p>
       <div className="contact-details">
         <div className="contact-item">
           <Phone className="icon-down-p" />{" "}
-          <a href="tel:+48690570800">690 570 800</a>
+          <a href="tel:+48690570800">690 570 800</a>
         </div>
         <div className="contact-item">
           <Mail className="icon-down-p" />{" "}
           <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
         </div>
         <div className="contact-item">
-          <MapPin className="icon-down-p" /> ul. Częstochowska 44, 45‑020 Opole
+          <MapPin className="icon-down-p" /> ul. Częstochowska 44, 45-020 Opole
         </div>
         <div className="contact-item">
-          <Clock className="icon-down-p" /> Pon–Pt: 07:00–20:00,
-          Sob: 08:00–18:00
+          <Clock className="icon-down-p" /> Pon–Pt: 07:00–20:00, Sob:
+          08:00–18:00
         </div>
       </div>
       <div className="ctaWrapper">

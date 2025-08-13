@@ -1,4 +1,6 @@
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import classes from "../../app/oferta/[slug]/page.module.scss";
 
 export const meta = {
@@ -23,28 +25,29 @@ export default function KorektaLakieruPage() {
         <div className={classes.contentSection__text}>
           <h2>Profesjonalna Korekta Lakieru – Od Rys do Lustra</h2>
           <p>
-            Korekta lakieru to serce auto detailingu, proces, który przywraca
-            karoserii samochodu jej pierwotny blask i gładkość. W MK Studio w
-            Opolu, precyzyjnie usuwam wszelkie niedoskonałości lakiernicze, od
-            drobnych zarysowań po głębokie rysy i nieestetyczne hologramy.
-            Efektem jest idealnie lśniąca powierzchnia, gotowa na długotrwałe
-            zabezpieczenie.
+            <Link href="/blog/korekta-lakieru-opole">Korekta lakieru</Link> to
+            serce auto detailingu, proces, który przywraca karoserii samochodu
+            jej pierwotny blask i gładkość. W MK Studio w Opolu, precyzyjnie
+            usuwam wszelkie niedoskonałości lakiernicze, od drobnych zarysowań
+            po głębokie rysy i nieestetyczne hologramy. Efektem jest idealnie
+            lśniąca powierzchnia, gotowa na długotrwałe zabezpieczenie.
           </p>
           <h3>Rodzaje Korekty Lakieru, które Oferuję:</h3>
           <ul>
             <li>
-              <strong>Jednoetapowa Korekta Lakieru (One-Step):</strong> Idealna
-              dla lakierów w dobrym stanie, wymagających odświeżenia i usunięcia
-              delikatnych zarysowań czy zmatowień. Skutecznie poprawia wygląd
-              lakieru, nadając mu większą głębię i blask w krótszym czasie.
+              <strong>Jednoetapowa Korekta Lakieru (One-Step):</strong> Jest
+              idealna dla lakierów w dobrym stanie, wymagających odświeżenia i
+              usunięcia delikatnych zarysowań czy zmatowień. Skutecznie
+              poprawiam wygląd lakieru, nadając mu większą głębię i blask w
+              krótszym czasie.
             </li>
             <li>
               <strong>
                 Wieloetapowa Korekta Lakieru (Dwustopniowa/Trójstopniowa):
               </strong>{" "}
-              Kompleksowy proces, który pozwala usunąć od 80% do nawet 95% rys i
-              defektów lakieru. Obejmuje kilka etapów polerowania z użyciem
-              różnych past i padów, co pozwala na stopniowe wykończenie
+              To kompleksowy proces, który pozwala usunąć od 80% do nawet 95%
+              rys i defektów lakieru. Obejmuje kilka etapów polerowania z
+              użyciem różnych past i padów, co pozwala na stopniowe wykończenie
               powierzchni do perfekcji. Efektem jest idealna gładkość i efekt
               &bdquo;lustra&rdquo;.
             </li>
@@ -57,7 +60,7 @@ export default function KorektaLakieruPage() {
             <li>
               <strong>Detailingowe Mycie i Dekontaminacja:</strong> Przed każdą
               korektą lakieru, samochód przechodzi przez szczegółowy proces
-              mycia detailingowego i dekontaminacji. Usuwamy wszelkie
+              mycia detailingowego i dekontaminacji. Usuwam wszelkie
               zanieczyszczenia, smołę, naloty metaliczne i żywicę, aby zapewnić
               idealnie czystą powierzchnię do pracy.
             </li>
@@ -79,16 +82,17 @@ export default function KorektaLakieruPage() {
         className={`${classes.contentSection} ${classes["contentSection--reverse"]}`}
       >
         <div className={classes.contentSection__text}>
-          <h2>Dlaczego Wybrać Korektę Lakieru w MK Studio w Opolu?</h2>
+          <h2>Dlaczego Warto Wybrać Korektę Lakieru w Moim Studio w Opolu?</h2>
           <p>
             Perfekcyjny lakier to wizytówka każdego samochodu. W MK Studio
-            Detaling, dzięki wieloletniemu doświadczeniu i precyzyjnemu
+            Detailing, dzięki wieloletniemu doświadczeniu i precyzyjnemu
             podejściu, gwarantuję efekty, które przerosną Twoje oczekiwania.
           </p>
           <ul>
             <li>
               <strong>Wieloletnie Doświadczenie:</strong> Posiadam ponad 10 lat
-              praktyki w detailingu, specjalizując się w korektach lakieru.
+              praktyki w detailingu, specjalizując się w{" "}
+              <Link href="/blog/korekta-lakieru-opole">korekcie lakieru</Link>.
               Każdy projekt to dla mnie wyzwanie i dowód na to, co można
               osiągnąć dzięki pasji i precyzji.
             </li>
@@ -99,10 +103,10 @@ export default function KorektaLakieruPage() {
               bezpieczeństwo lakieru i spektakularne efekty bez hologramów.
             </li>
             <li>
-              <strong>Osobiste Wykonanie Przez Właściciela:</strong> Cały proces
-              korekty lakieru wykonuję osobiście – Kamil, właściciel MK Studio.
-              Masz pewność, że Twoje auto jest w rękach doświadczonego eksperta,
-              który dba o każdy, nawet najmniejszy detal.
+              <strong>Osobiste Wykonanie Przeze Mnie:</strong> Cały proces
+              korekty lakieru wykonuję osobiście – jako Kamil, właściciel MK
+              Studio. Masz pewność, że Twoje auto jest w rękach doświadczonego
+              eksperta, który dba o każdy, nawet najmniejszy detal.
             </li>
             <li>
               <strong>Indywidualna Ocena Stanu Lakieru:</strong> Przed
@@ -138,7 +142,7 @@ export default function KorektaLakieruPage() {
             </p>
             <p className={classes.contentSection__textP}>
               Zaufaj mojemu doświadczeniu i pasji do perfekcji, a Twój samochód
-              odzyska swój salonowy blask i będzie chroniony na lata.
+              odzyka swój salonowy blask i będzie chroniony na lata.
             </p>
           </div>
         </div>

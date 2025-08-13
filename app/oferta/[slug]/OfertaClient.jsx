@@ -64,6 +64,13 @@ export default function OfertaClient({ slugFromParent }) {
 
   return (
     <div className={classes.pageWrapper}>
+      <div className={`${classes.whiteBlock} ${classes.whiteBlockLeft}`}></div>
+      <div className={`${classes.whiteBlock} ${classes.whiteBlockRight}`}></div>
+      <div className={`${classes.whiteBlock} ${classes.whiteBlockTop}`}></div>
+      <div
+        className={`${classes.whiteBlock} ${classes.whiteBlockBottom}`}
+      ></div>
+
       <header className={classes.hero}>
         <Image
           src={heroSrc}

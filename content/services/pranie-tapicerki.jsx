@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import classes from "../../app/oferta/[slug]/page.module.scss";
 
 export const meta = {
@@ -38,9 +39,12 @@ export default function PranieTapicerkiPage() {
             </li>
             <li>
               <strong>Pranie Tapicerki Materiałowej:</strong> Metoda
-              ekstrakcyjna pozwala na dogłębne usunięcie plam, brudu i alergenów
-              z siedzeń, dywaników, podsufitki i boczków. Tapicerka odzyskuje
-              świeży wygląd i kolor.
+              ekstrakcyjna pozwala na{" "}
+              <Link href="/blog/glebokie-pranie-tapicerki-opole">
+                dogłębne usunięcie plam, brudu
+              </Link>{" "}
+              i alergenów z siedzeń, dywaników, podsufitki i boczków. Tapicerka
+              odzyskuje świeży wygląd i kolor.
             </li>
             <li>
               <strong>Czyszczenie i Konserwacja Skór:</strong> Jeśli Twoje auto
@@ -133,8 +137,11 @@ export default function PranieTapicerkiPage() {
           <h3>Usługę Wykonuje Właściciel – Kamil z MK Studio Detailing</h3>
           <div>
             <p className={classes.contentSection__textP}>
-              Wszystkie usługi detailingu wnętrza i prania tapicerki wykonuję
-              osobiście – <strong>Kamil</strong>, właściciel MK Studio
+              Wszystkie usługi{" "}
+              <Link href="/blog/glebokie-pranie-tapicerki-opole">
+                detailingu wnętrza i prania tapicerki
+              </Link>{" "}
+              wykonuję osobiście – <strong>Kamil</strong>, właściciel MK Studio
               Detailing. Dzięki temu masz pewność, że Twoje auto trafia w ręce
               fachowca z pasją i wieloletnim doświadczeniem w branży.
             </p>

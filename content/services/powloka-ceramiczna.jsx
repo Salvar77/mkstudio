@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import classes from "../../app/oferta/[slug]/page.module.scss";
 
 export const meta = {
@@ -22,21 +23,24 @@ export default function PowlokaCeramicznaPage() {
         <div className={classes.contentSection__text}>
           <h2>Powłoka Ceramiczna – Niezrównana Ochrona i Blask Lakieru</h2>
           <p>
-            Powłoka ceramiczna to zaawansowane zabezpieczenie lakieru
-            samochodowego, które rewolucjonizuje jego ochronę i wygląd. Tworzy
-            na powierzchni karoserii twardą, niewidzialną warstwę, która
-            skutecznie chroni przed mikrozarysowaniami, szkodliwymi czynnikami
-            zewnętrznymi i ułatwia utrzymanie czystości. W MK Studio Detailing w
-            Opolu oferuję profesjonalną aplikację powłok ceramicznych,
-            gwarantując wieloletnią ochronę i spektakularny efekt wizualny.
+            <Link href="/blog/powloka-ceramiczna-opole">
+              Powłoka ceramiczna
+            </Link>{" "}
+            to zaawansowane zabezpieczenie lakieru samochodowego, które
+            rewolucjonizuje jego ochronę i wygląd. Tworzy na powierzchni
+            karoserii twardą, niewidzialną warstwę, która skutecznie chroni
+            przed mikrozarysowaniami, szkodliwymi czynnikami zewnętrznymi i
+            ułatwia utrzymanie czystości. W moim studio detailingowym w Opolu
+            oferuję profesjonalną aplikację powłok ceramicznych, gwarantując
+            wieloletnią ochronę i spektakularny efekt wizualny.
           </p>
-          <h3>Korzyści z Aplikacji Powłoki Ceramicznej:</h3>
+          <h3>Korzyści z Aplikacji Mojej Powłoki Ceramicznej:</h3>
           <ul>
             <li>
-              <strong>Wieloletnia Ochrona Lakieru:</strong> Powłoka ceramiczna
-              tworzy trwałą barierę ochronną, która zabezpiecza lakier przed
-              działaniem promieni UV, kwaśnych deszczy, ptasich odchodów, soli
-              drogowej i drobnych zarysowań.
+              <strong>Wieloletnia Ochrona Lakieru:</strong> Moja powłoka
+              ceramiczna tworzy trwałą barierę ochronną, która zabezpiecza
+              lakier przed działaniem promieni UV, kwaśnych deszczy, ptasich
+              odchodów, soli drogowej i drobnych zarysowań.
             </li>
             <li>
               <strong>Niesamowity Efekt Hydrofobowy:</strong> Powierzchnia
@@ -77,7 +81,7 @@ export default function PowlokaCeramicznaPage() {
         className={`${classes.contentSection} ${classes["contentSection--reverse"]}`}
       >
         <div className={classes.contentSection__text}>
-          <h2>Proces Aplikacji Powłoki Ceramicznej w MK Studio Detailing</h2>
+          <h2>Proces Aplikacji Powłoki Ceramicznej w Moim Studio</h2>
           <p>
             Aplikacja powłoki ceramicznej to skomplikowany proces, który wymaga
             precyzji, odpowiednich warunków i doświadczenia. W MK Studio
@@ -95,14 +99,17 @@ export default function PowlokaCeramicznaPage() {
               <strong>Odtłuszczanie i Inspekcja:</strong> Po korekcie lakier
               jest wielokrotnie odtłuszczany specjalnymi preparatami, aby usunąć
               wszelkie pozostałości past polerskich i zapewnić idealnie czystą
-              powierzchnię. Następnie przeprowadzana jest szczegółowa inspekcja
-              pod specjalnym oświetleniem.
+              powierzchnię. Następnie przeprowadzam szczegółową inspekcję pod
+              specjalnym oświetleniem.
             </li>
             <li>
-              <strong>Profesjonalna Aplikacja Powłoki:</strong> Powłoka
-              ceramiczna jest aplikowana w kontrolowanych warunkach, panel po
-              panelu, z zachowaniem odpowiednich temperatur i wilgotności. Każda
-              warstwa jest precyzyjnie rozprowadzana i docierana.
+              <strong>Profesjonalna Aplikacja Powłoki:</strong>{" "}
+              <Link href="/blog/powloka-ceramiczna-opole">
+                Powłoka ceramiczna
+              </Link>{" "}
+              jest aplikowana w kontrolowanych warunkach, panel po panelu, z
+              zachowaniem odpowiednich temperatur i wilgotności. Każda warstwa
+              jest precyzyjnie rozprowadzana i docierana przeze mnie.
             </li>
 
             <li>
@@ -125,16 +132,18 @@ export default function PowlokaCeramicznaPage() {
             </footer>
           </blockquote>
 
-          <h3>Usługę Wykonuje Właściciel</h3>
+          <h3>Usługę Wykonuję Osobiście – Gwarancja Perfekcji</h3>
           <div>
             <p className={classes.contentSection__textP}>
               Wszystkie usługi wykonuję osobiście – <strong>Kamil</strong>,
               właściciel MK Studio Detailing. Masz pewność, że Twoje auto trafia
-              w ręce fachowca z pasją i doświadczeniem.
+              w moje ręce, w ręce fachowca z pasją i wieloletnim doświadczeniem.
             </p>
             <p className={classes.contentSection__textP}>
               Moja wiedza i umiejętności zdobyte przez lata pracy w branży auto
               detailingu gwarantują najwyższą jakość świadczonych usług.
+              Osobiste zaangażowanie w każdy projekt to fundament zaufania i
+              perfekcyjnych rezultatów.
             </p>
           </div>
         </div>
@@ -151,7 +160,7 @@ export default function PowlokaCeramicznaPage() {
       </section>
 
       <section className={classes.callToActionSection}>
-        <h2>Galeria Realizacji – Powłoka Ceramiczna</h2>
+        <h2>Moja Galeria Realizacji – Powłoka Ceramiczna</h2>
         <p>
           Zobacz efekty moich prac i przekonaj się, jak powłoka ceramiczna
           podkreśla blask i chroni lakier samochodowy.
@@ -190,8 +199,8 @@ export default function PowlokaCeramicznaPage() {
             <p className={classes.faqAnswer}>
               Trwałość powłoki ceramicznej zależy od jej rodzaju
               (jednowarstwowa, wielowarstwowa), jakości produktu oraz sposobu
-              pielęgnacji samochodu. Profesjonalne powłoki ceramiczne oferowane
-              w MK Studio gwarantują ochronę od 2 do nawet 5 lat.
+              pielęgnacji samochodu. Profesjonalne powłoki ceramiczne, które
+              oferuję w moim studio, gwarantują ochronę od 2 do nawet 5 lat.
             </p>
           </details>
           <details className={classes.faqItem}>
@@ -215,7 +224,7 @@ export default function PowlokaCeramicznaPage() {
               precyzji i odpowiednich warunków (czyste, bezpyłowe środowisko,
               kontrolowana temperatura i wilgotność). Niewłaściwa aplikacja może
               prowadzić do powstawania smug, zacieków i konieczności
-              mechanicznego usuwania powłoki. Zawsze zaleca się zlecenie tego
+              mechanicznego usuwania powłoki. Zawsze zalecam zlecenie tego
               zadania profesjonalistom.
             </p>
           </details>
@@ -225,7 +234,7 @@ export default function PowlokaCeramicznaPage() {
             </summary>
             <p className={classes.faqAnswer}>
               Po aplikacji powłoki ceramicznej pielęgnacja samochodu staje się
-              łatwiejsza. Zaleca się regularne mycie ręczne (lub na myjni
+              łatwiejsza. Zalecam regularne mycie ręczne (lub na myjni
               bezdotykowej) z użyciem szamponów dedykowanych dla powłok
               ceramicznych. Należy unikać myjni automatycznych ze szczotkami
               oraz agresywnych środków chemicznych. Regularne odżywianie powłoki

@@ -25,8 +25,8 @@ export const metadata = {
 
 const Oferta = () => {
   return (
-    <div>
-      <h1 className={classes.oferta}>Usługi</h1>
+    <div className={classes.oferta}>
+      <h1 className={classes.oferta__title}>Usługi</h1>
       <Services />
     </div>
   );

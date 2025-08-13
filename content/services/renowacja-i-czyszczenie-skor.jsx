@@ -1,5 +1,7 @@
+import React from "react";
 import Image from "next/image";
 import classes from "../../app/oferta/[slug]/page.module.scss";
+import Link from "next/link"; // Dodany import Link do linkowania wewnętrznego
 
 export const meta = {
   title:
@@ -20,13 +22,16 @@ export default function RenowacjaCzyszczenieSkorPage() {
         <div className={classes.circleContainer3}></div>
         <div className={classes.circleContainer4}></div>
         <div className={classes.contentSection__text}>
-          <h2>Kompleksowa Renowacja i Czyszczenie Skór – Oferta MK Studio</h2>
+          <h2>Kompleksowa Renowacja i Czyszczenie Skór – Moja Oferta</h2>
           <p>
             Tapicerka skórzana to synonim luksusu i komfortu w samochodzie.
             Niestety, z czasem ulega ona zużyciu – pojawiają się przetarcia,
             zabrudzenia, a kolor traci swoją głębię. W MK Studio w Opolu
-            specjalizuję się w kompleksowej renowacji i czyszczeniu skór,
-            przywracając im fabryczny wygląd i miękkość.
+            specjalizuję się w kompleksowej{" "}
+            <Link href="/blog/renowacja-i-czyszczenie-skorzanej-tapicerki-opole">
+              renowacji i czyszczeniu skór
+            </Link>
+            , przywracając im fabryczny wygląd i miękkość.
           </p>
           <h3>Etapy Profesjonalnego Czyszczenia i Renowacji Skór:</h3>
           <ul>
@@ -59,7 +64,11 @@ export default function RenowacjaCzyszczenieSkorPage() {
               <strong>Hydroizolacja i Ochrona Długoterminowa:</strong> Dodatkowe
               zabezpieczenie hydrofobowe, które odpycha wodę i inne płyny,
               minimalizując ryzyko trwałych plam i ułatwiając codzienną
-              pielęgnację.
+              pielęgnację. Dowiedz się więcej o tym{" "}
+              <Link href="/blog/jak-zabezpieczyc-tapicerke-przed-plamami">
+                jak zabezpieczyć tapicerkę przed plamami
+              </Link>
+              .
             </li>
           </ul>
         </div>
@@ -79,7 +88,7 @@ export default function RenowacjaCzyszczenieSkorPage() {
         className={`${classes.contentSection} ${classes["contentSection--reverse"]}`}
       >
         <div className={classes.contentSection__text}>
-          <h2>Dlaczego Warto Zlecić Renowację Skór MK Studio w Opolu?</h2>
+          <h2>Dlaczego Warto Zlecić Renowację Skór Mojemu Studio w Opolu?</h2>
           <p>
             Tapicerka skórzana wymaga specjalistycznej wiedzy i delikatnych
             technik, aby nie naruszyć jej delikatnej struktury. W MK Studio
@@ -93,16 +102,15 @@ export default function RenowacjaCzyszczenieSkorPage() {
             </li>
             <li>
               <strong>Specjalistyczne Produkty:</strong> Korzystam wyłącznie z
-              profesjonalnych, certyfikowanych produktów renomowanych marek
-              dedykowanych do pielęgnacji i renowacji skór (np. Colourlock,
-              Gliptone, Leatherique - jeśli możesz wymienić konkretne, będzie to
-              atut E-E-A-T).
+              profesjonalnych, certyfikowanych produktów renomowanych marek (np.
+              Colourlock, Gliptone, Leatherique - jeśli możesz wymienić
+              konkretne, będzie to atut E-E-A-T).
             </li>
             <li>
-              <strong>Osobiste Zaangażowanie Właściciela:</strong> Każda usługa
-              wykonywana jest przeze mnie osobiście – Kamila, właściciela MK
-              Studio. To zapewnia dbałość o detale i indywidualne podejście do
-              każdego elementu tapicerki.
+              <strong>Osobiste Zaangażowanie Właściciela:</strong> Każdą usługa
+              wykonuję osobiście – jako Kamil, właściciel MK Studio. To zapewnia
+              dbałość o detale i indywidualne podejście do każdego elementu
+              tapicerki.
             </li>
             <li>
               <strong>Długotrwałe Efekty:</strong> Moje metody nie tylko usuwają
@@ -127,9 +135,12 @@ export default function RenowacjaCzyszczenieSkorPage() {
           <div>
             <p className={classes.contentSection__textP}>
               Jako <strong>Kamil</strong>, właściciel MK Studio Detailing,
-              osobiście dbam o to, aby każda tapicerka skórzana odzyskała swoje
-              pierwotne piękno. Moja praca to połączenie pasji, wiedzy i
-              rzemieślniczej precyzji.
+              osobiście dbam o to, aby każda{" "}
+              <Link href="/blog/renowacja-i-czyszczenie-skorzanej-tapicerki-opole">
+                tapicerka skórzana
+              </Link>{" "}
+              odzyskała swoje pierwotne piękno. Moja praca to połączenie pasji,
+              wiedzy i rzemieślniczej precyzji.
             </p>
             <p className={classes.contentSection__textP}>
               Zadbana skóra to nie tylko estetyka, ale także komfort i wartość
@@ -154,7 +165,11 @@ export default function RenowacjaCzyszczenieSkorPage() {
         <h2>Galeria Realizacji – Zobacz Metamorfozy Skór</h2>
         <p>
           Przejrzyj zdjęcia przed i po, aby przekonać się, jak dużą różnicę może
-          zrobić profesjonalna renowacja tapicerki skórzanej w Twoim aucie.
+          zrobić profesjonalna{" "}
+          <Link href="/blog/renowacja-i-czyszczenie-skorzanej-tapicerki-opole">
+            renowacja tapicerki skórzanej
+          </Link>{" "}
+          w Twoim aucie.
         </p>
         <div className={classes.buttonWrapper}>
           <a href="/galeria" className={classes.buttonPrimary}>
@@ -175,10 +190,16 @@ export default function RenowacjaCzyszczenieSkorPage() {
               Jak często należy czyścić i konserwować tapicerkę skórzaną?
             </summary>
             <p className={classes.faqAnswer}>
-              Zaleca się profesjonalne czyszczenie i konserwację tapicerki
+              Zalecam profesjonalne czyszczenie i konserwację tapicerki
               skórzanej co najmniej raz w roku, aby utrzymać ją w doskonałym
               stanie i zapobiec trwałym uszkodzeniom. Regularne odżywianie
-              zapobiega wysychaniu i pękaniu skóry.
+              zapobiega wysychaniu i pękaniu skóry. Możesz też zabezpieczyć
+              tapicerkę przed plamami, dowiedz się o tym więcej na moim blogu w
+              artykule{" "}
+              <Link href="/blog/jak-zabezpieczyc-tapicerke-przed-plamami">
+                Jak zabezpieczyć tapicerkę przed plamami
+              </Link>
+              .
             </p>
           </details>
           <details className={classes.faqItem}>
@@ -201,7 +222,7 @@ export default function RenowacjaCzyszczenieSkorPage() {
               Czas renowacji zależy od stopnia uszkodzeń i zakresu usługi.
               Standardowe czyszczenie i odżywianie może trwać kilka godzin,
               natomiast kompleksowa renowacja z malowaniem i naprawą większych
-              uszkodzeń może zająć od 1 do 3 dni. Dokładny czas ustalany jest po
+              uszkodzeń może zająć od 1 do 3 dni. Dokładny czas ustalam po
               ocenie stanu tapicerki.
             </p>
           </details>
@@ -212,7 +233,7 @@ export default function RenowacjaCzyszczenieSkorPage() {
             <p className={classes.faqAnswer}>
               Podstawowe, regularne odkurzanie i przecieranie wilgotną szmatką
               jest wskazane. Jednak do głębokiego czyszczenia i usuwania
-              trudnych plam zaleca się użycie profesjonalnych środków i technik,
+              trudnych plam zalecam użycie profesjonalnych środków i technik,
               aby uniknąć uszkodzenia skóry. Niewłaściwe produkty mogą wysuszyć,
               odbarwić lub uszkodzić tapicerkę.
             </p>

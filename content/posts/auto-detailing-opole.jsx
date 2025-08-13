@@ -40,54 +40,100 @@ export const meta = {
 export default function AutoDetailingPost() {
   return (
     <>
-      <h2>Co obejmuje kompleksowy auto detailing?</h2>
+      <h2>Kompleksowy Auto Detailing w Opolu: Co Obejmuje Moja Oferta?</h2>
       <p>
-        Kompleksowy auto detailing to pełna pielęgnacja samochodu – zarówno
-        wnętrza, jak i zewnętrza. Oferuję usługi: pranie tapicerki, renowację
-        skóry, korektę lakieru, aplikację folii PPF oraz powłokę ceramiczną, aby
-        Twój pojazd wyglądał jak nowy.
+        Nazywam się Kamil i w MK Studio w Opolu doskonale rozumiem, że
+        kompleksowy{" "}
+        <strong>
+          <Link href="/oferta/auto-detailing">auto detailing</Link>
+        </strong>{" "}
+        to coś więcej niż tylko mycie samochodu. To pełna, dogłębna pielęgnacja,
+        która przywraca samochodowi jego pierwotny blask, chroni go przed
+        szkodliwymi czynnikami zewnętrznymi i znacząco podnosi jego wartość.
+        Moje usługi są skrojone na miarę, obejmując zarówno wnętrze, jak i
+        zewnętrze Twojego pojazdu, aby każdy element był perfekcyjnie zadbany.
       </p>
 
-      <h2>Zakres usług</h2>
+      <h2>
+        Specjalistyczne Usługi Auto Detailingu – Gwarancja Jakości ode Mnie
+      </h2>
       <ul>
         <li>
-          <Droplet className="icon" /> <strong>Pranie tapicerki</strong> –
-          głębokie usuwanie zabrudzeń i odświeżanie wnętrza.
+          <Droplet className="icon" />
+          <strong>
+            <Link href="/oferta/pranie-tapicerki">Pranie tapicerki</Link>
+          </strong>{" "}
+          – używam profesjonalnych ekstraktorów i bezpiecznych detergentów, aby
+          głęboko wyczyścić i odświeżyć tapicerkę materiałową, eliminując plamy,
+          nieprzyjemne zapachy czy też roztocza.
         </li>
         <li>
-          <Feather className="icon" /> <strong>Renowacja skóry</strong> –
-          odżywianie, naprawa i zabezpieczenie powierzchni skórzanych.
+          <Feather className="icon" />
+          <strong>
+            <Link href="/oferta/renowacja-i-czyszczenie-skor">
+              Renowacja skóry
+            </Link>
+          </strong>{" "}
+          – to proces odżywiania, naprawy drobnych uszkodzeń oraz zabezpieczania
+          powierzchni skórzanych, przywracający im miękkość, kolor i estetyczny
+          wygląd.
         </li>
         <li>
-          <Wrench className="icon" /> <strong>Korekta lakieru</strong> –
-          usuwanie rys, hologramów i przywracanie połysku.
+          <Wrench className="icon" />
+          <strong>
+            <Link href="/oferta/korekta-lakieru">Korekta lakieru</Link>
+          </strong>{" "}
+          – mój wieloetapowy proces polerowania, znany także jako car detailing,
+          skutecznie usuwa zmatowienia, rysy, hologramy czy inne
+          niedoskonałości, przywracając lakierowi głęboki, lustrzany połysk.
         </li>
         <li>
-          <Droplet className="icon" /> <strong>Folia PPF</strong> – ochrona
-          lakieru przed kamieniami i zarysowaniami.
+          <Droplet className="icon" />
+          <strong>
+            <Link href="/oferta/folia-ppf-ochrona-lakieru">Folia PPF</Link>
+          </strong>{" "}
+          – aplikuję zaawansowaną, bezbarwną folię poliuretanową, która stanowi
+          niewidzialną barierę ochronną, skutecznie zabezpieczając lakier przed
+          odpryskami od kamieni, zarysowaniami i innymi uszkodzeniami
+          mechanicznymi.
         </li>
         <li>
-          <Droplet className="icon" /> <strong>Powłoka ceramiczna</strong> –
-          trwała bariera hydrofobowa i UV.
+          <Droplet className="icon" />
+          <strong>
+            <Link href="/oferta/powloka-ceramiczna">Powłoka ceramiczna</Link>
+          </strong>{" "}
+          – aplikuję profesjonalne powłoki, które tworzą na lakierze trwałą
+          barierę hydrofobową, ułatwiającą mycie samochodu oraz chroniącą go
+          przed promieniowaniem UV, solą drogową i kwaśnymi deszczami.
         </li>
       </ul>
 
-      <h2>Korzyści z kompleksowego detailingu</h2>
+      <h2>
+        Dlaczego warto wybrać MK Studio w Opolu? Korzyści z Mojego Detailingu
+      </h2>
       <p>
-        - Pełna ochrona i łatwiejsze utrzymanie czystości.
-        <br />- Przedłużenie żywotności materiałów i lakieru.
-        <br />- Odświeżony wygląd i komfort użytkowania.
-        <br />- Wzrost wartości rynkowej pojazdu.
+        Wybór profesjonalnego auto detailingu w MK Studio to inwestycja w wygląd
+        i trwałość Twojego pojazdu. Gwarantuję pełną ochronę i znacznie
+        łatwiejsze utrzymanie czystości, co przekłada się na oszczędność czasu.
+        Moje usługi przedłużają żywotność materiałów we wnętrzu oraz lakieru, a
+        odświeżony wygląd samochodu zwiększa komfort jego użytkowania i podnosi
+        jego wartość rynkową.
       </p>
 
-      <h2>Gdzie wykonuję usługę?</h2>
+      <h2>Lokalizacja i Obszar Mojego Działania</h2>
       <p>
-        Działam na terenie Opola oraz okolicznych miejscowości: Ozimek,
-        Prószków, Komprachcice i Lubniany. Mobilnie dojeżdżam z pełnym
-        wyposażeniem.
+        Jestem dumny, że mogę służyć mieszkańcom Opola i okolic jako zaufany
+        warsztat auto detailingu. Działam na terenie miasta oraz w
+        miejscowościach takich jak Ozimek, Prószków, Komprachcice i Lubniany.
+        Wiele usług realizuję również mobilnie, dojeżdżając do klienta z pełnym,
+        profesjonalnym wyposażeniem.
       </p>
 
-      <h2>Opinie klientów</h2>
+      <h2>Oceny i Opinie Zaufanych Klientów</h2>
+      <p>
+        Zaufanie moich klientów jest dla mnie najważniejsze. Sprawdź, co mówią
+        osoby, które powierzyły mi swoje samochody.
+      </p>
       <blockquote>
         <p>
           „Z całego serca polecam Salon. Samochód zyskał blask, tapicerka jak
@@ -105,29 +151,30 @@ export default function AutoDetailingPost() {
         <cite>– Marcin Rozycki</cite>
       </blockquote>
 
-      <h2>Masz pytania? Skontaktuj się ze mną</h2>
+      <h2>Skontaktuj się ze Mną, Ekspertem od Auto Detailingu w Opolu</h2>
       <p className="contact-info">
-        Potrzebujesz wyceny lub chcesz omówić szczegóły? Zapraszam do kontaktu:
+        Gotowy, aby doświadczyć różnicy? Potrzebujesz szczegółowej wyceny lub
+        chcesz omówić plan pielęgnacji Twojego samochodu? Zapraszam do kontaktu:
       </p>
       <div className="contact-details">
         <div className="contact-item">
           <Phone className="icon-down-p" />{" "}
-          <a href="tel:+48690570800">690 570 800</a>
+          <a href="tel:+48690570800">690 570 800</a>
         </div>
         <div className="contact-item">
           <Mail className="icon-down-p" />{" "}
           <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
         </div>
         <div className="contact-item">
-          <MapPin className="icon-down-p" /> ul. Częstochowska 44, 45‑020 Opole
+          <MapPin className="icon-down-p" /> ul. Częstochowska 44, 45-020 Opole
         </div>
         <div className="contact-item">
-          <Clock className="icon-down-p" /> Pon–Pt: 07:00–20:00,
-          Sob: 08:00–18:00
+          <Clock className="icon-down-p" /> Pon–Pt: 07:00–20:00, Sob:
+          08:00–18:00
         </div>
       </div>
       <div className="ctaWrapper">
-        <Link href="/kontakt">
+        <Link href="/oferta/auto-detailing">
           <span className="cta-button">Zarezerwuj Auto Detailing</span>
         </Link>
       </div>

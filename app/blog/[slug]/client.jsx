@@ -58,24 +58,38 @@ export default function BlogPostClient({ slugFromParent }) {
     "folia-ppf-opole": "styleThree",
     "korekta-lakieru-opole": "anotherSpecialImage",
     "powloka-ceramiczna-opole": "styleFour",
+    "auto-detailing-opole": "anotherSpecialImage",
   };
   const customImageClass = imageStyles[slug] || "";
 
   return (
     <main className={classes.blogPost__container}>
       <article className={classes.blogPost}>
-        <div
-          className={`${classes.blogPost__imageWrapper} ${
-            customImageClass ? classes[customImageClass] : ""
-          }`}
-        >
-          <Image
-            src={imageSrc}
-            alt={meta.mainImageAltText || title}
-            width={1200}
-            height={600}
-            style={{ objectFit: "cover" }}
-          />
+        <div className={classes.heroWrapper}>
+          {isDesktop ? (
+            <div
+              className={`${classes.blogPost__imageWrapper} ${
+                customImageClass ? classes[customImageClass] : ""
+              }`}
+              style={{ backgroundImage: `url(${imageSrc})` }}
+            >
+              <div className={classes.imageOverlay}></div>
+            </div>
+          ) : (
+            <div className={classes.blogPost__imageWrapper}>
+              <Image
+                src={imageSrc}
+                alt={meta.mainImageAltText || title}
+                width={1200}
+                height={600}
+                style={{ objectFit: "cover" }}
+              />
+              <div className={classes.imageOverlay}></div>
+            </div>
+          )}
+          <div
+            className={`${classes.blogPost__whiteBlock} ${classes.blogPost__whiteBlockLeft}`}
+          ></div>
         </div>
 
         <div className={classes.blogPost__box}>
@@ -93,7 +107,7 @@ export default function BlogPostClient({ slugFromParent }) {
                   alt={meta.imagesAltText?.[i] || `${title} ${i + 1}`}
                   width={800}
                   height={450}
-                  objectFit="cover"
+                  style={{ objectFit: "cover" }}
                 />
               ))}
             </div>

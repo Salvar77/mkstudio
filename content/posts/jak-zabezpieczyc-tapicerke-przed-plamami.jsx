@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   Wrench,
   Droplet,
+  Feather,
   PhoneCall as Phone,
   Mail,
   MapPin,
@@ -38,75 +39,115 @@ export const meta = {
 export default function PreventStainsPost() {
   return (
     <>
-      <h2>Kim jestem i dlaczego warto mi zaufać?</h2>
+      <h2>
+        Jak skutecznie zabezpieczyć tapicerkę samochodową przed trwałymi
+        plamami?
+      </h2>
       <p>
-        Nazywam się <strong>MK Studio Auto Detailing</strong> z Opola i mam
-        ponad 10 lat doświadczenia w auto detailingu. Specjalizuję się w
-        kompleksowej ochronie tapicerki samochodowej – od prania ekstrakcyjnego,
-        poprzez impregnację, aż po zabezpieczenie przed nowymi zabrudzeniami.
+        Nazywam się Kamil i w MK Studio Auto Detailing w Opolu doskonale wiem,
+        że tapicerka samochodowa jest jednym z najbardziej narażonych na
+        zabrudzenia elementów wnętrza. Jako specjalista z ponad dekadą
+        doświadczenia, oferuję kompleksowe rozwiązania, które nie tylko usuwają
+        istniejące plamy, ale przede wszystkim skutecznie zabezpieczają
+        tapicerkę na przyszłość. Moja ekspertyza w auto detailingu pozwala mi na
+        profesjonalne podejście do każdego rodzaju materiału.
       </p>
 
-      <h2>Dlaczego ochrona tapicerki ma dla mnie znaczenie?</h2>
+      <h2>Dlaczego profesjonalna ochrona tapicerki to priorytet?</h2>
       <p>
-        Wiem, jak trwałe zabrudzenia potrafią obniżyć wartość auta i skrócić
-        żywotność materiałów. Dlatego każdą usługę wykonuję z najwyższą
-        precyzją, aby tapicerka była chroniona przed plamami po kawie, tłustymi
-        śladami czy odciskami, zachowując świeży wygląd na dłużej.
+        Wiele osób nie zdaje sobie sprawy, że codzienne użytkowanie samochodu
+        może powodować nieodwracalne uszkodzenia tapicerki samochodowej. Wylane
+        napoje, tłuste jedzenie czy kurz mogą wniknąć głęboko we włókna,
+        skracając ich żywotność i obniżając wartość rynkową pojazdu. Właściwa
+        ochrona, którą zapewniam profesjonalną impregnacją, tworzy niewidzialną
+        barierę, która chroni materiał przed wnikaniem uporczywego brudu i
+        cieczy, co pozwala zachować świeży wygląd wnętrza na lata.
       </p>
 
-      <h2>Efektywne metody, które stosuję</h2>
+      <h2>Moje efektywne metody zabezpieczania i pielęgnacji tapicerki</h2>
       <ul>
         <li>
-          <strong>Pranie ekstrakcyjne</strong> – usuwam zabrudzenia z głębi
-          włókien bez przemaczania materiału.
+          <Wrench className="icon" />
+          <strong>Pranie ekstrakcyjne</strong> – to zaawansowana metoda, która
+          za pomocą profesjonalnych ekstraktorów i bezpiecznych środków
+          piorących usuwa zabrudzenia z najgłębszych warstw włókien, nie
+          dopuszczając do przemoczenia materiału.
         </li>
         <li>
-          <strong>Impregnacja</strong> – tworzę warstwę hydrofobową, która
-          zabezpiecza przed wchłanianiem płynów.
+          <Droplet className="icon" />
+          <strong>Impregnacja tapicerki</strong> – po dokładnym wyczyszczeniu
+          tworzę warstwę hydrofobową, która sprawia, że płyny zbierają się na
+          powierzchni, zamiast wnikać w materiał. Dzięki temu łatwo je usunąć,
+          zanim powstaną trwałe plamy na tapicerce.
         </li>
         <li>
-          <strong>Pielęgnacja skóry</strong> – odżywiam i zabezpieczam skórę,
-          aby nie pękała i nie blakła.
+          <Feather className="icon" />
+          <strong>
+            Pielęgnacja i{" "}
+            <Link href="/oferta/renowacja-i-czyszczenie-skor">
+              zabezpieczenie skóry
+            </Link>
+          </strong>{" "}
+          – używam specjalistycznych preparatów, które odżywiają, nawilżają i
+          chronią delikatne powierzchnie skórzane przed pękaniem, blaknięciem
+          oraz wnikaniem brudu.
         </li>
         <li>
-          <strong>Ochrona alcantary</strong> – delikatnie czyści i utrwalam
-          strukturę materiału.
+          <Wrench className="icon" />
+          <strong>Ochrona alcantary</strong> – ten delikatny materiał wymaga
+          szczególnej uwagi. Stosuję specjalne techniki i produkty, które
+          bezpiecznie czyszczą i utrwalają jego strukturę, zapobiegając
+          mechaceniu i trwałym zabrudzeniom tapicerki.
         </li>
       </ul>
 
-      <h2>Kroki do trwałej ochrony według mojego schematu</h2>
+      <h2>Mój profesjonalny schemat działania – krok po kroku</h2>
       <p>
-        1. Dokładna diagnostyka stanu tapicerki – sprawdzam rodzaj materiału i
-        poziom zabrudzeń.
+        W MK Studio, każda usługa jest przeze mnie precyzyjnie zaplanowana, aby
+        zapewnić najlepsze rezultaty.
         <br />
-        2. Wstępne czyszczenie i odkurzanie – usuwam luźne zanieczyszczenia.
+        1. **Dokładna diagnostyka{" "}
+        <Link href="/oferta/renowacja-i-czyszczenie-skor">stanu tapicerki</Link>
+        ** – identyfikuję rodzaj materiału oraz poziom i charakter zabrudzeń.
         <br />
-        3. Aplikacja specjalistycznych środków – głębokie penetrowanie
-        zabrudzeń.
+        2. **Wstępne czyszczenie i odkurzanie** – usuwam wszystkie luźne
+        zanieczyszczenia, które mogłyby przeszkadzać w dalszych etapach pracy.
         <br />
-        4. Impregnacja i zabezpieczenie – hydrofobowe powłoki tworzące barierę
-        ochronną.
+        3. **Aplikacja specjalistycznych środków** – używam odpowiednich
+        środków, które dogłębnie penetrują zabrudzenia w tapicerce,
+        rozpuszczając je od wewnątrz.
         <br />
-        5. Ostateczna kontrola jakości – test wodoodporności i wykończenie
-        detali.
+        4. **Impregnacja i zabezpieczenie** – nakładam warstwy ochronne, które
+        tworzą barierę hydrofobową i utrwalają efekt czyszczenia.
+        <br />
+        5. **Ostateczna kontrola jakości** – sprawdzam efektywność impregnacji
+        (np. test wodoodporności) i dbam o najmniejsze detale wykończenia.
       </p>
 
-      <h2>Gdzie dojeżdżam?</h2>
+      <h2>Lokalizacja i Obszar Działania</h2>
       <p>
-        Obsługuję Opole i okolice: Ozimek, Prószków, Komprachcice, Lubniany oraz
-        dzielnice Zaodrze, Wrzoski, Malina i Półwieś. Dojeżdżam z pełnym
-        wyposażeniem mobilnym.
+        Jako lokalny ekspert, obsługuję klientów z **Opola** i okolic, w tym
+        także z **Ozimka, Prószkowa, Komprachcic i Lubnian**. Działam również
+        mobilnie, dojeżdżając z pełnym, profesjonalnym wyposażeniem do dzielnic
+        takich jak **Zaodrze, Wrzoski, Malina i Półwieś**, co zapewnia
+        maksymalną wygodę i oszczędność Twojego czasu.
       </p>
 
-      <h2>Gwarancja jakości i profesjonalizmu</h2>
+      <h2>Gwarancja jakości i zaufania</h2>
       <p>
-        Na wszystkie usługi udzielam gwarancji satysfakcji. Dzięki wieloletniemu
-        doświadczeniu i używaniu profesjonalnych produktów takich marek jak{" "}
-        <strong>Tenzi, ProElite, Gyeon, ADBL</strong> zapewniam bezpieczny i
-        trwały efekt.
+        Moje doświadczenie i zaangażowanie w każdy projekt są gwarancją
+        satysfakcji. Pracuję wyłącznie na profesjonalnych produktach
+        renomowanych marek, takich jak **Tenzi, ProElite, Gyeon, ADBL**, co
+        zapewnia bezpieczeństwo dla Twojego samochodu i trwały, estetyczny
+        efekt.
       </p>
 
-      <h2>Opinie klientów</h2>
+      <h2>Co mówią o mnie zaufani klienci?</h2>
+      <p>
+        Zaufanie moich klientów buduję na jakości i rzetelności. Poniżej
+        znajdziesz kilka opinii, które pokazują, że moje usługi są wysoko
+        oceniane.
+      </p>
       <blockquote>
         <p>
           „Zdecydowanie polecam MK Studio ! Profesjonalna obsługa i skuteczne
@@ -127,25 +168,28 @@ export default function PreventStainsPost() {
         </p>
         <cite>– Dominika Suchodolska</cite>
       </blockquote>
-      <h2>Masz pytania? Skontaktuj się ze mną</h2>
+      <h2>Masz pytania? Skontaktuj się z ekspertem od tapicerki</h2>
       <p className="contact-info">
-        Jeśli potrzebujesz indywidualnej wyceny lub masz dodatkowe pytania,
-        skontaktuj się ze mną:
+        Jeśli potrzebujesz indywidualnej wyceny, chcesz dowiedzieć się więcej o
+        procesie zabezpieczania tapicerki lub masz inne pytania, zapraszam do
+        bezpośredniego kontaktu.
       </p>
       <div className="contact-details">
         <div className="contact-item">
           <Phone className="icon-down-p" />{" "}
-          <a href="tel:+48690570800">690 570 800</a>
+          <a href="tel:+48690570800">690 570 800</a>
         </div>
         <div className="contact-item">
           <Mail className="icon-down-p" />{" "}
           <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
         </div>
         <div className="contact-item">
-          <MapPin className="icon-down" /> ul. Częstochowskiej 44, 45-020 Opole
+          <MapPin className="icon-down-p" /> ul. Częstochowskiej 44, 45-020
+          Opole
         </div>
         <div className="contact-item">
-          <Clock className="icon-down" /> Pon–Pt: 07:00–20:00, Sob: 08:00–18:00
+          <Clock className="icon-down-p" /> Pon–Pt: 07:00–20:00, Sob:
+          08:00–18:00
         </div>
       </div>
       <div className="ctaWrapper">

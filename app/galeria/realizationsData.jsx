@@ -29,6 +29,8 @@ export const realizationsData = [
     largeImage: photoRealizations,
     largeImageWidth: 1920,
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    customClass: "autoDetailing",
+    mobileClass: "autoDetailingMobile",
   },
   {
     id: "renowacja-i-czyszczenie-skor",
@@ -45,6 +47,8 @@ export const realizationsData = [
     largeImage: photoRealizations,
     largeImageWidth: 1920,
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    customClass: "renowacjaSkor",
+    mobileClass: "renowacjaSkorMobile",
   },
   {
     id: "korekta-lakieru",
@@ -54,6 +58,8 @@ export const realizationsData = [
     largeImage: photoCorrection,
     largeImageWidth: 1920,
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    customClass: "korektaLakieru",
+    mobileClass: "korektaLakieruMobile",
   },
   {
     id: "folia-ppf-ochrona-lakieru",
@@ -63,6 +69,8 @@ export const realizationsData = [
     largeImage: photoFoilPpf,
     largeImageWidth: 1920,
     gradient: "linear-gradient(rgba(38, 32, 32, 0.5), rgba(40, 31, 31, 0.5))",
+    customClass: "foliaPPF",
+    mobileClass: "foliaPPFMobile",
   },
   {
     id: "powloka-ceramiczna",
@@ -72,6 +80,8 @@ export const realizationsData = [
     largeImage: ceramicCoatingImage,
     largeImageWidth: 1920,
     gradient: "linear-gradient(rgba(38, 32, 32, 0.5), rgba(40, 31, 31, 0.5))",
+    customClass: "powlokaCeramiczna",
+    mobileClass: "powlokaCeramicznaMobile", // Nowa klasa dla mobile
   },
   {
     id: "pranie-tapicerki",
@@ -81,5 +91,7 @@ export const realizationsData = [
     largeImage: photoClean,
     largeImageWidth: 1920,
     gradient: "linear-gradient(rgba(63, 59, 59, 0.5), rgba(40, 31, 31, 0.5))",
+    customClass: "pranieTapicerki",
+    mobileClass: "pranieTapicerkiMobile",
   },
 ];

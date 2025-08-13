@@ -12,7 +12,7 @@ const Galeria = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
+      setIsDesktop(window.innerWidth >= 992);
     };
     window.addEventListener("resize", handleResize);
     handleResize();
@@ -44,7 +44,13 @@ const Galeria = () => {
               className={classes.realizations__item}
             >
               <div
-                className={classes.realizations__imageWrapper}
+                className={`${classes.realizations__imageWrapper} ${
+                  isDesktop && realization.customClass
+                    ? classes[realization.customClass]
+                    : realization.mobileClass
+                    ? classes[realization.mobileClass]
+                    : ""
+                }`}
                 style={{ backgroundImage: realization.gradient }}
               >
                 <Image

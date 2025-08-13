@@ -1,6 +1,7 @@
 @import "../../../styles/colors";
 
 .blogPost {
+  position: relative;
   background: linear-gradient(
     135deg,
     $new-black 0%,
@@ -9,6 +10,11 @@
     lighten($gold-main, 20%) 25%,
     $white-smooth 100%
   );
+
+  .heroWrapper {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  }
 
   &__box {
     max-width: 1100px;
@@ -25,28 +31,67 @@
       padding: 0.2rem 0.4rem;
       border-radius: 0.25rem;
     }
+
+    ul {
+      li {
+        a {
+          color: $gold-main;
+          transition: color 0.3s ease, text-decoration 0.3s ease;
+          &:hover {
+            color: darken($gold-main, 10%);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    p,
+    li {
+      a {
+        color: $gold-main;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+
+        &:hover {
+          color: darken($gold-main, 10%);
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   &__imageWrapper {
     position: relative;
     width: 100%;
     margin-bottom: 2rem;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10rem;
+      background: linear-gradient(to top, $new-black, transparent);
+      z-index: 2;
+      pointer-events: none;
+    }
 
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
       object-position: 50% 50%;
-
       border-radius: 2rem;
       padding: 1rem;
+      display: block;
     }
   }
 
   img {
     padding: 1rem;
     width: 100%;
-    border-radius: 5rem;
+    border-radius: 2rem;
   }
 
   h1 {
@@ -67,14 +112,13 @@
 
   p {
     padding: 2rem;
-    // border-bottom: 2px solid $white-smooth;
     box-shadow: 0.2rem 0.2rem 0.4rem $grey-smooth;
-    text-shadow: 0.15rem 0.15rem 0.25rem $dark-smooth;
+    text-shadow: 0.1rem 0.1rem 0.15rem $dark-smooth;
 
     & > strong {
       display: inline;
       font-weight: 600;
-      color: $gold-main;
+      // color: $gold-main;
       margin: 0;
       padding: 0;
     }
@@ -169,7 +213,6 @@
       text-align: left;
       margin-top: 1rem;
       font-weight: 700;
-      // color: $new-black;
     }
   }
 
@@ -218,7 +261,7 @@
     display: block;
     margin-top: 2rem;
     font-weight: 600;
-    color: $blue-after;
+    // color: $blue-after;
     font-size: 1.4rem;
     font-style: normal;
     text-align: right;
@@ -259,47 +302,54 @@
     }
 
     &__imageWrapper {
-      position: relative;
-      width: 100%;
-      // overflow: hidden;
-      margin-bottom: 2rem;
-
       img {
-        height: 60rem;
+        display: none;
+      }
+      // background-image: url("https://placehold.co/1200x800/2a3541/ffffff?text=Wstaw+tutaj+adres+swojego+obrazka");
+      background-size: cover;
+      background-attachment: fixed;
+      height: 60rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba($new-black, 0) 0%,
+          rgba($new-black, 0.4) 50%,
+          rgba($new-black, 0.8) 100%
+        );
+        z-index: 1;
+        border-radius: 2rem;
       }
 
       &.specialImage {
-        img {
-          object-position: 75% 25%;
-        }
+        background-position: 75% 25%;
       }
 
       &.anotherSpecialImage {
-        img {
-          object-position: 50% 55%;
-        }
+        background-position: 50% 55%;
       }
 
       &.specialImage2 {
-        img {
-          object-position: 75% 45%;
-        }
+        background-position: 75% 45%;
       }
 
       &.styleThree {
-        img {
-          object-position: 70% 79.7%;
-        }
+        background-position: 70% 95.7%;
       }
 
       &.styleFour {
-        img {
-          object-position: 70% 50%;
-        }
+        background-position: 70% 50%;
       }
 
       &.largeImage img {
         min-height: 30rem;
+        display: block;
       }
     }
 

@@ -1,5 +1,7 @@
-import Image from "next/image";
+import React from "next/image";
+import Link from "next/link";
 import classes from "../../app/oferta/[slug]/page.module.scss";
+import Image from "next/image";
 
 export const meta = {
   title: "Folia PPF w Opolu – Najlepsza Ochrona Lakieru | MK Studio Detailing",
@@ -21,35 +23,39 @@ export default function FoliaPpfOchronaLakieruPage() {
         <div className={classes.contentSection__text}>
           <h2>Folia Ochronna PPF – Niewidzialna Tarcza dla Twojego Lakieru</h2>
           <p>
-            Folia PPF (Paint Protection Film) to najskuteczniejsza forma ochrony
-            lakieru samochodowego dostępna na rynku. Ta bezbarwna, elastyczna
-            folia tworzy na powierzchni karoserii niewidzialną barierę, która
-            chroni przed najczęstszymi zagrożeniami drogowymi i środowiskowymi.
-            W MK Studio Detailing w Opolu oferuję profesjonalny montaż folii
-            PPF, zapewniając Twojemu autu długotrwałą ochronę i nieskazitelny
-            wygląd.
+            <Link href="/blog/folia-ppf-opole">
+              Folia PPF (Paint Protection Film)
+            </Link>{" "}
+            to najskuteczniejsza forma ochrony lakieru samochodowego dostępna na
+            rynku. Ta bezbarwna, elastyczna folia tworzy na powierzchni
+            karoserii niewidzialną barierę, która chroni przed najczęstszymi
+            zagrożeniami drogowymi i środowiskowymi. W moim studio detailingowym
+            w Opolu oferuję profesjonalny montaż folii PPF, zapewniając Twojemu
+            autu długotrwałą ochronę i nieskazitelny wygląd.
           </p>
-          <h3>Dlaczego Warto Wybrać Folię PPF?</h3>
+          <h3>Dlaczego Warto Wybrać Moją Folię PPF?</h3>
           <ul>
             <li>
-              <strong>Ochrona przed Zarysowaniami i Odpryskami:</strong> Folia
-              PPF skutecznie absorbuje uderzenia kamieni, żwiru i innych
+              <strong>Ochrona przed Zarysowaniami i Odpryskami:</strong> Moja
+              folia PPF skutecznie absorbuje uderzenia kamieni, żwiru i innych
               drobnych elementów, zapobiegając powstawaniu odprysków i rys na
               lakierze.
             </li>
             <li>
               <strong>Ochrona przed Chemikaliami i Zanieczyszczeniami:</strong>
-              Chroni lakier przed szkodliwym działaniem ptasich odchodów, soków
-              z drzew, owadów, soli drogowej i innych agresywnych substancji.
+              Chronię Twój lakier przed szkodliwym działaniem ptasich odchodów,
+              soków z drzew, owadów, soli drogowej i innych agresywnych
+              substancji.
             </li>
             <li>
               <strong>Właściwości Samoregenerujące:</strong> Większość
-              nowoczesnych folii PPF posiada właściwości samoregenerujące, co
-              oznacza, że drobne rysy i zarysowania znikają pod wpływem ciepła
-              (np. słońca lub gorącej wody).
+              nowoczesnych <Link href="/blog/folia-ppf-opole">folii PPF</Link>{" "}
+              posiada właściwości samoregenerujące, co oznacza, że drobne rysy i
+              zarysowania znikają pod wpływem ciepła (np. słońca lub gorącej
+              wody).
             </li>
             <li>
-              <strong>Ochrona przed Promieniami UV:</strong> Zapobiega
+              <strong>Ochrona przed Promieniami UV:</strong> Zapobiegam
               blaknięciu i matowieniu lakieru spowodowanemu długotrwałą
               ekspozycją na słońce, utrzymując jego głębię koloru.
             </li>
@@ -76,7 +82,7 @@ export default function FoliaPpfOchronaLakieruPage() {
         className={`${classes.contentSection} ${classes["contentSection--reverse"]}`}
       >
         <div className={classes.contentSection__text}>
-          <h2>Proces Aplikacji Folii PPF w MK Studio Detailing</h2>
+          <h2>Proces Aplikacji Folii PPF w Moim Studio Detailingowym</h2>
           <p>
             Aplikacja folii PPF to precyzyjny proces, który wymaga
             profesjonalnego przygotowania i doświadczenia. W MK Studio Detaling
@@ -97,9 +103,9 @@ export default function FoliaPpfOchronaLakieruPage() {
               minimalizuje ryzyko widocznych krawędzi.
             </li>
             <li>
-              <strong>Profesjonalna Aplikacja:</strong> Folia jest aplikowana na
-              mokro przez doświadczonego technika, co pozwala na precyzyjne
-              ułożenie i usunięcie pęcherzyków powietrza.
+              <strong>Profesjonalna Aplikacja:</strong> Folię aplikuję na mokro
+              jako doświadczony technik, co pozwala na precyzyjne ułożenie i
+              usunięcie pęcherzyków powietrza.
             </li>
             <li>
               <strong>Długotrwała Ochrona i Łatwość w Pielęgnacji:</strong> Po
@@ -119,18 +125,18 @@ export default function FoliaPpfOchronaLakieruPage() {
             </footer>
           </blockquote>
 
-          <h3>Usługę Wykonuje Właściciel – Kamil z MK Studio Detailing</h3>
+          <h3>Usługę Wykonuję Osobiście – Kamil z MK Studio Detailing</h3>
           <div>
             <p className={classes.contentSection__textP}>
               Wszystkie usługi detailingu wnętrza i prania tapicerki wykonuję
               osobiście – <strong>Kamil</strong>, właściciel MK Studio
-              Detailing. Dzięki temu masz pewność, że Twoje auto trafia w ręce
-              fachowca z pasją i wieloletnim doświadczeniem w branży.
+              Detailing. Dzięki temu masz pewność, że Twoje auto trafia w moje
+              ręce jako fachowca z pasją i wieloletnim doświadczeniem w branży.
             </p>
             <p className={classes.contentSection__textP}>
               Moja wiedza i umiejętności, doskonalone przez lata pracy z
               różnorodnymi materiałami i stopniami zabrudzeń, gwarantują
-              najwyższą jakość świadczonych usług. Osobiste zaangażowanie w
+              najwyższą jakość świadczonych usług. Moje osobiste zaangażowanie w
               każdy projekt to fundament zaufania i perfekcyjnych rezultatów,
               które przekładają się na zdrowie i komfort Twojej podróży.
             </p>
@@ -149,7 +155,7 @@ export default function FoliaPpfOchronaLakieruPage() {
       </section>
 
       <section className={classes.callToActionSection}>
-        <h2>Galeria Realizacji – Folia PPF</h2>
+        <h2>Moja Galeria Realizacji – Folia PPF</h2>
         <p>
           Zobacz efekty mojej pracy i przekonaj się, jak folia PPF może
           zabezpieczyć i upiększyć lakier Twojego samochodu.
@@ -186,9 +192,9 @@ export default function FoliaPpfOchronaLakieruPage() {
             </summary>
             <p className={classes.faqAnswer}>
               Trwałość folii PPF zależy od jej jakości oraz warunków
-              eksploatacji pojazdu. Wysokiej jakości folie, takie jak te używane
-              w MK Studio, oferują gwarancję producenta na 5-10 lat, zachowując
-              swoje właściwości ochronne i estetyczne.
+              eksploatacji pojazdu. Wysokiej jakości folie, takie jak te,
+              których używam w MK Studio, oferują gwarancję producenta na 5-10
+              lat, zachowując swoje właściwości ochronne i estetyczne.
             </p>
           </details>
           <details className={classes.faqItem}>
@@ -220,7 +226,7 @@ export default function FoliaPpfOchronaLakieruPage() {
             </summary>
             <p className={classes.faqAnswer}>
               Pielęgnacja samochodu z folią PPF jest prosta. Można go myć
-              ręcznie lub na myjni automatycznej (bez szczotek). Zaleca się
+              ręcznie lub na myjni automatycznej (bez szczotek). Zalecam
               unikanie silnych chemikaliów i regularne mycie, aby utrzymać
               czystość folii. Warto również stosować dedykowane środki do
               konserwacji folii, aby przedłużyć jej żywotność i połysk.

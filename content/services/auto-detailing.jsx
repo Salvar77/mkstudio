@@ -1,5 +1,7 @@
+import React from "react";
 import Image from "next/image";
 import classes from "../../app/oferta/[slug]/page.module.scss";
+import Link from "next/link"; // Dodany import Link
 
 export const meta = {
   title:
@@ -22,30 +24,32 @@ export default function AutoDetailingPage() {
         <div className={classes.contentSection__text}>
           <h2>Kompleksowy Auto Detailing – Co Wchodzi w Skład Usługi?</h2>
           <p>
-            W MK Studio każdy projekt auto detailingu to precyzyjna praca,
-            mająca na celu przywrócenie Twojemu samochodowi nieskazitelnego
-            wyglądu i zapewnienie mu długotrwałej ochrony. Nasze usługi to coś
-            więcej niż zwykłe mycie – to prawdziwa metamorfoza, która obejmuje
-            każdy element pojazdu, zarówno z zewnątrz, jak i wewnątrz.
+            W MK Studio każdy projekt{" "}
+            <Link href="/blog/auto-detailing-opole">auto detailingu</Link> to
+            precyzyjna praca, mająca na celu przywrócenie Twojemu samochodowi
+            nieskazitelnego wyglądu i zapewnienie mu długotrwałej ochrony. Moje
+            usługi to coś więcej niż zwykłe mycie – to prawdziwa metamorfoza,
+            która obejmuje każdy element pojazdu, zarówno z zewnątrz, jak i
+            wewnątrz.
           </p>
-          <h3>Nasze Kluczowe Etapy Detailingu:</h3>
+          <h3>Moje Kluczowe Etapy Detailingu:</h3>
           <ul>
             <li>
               <strong>Mycie Detailingowe i Dekontaminacja Lakieru:</strong>{" "}
-              Usuwamy wszelkie zanieczyszczenia z powierzchni lakieru, takie jak
+              Usuwam wszelkie zanieczyszczenia z powierzchni lakieru, takie jak
               smoła, naloty metaliczne, żywica, które są niewidoczne gołym
               okiem, ale niszczą strukturę lakieru. To podstawa do dalszych
               prac.
             </li>
             <li>
               <strong>Jednokrokowa lub Wieloetapowa Korekta Lakieru:</strong>{" "}
-              Usuwamy rysy, hologramy i zmatowienia, przywracając lakierowi
+              Usuwam rysy, hologramy i zmatowienia, przywracając lakierowi
               głębię koloru i idealną gładkość. Korekta wieloetapowa zapewnia
               efekt &bdquo;lustra&rdquo; i najwyższy stopień perfekcji.
             </li>
             <li>
               <strong>Impregnacja Powłoką Syntetyczną / Ceramiczną:</strong>{" "}
-              Zabezpieczamy lakier przed szkodliwymi czynnikami zewnętrznymi,
+              Zabezpieczam lakier przed szkodliwymi czynnikami zewnętrznymi,
               takimi jak promienie UV, ptasie odchody, sól drogowa i drobne
               zarysowania. Powłoka ceramiczna gwarantuje wieloletnią ochronę i
               niesamowity efekt hydrofobowy.
@@ -54,7 +58,7 @@ export default function AutoDetailingPage() {
               <strong>
                 Pełne Czyszczenie Wnętrza, Pranie Tapicerki, Ozonowanie:
               </strong>{" "}
-              Zajmujemy się każdym detalem wnętrza – odkurzaniem, czyszczeniem
+              Zajmuję się każdym detalem wnętrza – odkurzaniem, czyszczeniem
               plastików, praniem tapicerki materiałowej lub impregnacją skóry,
               aż po dezynfekujące ozonowanie, które eliminuje nieprzyjemne
               zapachy, bakterie i wirusy.
@@ -85,23 +89,26 @@ export default function AutoDetailingPage() {
         className={`${classes.contentSection} ${classes["contentSection--reverse"]}`}
       >
         <div className={classes.contentSection__text}>
-          <h2>Dlaczego Warto Wybrać MK Studio w Opolu?</h2>
+          <h2>Dlaczego Warto Wybrać Moje Studio w Opolu?</h2>
           <p>
-            Wybierając MK Studio Detailing, stawiasz na pasję, precyzję i
-            niekwestionowane doświadczenie. Jesteśmy dumni z każdego auta, które
-            opuszcza nasz salon, lśniące jak nowe. Co nas wyróżnia?
+            Wybierając MK Studio Detailing, stawiasz na moją pasję, precyzję i
+            niekwestionowane doświadczenie. Jestem dumny z każdego auta, które
+            opuszcza mój salon, lśniące jak nowe. Co mnie wyróżnia?
           </p>
           <ul>
             <li>
-              <strong>Ponad 10 Lat Doświadczenia w Auto Detailingu:</strong>{" "}
-              Nasze bogate doświadczenie to gwarancja najwyższej jakości usług.
-              Przez dekadę doskonaliliśmy techniki i zdobywaliśmy wiedzę, aby
+              <strong>
+                Ponad 10 Lat Doświadczenia w{" "}
+                <Link href="/blog/auto-detailing-opole">Auto Detailingu</Link>:
+              </strong>{" "}
+              Moje bogate doświadczenie to gwarancja najwyższej jakości usług.
+              Przez dekadę doskonaliłem techniki i zdobywałem wiedzę, aby
               zapewnić Twojemu autu najlepszą możliwą opiekę.
             </li>
             <li>
-              <strong>Certyfikowane Kosmetyki Premium:</strong> Używamy
-              wyłącznie sprawdzonych, profesjonalnych produktów wiodących marek
-              (np. Koch-Chemie, FX Protect, Gtechniq - jeśli możesz wymienić
+              <strong>Certyfikowane Kosmetyki Premium:</strong> Używam wyłącznie
+              sprawdzonych, profesjonalnych produktów wiodących marek (np.
+              Koch-Chemie, FX Protect, Gtechniq - jeśli możesz wymienić
               konkretne). To gwarancja bezpieczeństwa dla lakieru i wnętrza
               pojazdu, oraz trwałych efektów.
             </li>
@@ -109,14 +116,14 @@ export default function AutoDetailingPage() {
               <strong>
                 Praca Przez Właściciela – Zero Anonimowych Pracowników:
               </strong>{" "}
-              Każde auto jest obsługiwane osobiście przez Kamila, właściciela MK
-              Studio. To eliminuje ryzyko niedociągnięć, zapewnia spójną,
-              najwyższą jakość i osobiste podejście do każdego klienta. Masz
-              pewność, że Twoje auto jest w rękach eksperta.
+              Każde auto jest obsługiwane osobiście przeze mnie, Kamila,
+              właściciela MK Studio. To eliminuje ryzyko niedociągnięć, zapewnia
+              spójną, najwyższą jakość i osobiste podejście do każdego klienta.
+              Masz pewność, że Twoje auto jest w rękach eksperta.
             </li>
             <li>
-              <strong>Indywidualne Podejście:</strong> Zawsze diagnozujemy stan
-              pojazdu i dobieramy zakres usług indywidualnie, aby osiągnąć
+              <strong>Indywidualne Podejście:</strong> Zawsze diagnozuję stan
+              pojazdu i dobieram zakres usług indywidualnie, aby osiągnąć
               najlepsze rezultaty dopasowane do Twoich potrzeb i oczekiwań.
             </li>
           </ul>
@@ -175,8 +182,9 @@ export default function AutoDetailingPage() {
         {" "}
         <h2>Najczęściej Zadawane Pytania o Auto Detailing</h2>
         <p className={classes.faqLeadText}>
-          Masz pytania dotyczące auto detailingu? Sprawdź nasze odpowiedzi na
-          najczęściej zadawane pytania.
+          Masz pytania dotyczące{" "}
+          <Link href="/blog/auto-detailing-opole">auto detailingu</Link>?
+          Sprawdź moje odpowiedzi na najczęściej zadawane pytania.
         </p>
         <div className={classes.faqListWrapper}>
           <details className={classes.faqItem}>
@@ -187,8 +195,8 @@ export default function AutoDetailingPage() {
               Czas trwania usługi auto detailingu zależy od wybranego pakietu
               oraz stanu początkowego pojazdu. Standardowa korekta lakieru z
               zabezpieczeniem może trwać od 1 do 3 dni, natomiast kompleksowy
-              detailing wnętrza kilka godzin. Szczegóły ustalamy indywidualnie
-              po ocenie auta.
+              detailing wnętrza kilka godzin. Szczegóły ustalam indywidualnie po
+              ocenie auta.
             </p>
           </details>
           <details className={classes.faqItem}>
