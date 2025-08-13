@@ -43,14 +43,6 @@
     cursor: pointer;
     will-change: transform;
     transform-style: preserve-3d;
-
-    // Logika wyświetlania przycisku przy najechaniu
-    &:hover {
-      .realizations__button {
-        opacity: 1;
-        transform: scale(1) translateZ(20px);
-      }
-    }
   }
 
   &__imageWrapper {
@@ -93,9 +85,8 @@
     flex-direction: column;
     border-radius: 0.6rem;
     font-weight: bold;
-    // Domyślnie ukryty i przesunięty
-    opacity: 0;
-    transform: scale(0.8) translateZ(20px);
+    opacity: 1;
+    transform: scale(1) translateZ(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 
     &:hover {
@@ -113,7 +104,6 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    // Tekst jest zawsze widoczny
     transform: translateZ(20px);
 
     p {
@@ -166,6 +156,19 @@
     &__wrapper {
       flex-direction: row;
       height: 70dvh;
+    }
+  }
+
+  .realizations__item {
+    .realizations__button {
+      opacity: 0;
+      transform: scale(0.8) translateZ(20px);
+    }
+    &:hover {
+      .realizations__button {
+        opacity: 1;
+        transform: scale(1) translateZ(20px);
+      }
     }
   }
 }

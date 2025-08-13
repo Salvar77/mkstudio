@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../utils/motion";
 import { servicesData } from "../../constants/index";
+import { useState, useRef } from "react";
 
 const Services = () => {
   return (
@@ -33,13 +34,11 @@ const Services = () => {
                 </div>
                 <div className={classes.card__body}>
                   <h3 className={classes.card__title}>{service.title}</h3>
-
                   <div className={classes.card__rating}>
                     {Array.from({ length: 5 }).map((_, i) => (
                       <span key={i}>★</span>
                     ))}
                   </div>
-
                   <hr className={classes.card__divider} />
                   {service.additionalInfo && (
                     <div
