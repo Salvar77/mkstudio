@@ -117,9 +117,8 @@ export default function BlogPostClient({ slugFromParent }) {
             ← Powrót do bloga
           </Link>
         </div>
-
-        <CtaSection />
       </article>
+      <CtaSection />
     </main>
   );
 }

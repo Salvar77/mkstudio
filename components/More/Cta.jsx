@@ -36,32 +36,28 @@ export default function CtaSection() {
               <IoMdHelpCircleOutline className={classes.iconQuestion} />
               Umów się na Profesjonalny Auto Detailing w Opolu!
             </h2>
+
             <p className={classes.text}>
               Wypełnij formularz kontaktowy, a ja,{" "}
               <span className={classes.name}>Kamil</span>, skontaktuję się z
-              Tobą w ciągu godziny!
+              Tobą w ciągu godziny, aby ustalić szczegóły. Nie czekaj z
+              rezerwacją!
             </p>
           </div>
           <Link href="/kontakt" passHref>
             <div className={classes.button}>
               <svg
                 className={classes.icon}
-                viewBox="0 0 64 64"
                 xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="#171a21"
               >
-                <path d="M8 44h48v4H8z" fill="#171a21" />
-                <path d="M12 44l4-12h32l4 12" fill="#d4af37" />
                 <path
-                  d="M16 32v-8h32v8"
-                  stroke="#171a21"
-                  strokeWidth="2"
-                  fill="none"
-                />
-                <path
-                  d="M20 24l12 8 12-8"
-                  stroke="#171a21"
-                  strokeWidth="2"
-                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 8l9 6 9-6M4 6h16a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1z"
                 />
               </svg>
               <Link href="/kontakt">

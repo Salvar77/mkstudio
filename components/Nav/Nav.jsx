@@ -20,7 +20,7 @@ export default function Nav({ isOpen, toggleNav }) {
     { href: "/kontakt", label: "Kontakt" },
   ];
 
-  const solidNav = pathname !== "/" && isDesktop;
+  const solidNav = pathname === "/galeria" && isDesktop;
 
   useEffect(() => {
     const onResize = () => {
