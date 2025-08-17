@@ -1,14 +1,11 @@
 import "./globals.scss";
 import LayoutClient from "../components/More/LayoutClient";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { Chakra_Petch } from "next/font/google"; // <-- Next.js zaleca tę metodę
+import { Chakra_Petch } from "next/font/google";
 
-// Definiowanie czcionki za pomocą next/font.
-// Next.js zajmie się automatycznie hostowaniem plików .ttf i optymalizacją.
 const chakraPetch = Chakra_Petch({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
-  variable: "--font-chakra-petch", // Opcjonalna zmienna CSS dla większej elastyczności
+  variable: "--font-chakra-petch",
 });
 
 export const metadata = {
@@ -54,7 +51,6 @@ export default function RootLayout({ children }) {
       <body className={chakraPetch.className}>
         <LayoutClient>{children}</LayoutClient>
       </body>
-      <GoogleAnalytics gaId="G-Your_ID" />
     </html>
   );
 }

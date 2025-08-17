@@ -4,8 +4,8 @@ import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import classes from "./Hero.module.scss";
-import HeroImageMobile from "../../assets/image/logo-mkstudio-auto-detailing-opole.jpg";
-import HeroImageDesktop from "../../assets/image/logo-mkstudio-auto-detailing-opole.jpg";
+import HeroImageMobile from "../../assets/image/logo-mkstudio-auto-detailing-opole-mobile.webp";
+import HeroImageDesktop from "../../assets/image/logo-mkstudio-auto-detailing-opole.webp";
 
 const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
   const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
@@ -25,6 +25,9 @@ const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
               style={{ objectFit: "cover" }}
               // objectPosition={isMobile ? "center" : "80% 20%"}
               priority
+              sizes="(max-width: 768px) 100vw, 
+                     (max-width: 992px) 50vw,
+                     50vw"
             />
           </div>
 
