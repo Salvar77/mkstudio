@@ -8,6 +8,7 @@ import {
   MapPin,
   Clock,
 } from "lucide-react";
+import classes from "../../app/blog/[slug]/page.module.scss";
 
 export const meta = {
   id: 4,
@@ -107,31 +108,35 @@ export default function PaintCorrectionPost() {
       </blockquote>
 
       <h2>Masz pytania? Skontaktuj się ze mną</h2>
-      <p className="contact-info">
+      <p className={classes.contactInfo}>
         Jeśli chcesz uzyskać indywidualną wycenę{" "}
         <Link href="/oferta/korekta-lakieru">korekty lakieru</Link> lub masz
         dodatkowe pytania, zapraszam do kontaktu w celu omówienia szczegółów i
         wyceny usługi:
       </p>
-      <div className="contact-details">
-        <div className="contact-item">
-          <Phone className="icon-down-p" />{" "}
+      <div className={classes.contactDetails}>
+        <div className={classes.contactItem}>
+          <Phone className={classes.iconDownP} />{" "}
           <a href="tel:+48690570800">690 570 800</a>
         </div>
-        <div className="contact-item">
-          <Mail className="icon-down-p" />{" "}
+        <div className={classes.contactItem}>
+          <Mail className={classes.iconDownP} />{" "}
           <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
         </div>
-        <div className="contact-item">
-          <MapPin className="icon-down" /> ul. Częstochowskiej 44, 45-020 Opole
+        <div className={classes.contactItem}>
+          <MapPin className={classes.iconDown} /> ul. Częstochowskiej 44, 45-020
+          Opole
         </div>
-        <div className="contact-item">
-          <Clock className="icon-down" /> Pon–Pt: 07:00–20:00, Sob: 08:00–18:00
+        <div className={classes.contactItem}>
+          <Clock className={classes.iconDown} /> Pon–Pt: 07:00–20:00, Sob:
+          08:00–18:00
         </div>
       </div>
-      <div className="ctaWrapper">
+      <div className={classes.ctaWrapper}>
         <Link href="/kontakt">
-          <span className="cta-button">Przejdź do formularza kontaktowego</span>
+          <span className={classes.ctaButton}>
+            Przejdź do formularza kontaktowego
+          </span>
         </Link>
       </div>
     </>

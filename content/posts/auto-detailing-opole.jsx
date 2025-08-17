@@ -9,6 +9,7 @@ import {
   MapPin,
   Clock,
 } from "lucide-react";
+import classes from "../../app/blog/[slug]/page.module.scss";
 
 export const meta = {
   id: 7,
@@ -152,30 +153,31 @@ export default function AutoDetailingPost() {
       </blockquote>
 
       <h2>Skontaktuj się ze Mną, Ekspertem od Auto Detailingu w Opolu</h2>
-      <p className="contact-info">
+      <p className={classes.contactInfo}>
         Gotowy, aby doświadczyć różnicy? Potrzebujesz szczegółowej wyceny lub
         chcesz omówić plan pielęgnacji Twojego samochodu? Zapraszam do kontaktu:
       </p>
-      <div className="contact-details">
-        <div className="contact-item">
-          <Phone className="icon-down-p" />{" "}
+      <div className={classes.contactDetails}>
+        <div className={classes.contactItem}>
+          <Phone className={classes.iconDownP} />{" "}
           <a href="tel:+48690570800">690 570 800</a>
         </div>
-        <div className="contact-item">
-          <Mail className="icon-down-p" />{" "}
+        <div className={classes.contactItem}>
+          <Mail className={classes.iconDownP} />{" "}
           <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
         </div>
-        <div className="contact-item">
-          <MapPin className="icon-down-p" /> ul. Częstochowska 44, 45-020 Opole
+        <div classNameo={classes.contactItem}>
+          <MapPin className={classes.iconDownP} /> ul. Częstochowska 44, 45-020
+          Opole
         </div>
-        <div className="contact-item">
-          <Clock className="icon-down-p" /> Pon–Pt: 07:00–20:00, Sob:
+        <div className={classes.contactItem}>
+          <Clock className={classes.iconDownP} /> Pon–Pt: 07:00–20:00, Sob:
           08:00–18:00
         </div>
       </div>
-      <div className="ctaWrapper">
+      <div className={classes.ctaWrapper}>
         <Link href="/oferta/auto-detailing">
-          <span className="cta-button">Zarezerwuj Auto Detailing</span>
+          <span className={classes.ctaButton}>Zarezerwuj Auto Detailing</span>
         </Link>
       </div>
     </>

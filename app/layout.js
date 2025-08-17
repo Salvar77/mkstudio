@@ -1,4 +1,3 @@
-import "./globals.scss";
 import LayoutClient from "../components/More/LayoutClient";
 import { Chakra_Petch } from "next/font/google";
 
