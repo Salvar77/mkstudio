@@ -11,7 +11,7 @@ import { RiShining2Fill } from "react-icons/ri";
 import { GiVacuumCleaner } from "react-icons/gi";
 import AnimatedButton from "../More/AnimatedButton";
 import classes from "./AboutMe.module.scss";
-import AboutImage from "../../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-2.jpg";
+import AboutImage from "../../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-2.webp";
 
 const features = [
   { Icon: FaCar, text: "Profesjonalne mycie detailingowe" },

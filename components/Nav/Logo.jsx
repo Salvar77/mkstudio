@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Logo.module.scss";
-import MKStudioLogo from "../../assets/image/logo2.jpg";
+import MKStudioLogo from "../../assets/image/logo-mkstudio-auto-detailing-opole-mobile.webp";
 
 const Logo = () => (
   <div className={styles.logo}>

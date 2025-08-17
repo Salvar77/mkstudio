@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/image/logo-mkstudio-auto-detailing-opole.jpg";
+import Logo from "../../assets/image/logo-mkstudio-auto-detailing-opole-mobile.webp";
 import classes from "./ContactMain.module.scss";
 import Link from "next/link";
 import Image from "next/image";

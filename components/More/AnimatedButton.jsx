@@ -1,4 +1,3 @@
-// src/components/AnimatedButton/AnimatedButton.jsx
 import React from "react";
 import styles from "./AnimatedButton.module.scss";
 import clsx from "clsx";
