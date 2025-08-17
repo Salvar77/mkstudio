@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
@@ -10,17 +10,6 @@ export default function LayoutClient({ children }) {
   const isHome = pathname === "/";
 
   const [isOpen, setIsOpen] = useState(false);
-  const [showLogo, setShowLogo] = useState(true);
-
-  useEffect(() => {
-    const onScroll = () => {
-      const scrollY = document.documentElement.scrollTop;
-      const isMobile = window.innerWidth < 992;
-      setShowLogo(!(isMobile && scrollY > 200));
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const toggleNav = () => setIsOpen((prev) => !prev);
 
