@@ -1,5 +1,6 @@
 import LayoutClient from "../components/More/LayoutClient";
 import { Chakra_Petch } from "next/font/google";
+import "./globals.scss";
 
 const chakraPetch = Chakra_Petch({
   subsets: ["latin"],

@@ -1,5 +1,4 @@
 "use client";
-import "../../app/globals.scss";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Nav from "../Nav/Nav";

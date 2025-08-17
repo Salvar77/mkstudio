@@ -166,7 +166,7 @@ export default function AutoDetailingPost() {
           <Mail className={classes.iconDownP} />{" "}
           <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
         </div>
-        <div classNameo={classes.contactItem}>
+        <div className={classes.contactItem}>
           <MapPin className={classes.iconDownP} /> ul. Częstochowska 44, 45-020
           Opole
         </div>
