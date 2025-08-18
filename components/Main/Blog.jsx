@@ -16,7 +16,7 @@ const Blog = ({ showReadMoreLink = false }) => {
               <Image
                 src={post.image}
                 alt={`${post.title} - auto detailing, pranie tapicerki, korekta lakieru`}
-                width={300}
+                width={400}
                 height={300}
               />
             </div>
