@@ -1,12 +1,22 @@
-import classes from "./page.module.scss";
+import dynamic from "next/dynamic";
 import Hero from "../components/Main/Hero";
 import Services from "../components/Main/Services";
-import Pricelist from "../components/Main/Pricelist";
-import Contact from "../components/Main/Contact";
-import AboutMe from "../components/Main/AboutMe";
-import Blog from "../components/Main/Blog";
-import ElfsightLazyWrapper from "../components/More/ElfsightLazyWrapper";
 import SliderSection from "../components/SliderSection/SliderSection";
+
+const Pricelist = dynamic(() => import("../components/Main/Pricelist"), {
+  ssr: false,
+});
+const AboutMe = dynamic(() => import("../components/Main/AboutMe"), {
+  ssr: false,
+});
+const Blog = dynamic(() => import("../components/Main/Blog"), { ssr: false });
+const ElfsightLazyWrapper = dynamic(
+  () => import("../components/More/ElfsightLazyWrapper"),
+  { ssr: false }
+);
+const Contact = dynamic(() => import("../components/Main/Contact"), {
+  ssr: false,
+});
 
 export const metadata = {
   title:
