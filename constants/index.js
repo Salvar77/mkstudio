@@ -16,7 +16,6 @@ export const servicesData = [
     id: "oferta/auto-detailing",
     title: "Auto Detailing",
     image: autodetailing,
-
     description: "Sprawdź",
     gradient: "linear-gradient(rgba(63,59,59,.5), rgba(40,31,31,.5))",
     additionalInfo:
