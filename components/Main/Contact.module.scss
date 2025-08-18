@@ -43,7 +43,7 @@
   .contact__info-row {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* Tutaj kontrolujesz odstęp między ikoną a tekstem */
+    gap: 1.5rem;
   }
 
   .contact__info_phone {
@@ -53,7 +53,6 @@
   .contact__email_link {
     color: $gold-main;
     text-decoration: none;
-    // Usunięto margin-right: 2rem; - kolidowało z gap
   }
 
   .icon {

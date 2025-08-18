@@ -6,6 +6,7 @@ const chakraPetch = Chakra_Petch({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
   variable: "--font-chakra-petch",
+  display: "swap",
 });
 
 export const metadata = {
