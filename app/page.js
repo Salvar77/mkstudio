@@ -1,7 +1,15 @@
 import dynamic from "next/dynamic";
 import Hero from "../components/Main/Hero";
-import Services from "../components/Main/Services";
 import SliderSection from "../components/SliderSection/SliderSection";
+
+const Services = dynamic(() => import("../components/Main/Services"), {
+  ssr: false,
+});
+
+const SliderSection = dynamic(
+  () => import("../components/SliderSection/SliderSection"),
+  { ssr: false }
+);
 
 const Pricelist = dynamic(() => import("../components/Main/Pricelist"), {
   ssr: false,
