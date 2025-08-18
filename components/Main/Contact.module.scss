@@ -1,3 +1,5 @@
+/* Contact.module.scss */
+
 @import "../../styles/colors";
 
 .contact {
@@ -34,10 +36,35 @@
   transform: translateX(-50%);
 }
 
-/* Dane kontaktowe (lewa kolumna) */
 .contact__info {
   margin-right: 2rem;
   color: $white-smooth;
+
+  .contact__info-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Tutaj kontrolujesz odstęp między ikoną a tekstem */
+  }
+
+  .contact__info_phone {
+    margin-bottom: 0.2rem;
+  }
+  .contact__phone_link,
+  .contact__email_link {
+    color: $gold-main;
+    text-decoration: none;
+    // Usunięto margin-right: 2rem; - kolidowało z gap
+  }
+
+  .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    min-width: 2.2rem;
+    vertical-align: middle;
+    margin-top: -0.5rem;
+    margin-right: 0.5rem;
+  }
+
   h2 {
     margin-bottom: 1rem;
   }
@@ -45,6 +72,11 @@
     color: $gold-main;
     text-decoration: none;
   }
+
+  .contact__address {
+    margin-bottom: 1.5rem;
+  }
+
   .contact__divider {
     border: none;
     border-bottom: 1px solid $gold-main;
@@ -184,5 +216,7 @@
   .contact {
     background: linear-gradient(165deg, $new-black, $new-black, $grey-smooth);
     height: 61rem;
+    display: flex;
+    align-items: center;
   }
 }

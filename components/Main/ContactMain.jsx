@@ -4,13 +4,7 @@ import classes from "./ContactMain.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faTiktok,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { FaFacebookF } from "react-icons/fa";
 
 const ContactMain = () => {
   const [showServices, setShowServices] = useState(false);
@@ -110,8 +104,7 @@ const ContactMain = () => {
               rel="noopener noreferrer"
               aria-label="Odwiedź mnie na Facebooku"
             >
-              <FontAwesomeIcon icon={faFacebookF} size="lg" />
-              <span className="sr-only">Facebook</span>
+              <FaFacebookF className={classes.facebookIcon} />
             </a>
           </li>
         </ul>

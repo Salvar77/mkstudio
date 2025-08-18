@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import classes from "./Contact.module.scss";
+import { PhoneCall, AtSign } from "lucide-react";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -86,19 +87,31 @@ const Contact = () => {
               <br />
               Opole
             </p>
-            <p>
+            <p className={classes.contact__address}>
               Ulica: Częstochowska 44
               <br />
               Miasto: 45-020 Opole
             </p>
-            <p>
-              📞 <a href="tel:+48690570800">690 570 800</a>
-              <br />
-              ✉️{" "}
-              <a href="mailto:mkstudio.opole@gmail.com">
+            <div
+              className={`${classes.contact__info_row} ${classes.contact__info_phone}`}
+            >
+              <PhoneCall className={classes.icon} />
+              <a
+                href="tel:+48690570800"
+                className={classes.contact__phone_link}
+              >
+                690 570 800
+              </a>
+            </div>
+            <div className={classes.contact__info_row}>
+              <AtSign className={classes.icon} />
+              <a
+                href="mailto:mkstudio.opole@gmail.com"
+                className={classes.contact__email_link}
+              >
                 mkstudio.opole@gmail.com
               </a>
-            </p>
+            </div>
 
             <hr className={classes.contact__divider} />
 
