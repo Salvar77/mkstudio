@@ -90,7 +90,6 @@ export default function AboutMe() {
           alt="Właściciel MK Studio, Kamil. Profesjonalny Auto Detailing Opole: pranie tapicerki i korekta lakieru."
           fill
           style={{ objectFit: "cover" }}
-          priority
         />
       </div>
     </section>
