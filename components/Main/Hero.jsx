@@ -23,9 +23,7 @@ const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
               alt="Główny baner MK Studio Auto Detailing - profesjonalny auto detailing Opole, pranie tapicerki i korekta lakieru"
               fill
               style={{ objectFit: "cover" }}
-              // objectPosition={isMobile ? "center" : "80% 20%"}
               priority
-              fetchpriority="high"
             />
           </div>
 

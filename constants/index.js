@@ -1,16 +1,15 @@
-import Logo2 from "../assets/image/logo2.jpg";
-import autodetailing from "../assets/image/auto-detailing-mk-studio-opole-produkty.jpg";
-import autodetailing2 from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-17.jpg";
-import leatherrenovation from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-32.jpg";
-import paintcorrection from "../assets/image/galeria-korekta-lakieru-1.jpg";
-import ppf from "../assets/image/ppf2.jpg";
-import ceramic from "../assets/image/galeria-powloka-ceramiczna-3.jpg";
-import upholstery from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-22.jpg";
-import blogPost from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-18.jpg";
-import blogPost2 from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-25.jpg";
-import blogPost3 from "../assets/image/galeria-korekta-lakieru-2.jpg";
-import blogPost4 from "../assets/image/ppf4.jpeg";
-import blogPost5 from "../assets/image/galeria-powloka-ceramiczna-3.jpg";
+import autodetailing from "../assets/image/auto-detailing-mk-studio-opole-produkty.webp";
+import autodetailing2 from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-17.webp";
+import leatherrenovation from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-32.webp";
+import paintcorrection from "../assets/image/galeria-korekta-lakieru-1.webp";
+import ppf from "../assets/image/ppf2.webp";
+import ceramic from "../assets/image/galeria-powloka-ceramiczna-3.webp";
+import upholstery from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-22.webp";
+import blogPost from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-18.webp";
+import blogPost2 from "../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-25.webp";
+import blogPost3 from "../assets/image/galeria-korekta-lakieru-2.webp";
+import blogPost4 from "../assets/image/ppf4.webp";
+import blogPost5 from "../assets/image/galeria-powloka-ceramiczna-3.webp";
 
 export const servicesData = [
   {

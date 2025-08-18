@@ -5,7 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeScale } from "../../utils/motion";
 import { servicesData } from "../../constants/index";
-import { useState, useRef } from "react";
 
 const Services = () => {
   return (
