@@ -3,14 +3,14 @@
 import React from "react";
 import classes from "./ContactContent.module.scss";
 import { motion } from "framer-motion";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import {
-  faLocationDot,
-  faPhone,
-  faEnvelope,
-  faClock,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  FaFacebookF,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa";
+import { FaRegClock, FaClock, FaHourglassEnd } from "react-icons/fa";
+
 import {
   textVariant,
   fadeIn,
@@ -35,7 +35,7 @@ const ContactContent = () => (
         ponad 10-letnie doświadczenie w auto detailingu i prowadzę studio{" "}
         <span className={classes.bold}>MK Studio Auto Detailing</span> w Opolu.
         Codziennie pomagam kierowcom przywracać ich samochodom świeżość – od{" "}
-        <span className={classes.bold}>czyszczenia tapicerki</span>, przez{" "}
+        <span classNameę={classes.bold}>czyszczenia tapicerki</span>, przez{" "}
         <span className={classes.bold}>korektę lakieru</span>, aż po{" "}
         <span className={classes.bold}>powłoki ceramiczne</span>.
       </motion.p>
@@ -54,24 +54,24 @@ const ContactContent = () => (
       <motion.p variants={fadeIn("up", "spring", 0.8, 0.7)}>
         <span className={classes.bold}>MK Studio Auto Detailing – Opole</span>
         <br />
-        <FontAwesomeIcon icon={faLocationDot} className={classes.icon1} /> ul.
-        Częstochowska 44, 45-020 Opole
+        <FaMapMarkerAlt className={classes.icon1} /> ul. Częstochowska 44,
+        45-020 Opole
         <br />
-        <FontAwesomeIcon icon={faPhone} className={classes.icon} />{" "}
+        <FaPhone className={classes.icon} />{" "}
         <a href="tel:690570800">690 570 800</a>
         <br />
-        <FontAwesomeIcon icon={faEnvelope} className={classes.icon} />{" "}
+        <FaEnvelope className={classes.icon} />{" "}
         <a href="mailto:mkstudio.opole@gmail.com">mkstudio.opole@gmail.com</a>
       </motion.p>
 
       <motion.h3 variants={textVariant(1.0)}>Godziny otwarcia</motion.h3>
 
       <motion.p variants={fadeIn("up", "spring", 1.2, 0.7)}>
-        🕒 Pon.–Pt. 07:00–20:00
+        <FaRegClock className={classes.icon} /> Pon.–Pt. 07:00–20:00
         <br />
-        🕗 Sobota 08:00–18:00
+        <FaClock className={classes.icon} /> Sobota 08:00–18:00
         <br />
-        🚫 Niedziela: nieczynne
+        <FaHourglassEnd className={classes.icon} /> Niedziela: nieczynne
       </motion.p>
 
       <motion.p variants={fadeIn("up", "spring", 1.4, 0.7)}>
@@ -93,7 +93,7 @@ const ContactContent = () => (
             rel="noreferrer"
             aria-label="Facebook"
           >
-            <FontAwesomeIcon icon={faFacebookF} />
+            <FaFacebookF />
           </a>
         </li>
       </motion.ul>
