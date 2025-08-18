@@ -1,7 +1,15 @@
 import React from "react";
 import classes from "./page.module.scss";
-import ContactWithAnimation from "../../components/More/ContactWithAnimation";
-import ContactContent from "./ContactContent";
+import dynamic from "next/dynamic";
+
+const ContactWithAnimation = dynamic(
+  () => import("../../components/More/ContactWithAnimation"),
+  { ssr: false }
+);
+
+const ContactContent = dynamic(() => import("./ContactContent"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "Kontakt | MK Studio Auto Detailing Opole",

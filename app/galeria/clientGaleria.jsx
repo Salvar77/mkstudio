@@ -1,5 +1,9 @@
-import Galeria from "./Galeria";
-import { realizationsData } from "./realizationsData"; // Sprawdź i dostosuj ścieżkę do realizationsData
+import { realizationsData } from "./realizationsData";
+import dynamic from "next/dynamic";
+
+const Galeria = dynamic(() => import("./galeria.js"), {
+  ssr: false,
+});
 
 export async function generateMetadata() {
   const pageTitle = "Galeria Realizacji | MK Studio Auto Detailing Opole";

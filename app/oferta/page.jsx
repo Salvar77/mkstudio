@@ -1,6 +1,10 @@
 import React from "react";
-import Services from "../../components/Main/Services";
 import classes from "./Oferta.module.scss";
+import dynamic from "next/dynamic";
+
+const Services = dynamic(() => import("../../components/Main/Services"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "Oferta usług | MK Studio Auto Detailing Opole",

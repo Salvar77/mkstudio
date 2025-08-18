@@ -3,11 +3,10 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import classes from "./galeria.module.scss";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import { staggerContainer, slideRotateY } from "../../utils/motion";
 import { realizationsData } from "./realizationsData";
 
-// Zmodyfikowana wersja z Tilted Card
 const Galeria = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const ref = useRef(null);
