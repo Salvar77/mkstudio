@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 import Hero from "../components/Main/Hero";
-import SliderSection from "../components/SliderSection/SliderSection";
 
 const Services = dynamic(() => import("../components/Main/Services"), {
   ssr: false,
