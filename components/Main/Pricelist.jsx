@@ -1,14 +1,9 @@
 "use client";
 import React from "react";
-import classes from "./Pricelist.module.scss";
 import { usePathname } from "next/navigation";
 import { exteriorServices, interiorServices } from "../../constants";
-import dynamic from "next/dynamic";
-
-const FaMagic = dynamic(
-  () => import("react-icons/fa").then((mod) => mod.FaMagic),
-  { ssr: false }
-);
+import { FaMagic } from "react-icons/fa";
+import classes from "./Pricelist.module.scss";
 
 const PriceSection = ({ title, services }) => (
   <section className={classes.pricingSection}>

@@ -3,43 +3,15 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
 import { textVariant, fadeIn } from "../../utils/motion";
+import { FaCar, FaShieldAlt, FaCouch } from "react-icons/fa";
+import { MdBlurOn, MdBathroom } from "react-icons/md";
+import { IoMdBrush } from "react-icons/io";
+import { RiShining2Fill } from "react-icons/ri";
+import { GiVacuumCleaner } from "react-icons/gi";
 import AnimatedButton from "../More/AnimatedButton";
 import classes from "./AboutMe.module.scss";
 import AboutImage from "../../assets/image/wlasciciel-mk-studio-kamil-auto-detailing-2.webp";
-
-const FaCar = dynamic(() => import("react-icons/fa").then((mod) => mod.FaCar), {
-  ssr: false,
-});
-const FaShieldAlt = dynamic(
-  () => import("react-icons/fa").then((mod) => mod.FaShieldAlt),
-  { ssr: false }
-);
-const FaCouch = dynamic(
-  () => import("react-icons/fa").then((mod) => mod.FaCouch),
-  { ssr: false }
-);
-const MdBlurOn = dynamic(
-  () => import("react-icons/md").then((mod) => mod.MdBlurOn),
-  { ssr: false }
-);
-const MdBathroom = dynamic(
-  () => import("react-icons/md").then((mod) => mod.MdBathroom),
-  { ssr: false }
-);
-const IoMdBrush = dynamic(
-  () => import("react-icons/io").then((mod) => mod.IoMdBrush),
-  { ssr: false }
-);
-const RiShining2Fill = dynamic(
-  () => import("react-icons/ri").then((mod) => mod.RiShining2Fill),
-  { ssr: false }
-);
-const GiVacuumCleaner = dynamic(
-  () => import("react-icons/gi").then((mod) => mod.GiVacuumCleaner),
-  { ssr: false }
-);
 
 const features = [
   { Icon: FaCar, text: "Profesjonalne mycie detailingowe" },
