@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import classes from "./ContactContent.module.scss";
 import { motion } from "framer-motion";

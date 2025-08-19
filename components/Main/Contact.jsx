@@ -1,7 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import classes from "./Contact.module.scss";
-import { PhoneCall, AtSign } from "lucide-react";
+import dynamic from "next/dynamic";
+
+const PhoneCall = dynamic(
+  () => import("lucide-react").then((mod) => mod.PhoneCall),
+  { ssr: false }
+);
+const AtSign = dynamic(() => import("lucide-react").then((mod) => mod.AtSign), {
+  ssr: false,
+});
 
 const Contact = () => {
   const [form, setForm] = useState({

@@ -3,8 +3,14 @@ import Logo from "../../assets/image/logo-mkstudio-auto-detailing-opole-mobile.w
 import classes from "./ContactMain.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import { FaFacebookF } from "react-icons/fa";
+const FaFacebookF = dynamic(
+  () => import("react-icons/fa").then((mod) => mod.FaFacebookF),
+  {
+    ssr: false,
+  }
+);
 
 const ContactMain = () => {
   const [showServices, setShowServices] = useState(false);

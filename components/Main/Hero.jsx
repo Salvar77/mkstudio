@@ -7,8 +7,7 @@ import classes from "./Hero.module.scss";
 import HeroImageMobile from "../../assets/image/logo-mkstudio-auto-detailing-opole.webp";
 import HeroImageDesktop from "../../assets/image/logo-mkstudio-auto-detailing-opole.webp";
 
-const Hero = ({ mobileWhiteBlockColor = "#1D120C" }) => {
-  const [whiteBlockColor, setWhiteBlockColor] = useState(mobileWhiteBlockColor);
+const Hero = () => {
   const isMobile = useMediaQuery("(max-width: 992px)");
 
   const description = "Kompleksowy detailing samochodu";

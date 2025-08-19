@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import classes from "./Cta.module.scss";
-import { IoMdHelpCircleOutline } from "react-icons/io";
+import dynamic from "next/dynamic";
+
+const IoMdHelpCircleOutline = dynamic(
+  () => import("react-icons/io").then((mod) => mod.IoMdHelpCircleOutline),
+  { ssr: false }
+);
 
 export default function CtaSection() {
   useEffect(() => {
