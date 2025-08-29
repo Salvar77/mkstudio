@@ -4,10 +4,10 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 
 export const meta = {
   title:
-    "Powłoka Ceramiczna w Opolu – Długotrwała Ochrona Lakieru | MK Studio Detailing",
+    "Powłoka Ceramiczna w Opolu – Długotrwała Ochrona Lakieru | MK Studio Auto Detailing",
   hero: "/logo-mkstudio-auto-detailing-opole.jpg",
   heroAltText: "Powłoka ceramiczna w Opolu. Logo MK Studio Auto Detailing.",
-  lead: "Zabezpiecz lakier swojego samochodu powłoką ceramiczną w MK Studio Detailing w Opolu. Oferuję profesjonalną aplikację, która zapewnia wieloletnią ochronę przed rysami, brudem, promieniami UV i ułatwia pielęgnację. Nadaj swojemu autu niezrównany blask i trwałość.",
+  lead: "Zabezpiecz lakier swojego samochodu powłoką ceramiczną w MK Studio Auto Detailing w Opolu. Oferuję profesjonalną aplikację, która zapewnia wieloletnią ochronę przed rysami, brudem, promieniami UV i ułatwia pielęgnację. Nadaj swojemu autu niezrównany blask i trwałość.",
   slug: "powloka-ceramiczna",
 };
 
@@ -84,7 +84,7 @@ export default function PowlokaCeramicznaPage() {
           <h2>Proces Aplikacji Powłoki Ceramicznej w Moim Studio</h2>
           <p>
             Aplikacja powłoki ceramicznej to skomplikowany proces, który wymaga
-            precyzji, odpowiednich warunków i doświadczenia. W MK Studio
+            precyzji, odpowiednich warunków i doświadczenia. W MK Studio Auto
             Detaling dbam o każdy etap, aby zapewnić maksymalną trwałość i
             skuteczność zabezpieczenia.
           </p>
@@ -136,8 +136,9 @@ export default function PowlokaCeramicznaPage() {
           <div>
             <p className={classes.contentSection__textP}>
               Wszystkie usługi wykonuję osobiście – <strong>Kamil</strong>,
-              właściciel MK Studio Detailing. Masz pewność, że Twoje auto trafia
-              w moje ręce, w ręce fachowca z pasją i wieloletnim doświadczeniem.
+              właściciel MK Studio Auto Detailing. Masz pewność, że Twoje auto
+              trafia w moje ręce, w ręce fachowca z pasją i wieloletnim
+              doświadczeniem.
             </p>
             <p className={classes.contentSection__textP}>
               Moja wiedza i umiejętności zdobyte przez lata pracy w branży auto

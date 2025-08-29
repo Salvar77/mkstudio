@@ -40,11 +40,11 @@ export const meta = {
 export default function DeepCleanPost() {
   return (
     <>
-      <h2>
+      <h2 className={classes.blogTitle}>
         Głębokie pranie tapicerki w Opolu: Twoje auto zasługuje na czyste i
         zdrowe wnętrze
       </h2>
-      <p>
+      <p className={classes.textShadow}>
         W MK Studio Auto Detailing w Opolu doskonale wiem, że{" "}
         <Link href="/oferta/pranie-tapicerki">głębokie pranie tapicerki</Link>{" "}
         to klucz do utrzymania higieny i komfortu w Twoim pojeździe. Jako
@@ -54,10 +54,10 @@ export default function DeepCleanPost() {
         zabrudzenia, alergeny i nieprzyjemne zapachy.
       </p>
 
-      <h2>
+      <h2 className={classes.blogTitle}>
         Mój profesjonalny proces prania tapicerki – technologia i precyzja
       </h2>
-      <p>
+      <p className={classes.textShadow}>
         Każdy etap mojej pracy jest starannie zaplanowany, aby zapewnić
         maksymalną skuteczność oraz bezpieczeństwo dla materiałów w Twoim aucie.
       </p>
@@ -96,11 +96,13 @@ export default function DeepCleanPost() {
         </li>
       </ul>
 
-      <h2>Jakie korzyści zyskujesz, wybierając moje usługi?</h2>
-      <p>
+      <h2 className={classes.blogTitle}>
+        Jakie korzyści zyskujesz, wybierając moje usługi?
+      </h2>
+      <p className={classes.textShadow}>
         Wybór profesjonalnego{" "}
         <Link href="/oferta/pranie-tapicerki">prania tapicerki</Link> w MK
-        Studio to inwestycja, która się opłaca.
+        Studio Auto Detailing to inwestycja, która się opłaca.
         <br />
         - Usunięcie nawet najbardziej uporczywych plam po kawie, oleju, czy też
         błocie.
@@ -115,30 +117,38 @@ export default function DeepCleanPost() {
         <br />- Zwiększenie komfortu i wartości Twojego samochodu.
       </p>
 
-      <h2>Obszar działania: Opole i okolice – Dojazd do klienta</h2>
-      <p>
-        Działam głównie w Opolu i jego okolicach: **Ozimek, Prószków,
-        Komprachcice, Lubniany**. Oferuję również usługę mobilną, dzięki czemu
-        mogę dojechać z pełnym profesjonalnym wyposażeniem do dzielnic takich
-        jak **Zaodrze, Wrzoski, Malina i Półwieś**. Wygodnie i bez konieczności
-        ruszania się z domu!
+      <h2 className={classes.blogTitle}>
+        Obszar działania: Opole i okolice – Dojazd do klienta
+      </h2>
+      <p className={classes.textShadow}>
+        Działam głównie w Opolu i jego okolicach:{" "}
+        <strong>Ozimek, Prószków, Komprachcice, Lubniany</strong>. Oferuję
+        również usługę mobilną, dzięki czemu mogę dojechać z pełnym
+        profesjonalnym wyposażeniem do dzielnic takich jak{" "}
+        <strong>Zaodrze, Wrzoski, Malina i Półwieś</strong>. Wygodnie i bez
+        konieczności ruszania się z domu!
       </p>
 
-      <h2>Zaufanie klientów jest moim priorytetem</h2>
+      <h2 className={classes.blogTitle}>
+        Zaufanie klientów jest moim priorytetem
+      </h2>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Firma MK Studio Opole oferuje kompleksowe czyszczenie samochodu, w
-          tym <Link href="/oferta/pranie-tapicerki">pranie tapicerki</Link>, na
-          najwyższym poziomie. Ich usługi charakteryzują się profesjonalizmem,
-          dokładnością i użyciem nowoczesnych technologii. Po wizycie u nich mój
-          samochód wyglądał jak nowy – tapicerka była idealnie czysta, a wnętrze
-          odświeżone. Zdecydowanie polecam MK Studio Opole każdemu, kto chce
-          zadbać o swoje auto.”
+          tym{" "}
+          <Link href="/oferta/pranie-tapicerki" className={classes.textLink}>
+            pranie tapicerki
+          </Link>
+          , na najwyższym poziomie. Ich usługi charakteryzują się
+          profesjonalizmem, dokładnością i użyciem nowoczesnych technologii. Po
+          wizycie u nich mój samochód wyglądał jak nowy – tapicerka była
+          idealnie czysta, a wnętrze odświeżone. Zdecydowanie polecam MK Studio
+          Opole każdemu, kto chce zadbać o swoje auto.”
         </p>
         <cite>– Tuśkq T</cite>
       </blockquote>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Jestem bardzo zadowolony z usług "MK Studio" prania tapicerki
           samochodowej. Ich profesjonalizm, skuteczność oraz staranność w
           działaniu przerosły moje oczekiwania. Tapicerka mojego samochodu
@@ -148,13 +158,16 @@ export default function DeepCleanPost() {
         <cite>– Tomasz Mazur</cite>
       </blockquote>
 
-      <h2>
+      <h2 className={classes.blogContactTitle}>
         Chcesz odświeżyć wnętrze swojego samochodu? Skontaktuj się ze mną!
       </h2>
       <p className={classes.contactInfo}>
         Jeśli masz pytania, potrzebujesz indywidualnej wyceny lub chcesz umówić
-        się na <Link href="/oferta/pranie-tapicerki">pranie tapicerki</Link>,
-        zapraszam do kontaktu.
+        się na{" "}
+        <Link href="/oferta/pranie-tapicerki" className={classes.textLink}>
+          pranie tapicerki
+        </Link>
+        , zapraszam do kontaktu.
       </p>
       <div className={classes.contactDetails}>
         <div className={classes.contactItem}>

@@ -40,14 +40,14 @@ export const meta = {
 export default function CeramicCoatingPost() {
   return (
     <>
-      <h1>
+      <h2 className={classes.blogTitle}>
         Powłoka ceramiczna w Opolu: Niezawodna tarcza dla lakieru Twojego auta
-      </h1>
-      <p>
-        W MK Studio Auto Detailing doskonale rozumiem, że lakier samochodowy to
-        coś więcej niż tylko sam kolor. To wizytówka Twojego pojazdu, która z
-        czasem traci blask i jest narażona na uszkodzenia. Właśnie dlatego
-        postawiłem na profesjonalną{" "}
+      </h2>
+      <p className={classes.textShadow}>
+        W <strong>MK Studio Auto Detailing</strong> doskonale rozumiem, że
+        lakier samochodowy to coś więcej niż tylko sam kolor. To wizytówka
+        Twojego pojazdu, która z czasem traci blask i jest narażona na
+        uszkodzenia. Właśnie dlatego postawiłem na profesjonalną{" "}
         <strong>
           <Link href="/oferta/powloka-ceramiczna">powłokę ceramiczną</Link>
         </strong>
@@ -58,14 +58,14 @@ export default function CeramicCoatingPost() {
         gwarantując tym najwyższą jakość i trwałość.
       </p>
 
-      <h2>
+      <h2 className={classes.blogTitle}>
         Mój proces aplikacji powłoki ceramicznej – precyzja i doświadczenie
       </h2>
-      <p>
+      <p className={classes.textShadow}>
         Aplikacja powłoki ceramicznej to skomplikowany, wieloetapowy proces,
-        który wymaga precyzji i odpowiednich warunków. W MK Studio Auto
-        Detailing nie idę na skróty – każdy krok jest dla mnie kluczowy aby
-        uzyskać perfekcję i trwały efekt.
+        który wymaga precyzji i odpowiednich warunków. W{" "}
+        <strong> MK Studio Auto Detailing</strong> nie idę na skróty – każdy
+        krok jest dla mnie kluczowy aby uzyskać perfekcję i trwały efekt.
       </p>
       <ul>
         <li>
@@ -107,10 +107,13 @@ export default function CeramicCoatingPost() {
         </li>
       </ul>
 
-      <h2>Dlaczego warto wybrać moje powłoki ceramiczne?</h2>
-      <p>
-        Aplikacja powłoki ceramicznej w moim studio MK Studio Auto Detailing w
-        Opolu to inwestycja w przyszłość Twojego samochodu. Zyskujesz:
+      <h2 className={classes.blogTitle}>
+        Dlaczego warto wybrać moje powłoki ceramiczne?
+      </h2>
+      <p className={classes.textShadow}>
+        Aplikacja powłoki ceramicznej w moim studio{" "}
+        <strong>MK Studio Auto Detailing</strong> w Opolu to inwestycja w
+        przyszłość Twojego samochodu. Zyskujesz:
         <br />- <strong>Długotrwała ochrona</strong>: Powłoka chroni lakier
         przed drobnymi zarysowaniami, ptasimi odchodami, solą drogową,
         promieniowaniem UV i kwaśnymi deszczami.
@@ -125,24 +128,30 @@ export default function CeramicCoatingPost() {
         wyglądał jak nowy przez długi czas.
       </p>
 
-      <h2>Opinie zadowolonych klientów</h2>
+      <h2 className={classes.blogTitle}>Opinie zadowolonych klientów</h2>
       <blockquote>
-        <p>„Mila profesjonalna obsluga auto Jak z salonu polecam”</p>
+        <p className={classes.textShadowD}>
+          „Mila profesjonalna obsluga auto Jak z salonu polecam”
+        </p>
         <cite>– Piotr - Pavel Konobrock</cite>
       </blockquote>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Polecam firmę. Jestem zadowolona z wykonanych usług w moim aucie, I
           profesjonalnym podejściu do klienta. Szybki termin , niskie ceny.”
         </p>
         <cite>– Joanna Dec</cite>
       </blockquote>
 
-      <h2>Chcesz zabezpieczyć swój samochód? Skontaktuj się ze mną!</h2>
+      <h2 className={classes.blogContactTitle}>
+        Chcesz zabezpieczyć swój samochód? Skontaktuj się ze mną!
+      </h2>
       <p className={classes.contactInfo}>
         Zapraszam do kontaktu, jeśli chcesz dowiedzieć się więcej o{" "}
-        <Link href="/oferta/powloka-ceramiczna">powłoce ceramicznej</Link>,
-        omówić szczegóły oferty lub umówić się na indywidualną wycenę w moim
+        <Link href="/oferta/powloka-ceramiczna" className={classes.textLink}>
+          powłoce ceramicznej
+        </Link>
+        , omówić szczegóły oferty lub umówić się na indywidualną wycenę w moim
         studio w Opolu.
       </p>
       <div className={classes.contactDetails}>

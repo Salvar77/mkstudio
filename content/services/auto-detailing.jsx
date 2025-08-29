@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import classes from "../../app/oferta/[slug]/page.module.scss";
-import Link from "next/link"; // Dodany import Link
+import Link from "next/link";
 
 export const meta = {
   title:
-    "Auto Detailing w Opolu – Kompleksowa Metamorfoza Auta | MK Studio Detailing",
+    "Auto Detailing w Opolu – Kompleksowa Metamorfoza Auta | MK Studio Auto Detailing",
   hero: "/logo-mkstudio-auto-detailing-opole.jpg",
   heroAltText:
     "Profesjonalny auto detailing w Opolu. Logo MK Studio Auto Detailing.",
@@ -91,11 +91,11 @@ export default function AutoDetailingPage() {
         <div className={classes.contentSection__text}>
           <h2>Dlaczego Warto Wybrać Moje Studio w Opolu?</h2>
           <p>
-            Wybierając MK Studio Detailing, stawiasz na moją pasję, precyzję i
-            niekwestionowane doświadczenie. Jestem dumny z każdego auta, które
-            opuszcza mój salon, lśniące jak nowe. Co mnie wyróżnia?
+            Wybierając MK Studio Auto Detailing, stawiasz na moją pasję,
+            precyzję i niekwestionowane doświadczenie. Jestem dumny z każdego
+            auta, które opuszcza mój salon, lśniące jak nowe. Co mnie wyróżnia?
           </p>
-          <ul>
+          <ul className={classes.newBlackText}>
             <li>
               <strong>
                 Ponad 10 Lat Doświadczenia w{" "}
@@ -108,9 +108,8 @@ export default function AutoDetailingPage() {
             <li>
               <strong>Certyfikowane Kosmetyki Premium:</strong> Używam wyłącznie
               sprawdzonych, profesjonalnych produktów wiodących marek (np.
-              Koch-Chemie, FX Protect, Gtechniq - jeśli możesz wymienić
-              konkretne). To gwarancja bezpieczeństwa dla lakieru i wnętrza
-              pojazdu, oraz trwałych efektów.
+              Koch-Chemie, FX Protect, Gtechniq). To gwarancja bezpieczeństwa
+              dla lakieru i wnętrza pojazdu, oraz trwałych efektów.
             </li>
             <li>
               <strong>
@@ -135,7 +134,8 @@ export default function AutoDetailingPage() {
               życzliwość szczerze mnie ujęły. 👍👍&rdquo;
             </p>
             <footer>
-              &mdash; <cite>Andreas Krefft, Opole</cite>
+              &mdash;{" "}
+              <cite className={classes.quoteText}>Andreas Krefft, Opole</cite>
             </footer>
           </blockquote>
 
@@ -143,8 +143,8 @@ export default function AutoDetailingPage() {
           <div>
             <p className={classes.contentSection__textP}>
               Wszystkie usługi wykonuję osobiście – <strong>Kamil</strong>,
-              właściciel MK Studio Detailing. Masz pewność, że Twoje auto trafia
-              w ręce fachowca z pasją i doświadczeniem.
+              właściciel MK Studio Auto Detailing. Masz pewność, że Twoje auto
+              trafia w ręce fachowca z pasją i doświadczeniem.
             </p>
             <p className={classes.contentSection__textP}>
               Moja wiedza i umiejętności zdobyte przez lata pracy w branży auto

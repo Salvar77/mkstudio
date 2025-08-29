@@ -7,13 +7,42 @@
   text-shadow: 0.3rem 0.3rem 0.6rem rgba($dark-smooth, 0.9);
   font-size: 1.9rem;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.1rem 2rem;
+    }
+    .poweredByLink {
+      color: $white-smooth;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: lighten($white-smooth, 10%);
+      }
+    }
+  }
+
+  &__poweredByInfo {
+    text-align: center;
+  }
+
   &__text {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0.1rem;
-    font-weight: bold;
 
     &Info {
       margin-top: 0.7em;
@@ -39,8 +68,6 @@
   box-shadow: 0.3rem 0.4rem 0.8rem rgba(235, 232, 232, 0.1);
   padding: 2rem;
   text-align: center;
-
-  // background: linear-gradient(20deg, $new-black, $new-black, $grey-smooth);
 
   &__link {
     text-decoration: none;

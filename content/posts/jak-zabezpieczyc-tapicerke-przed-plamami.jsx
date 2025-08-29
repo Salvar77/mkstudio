@@ -40,22 +40,24 @@ export const meta = {
 export default function PreventStainsPost() {
   return (
     <>
-      <h2>
+      <h2 className={classes.blogTitle}>
         Jak skutecznie zabezpieczyć tapicerkę samochodową przed trwałymi
         plamami?
       </h2>
-      <p>
-        Nazywam się Kamil i w MK Studio Auto Detailing w Opolu doskonale wiem,
-        że tapicerka samochodowa jest jednym z najbardziej narażonych na
-        zabrudzenia elementów wnętrza. Jako specjalista z ponad dekadą
-        doświadczenia, oferuję kompleksowe rozwiązania, które nie tylko usuwają
-        istniejące plamy, ale przede wszystkim skutecznie zabezpieczają
+      <p className={classes.textShadow}>
+        Nazywam się Kamil i w <strong>MK Studio Auto Detailing</strong> w Opolu
+        doskonale wiem, że tapicerka samochodowa jest jednym z najbardziej
+        narażonych na zabrudzenia elementów wnętrza. Jako specjalista z ponad
+        dekadą doświadczenia, oferuję kompleksowe rozwiązania, które nie tylko
+        usuwają istniejące plamy, ale przede wszystkim skutecznie zabezpieczają
         tapicerkę na przyszłość. Moja ekspertyza w auto detailingu pozwala mi na
         profesjonalne podejście do każdego rodzaju materiału.
       </p>
 
-      <h2>Dlaczego profesjonalna ochrona tapicerki to priorytet?</h2>
-      <p>
+      <h2 className={classes.blogTitle}>
+        Dlaczego profesjonalna ochrona tapicerki to priorytet?
+      </h2>
+      <p className={classes.textShadow}>
         Wiele osób nie zdaje sobie sprawy, że codzienne użytkowanie samochodu
         może powodować nieodwracalne uszkodzenia tapicerki samochodowej. Wylane
         napoje, tłuste jedzenie czy kurz mogą wniknąć głęboko we włókna,
@@ -65,7 +67,9 @@ export default function PreventStainsPost() {
         cieczy, co pozwala zachować świeży wygląd wnętrza na lata.
       </p>
 
-      <h2>Moje efektywne metody zabezpieczania i pielęgnacji tapicerki</h2>
+      <h2 className={classes.blogTitle}>
+        Moje efektywne metody zabezpieczania i pielęgnacji tapicerki
+      </h2>
       <ul>
         <li>
           <Wrench className="icon" />
@@ -102,62 +106,72 @@ export default function PreventStainsPost() {
         </li>
       </ul>
 
-      <h2>Mój profesjonalny schemat działania – krok po kroku</h2>
-      <p>
+      <h2 className={classes.blogTitle}>
+        Mój profesjonalny schemat działania – krok po kroku
+      </h2>
+      <p className={classes.textShadow}>
         W MK Studio, każda usługa jest przeze mnie precyzyjnie zaplanowana, aby
         zapewnić najlepsze rezultaty.
         <br />
-        1. **Dokładna diagnostyka{" "}
-        <Link href="/oferta/renowacja-i-czyszczenie-skor">stanu tapicerki</Link>
-        ** – identyfikuję rodzaj materiału oraz poziom i charakter zabrudzeń.
+        1.{" "}
+        <strong>
+          Dokładna diagnostyka{" "}
+          <Link href="/oferta/renowacja-i-czyszczenie-skor">
+            stanu tapicerki
+          </Link>
+        </strong>{" "}
+        – identyfikuję rodzaj materiału oraz poziom i charakter zabrudzeń.
         <br />
-        2. **Wstępne czyszczenie i odkurzanie** – usuwam wszystkie luźne
-        zanieczyszczenia, które mogłyby przeszkadzać w dalszych etapach pracy.
+        2. <strong>Wstępne czyszczenie i odkurzanie</strong> – usuwam wszystkie
+        luźne zanieczyszczenia, które mogłyby przeszkadzać w dalszych etapach
+        pracy.
         <br />
-        3. **Aplikacja specjalistycznych środków** – używam odpowiednich
-        środków, które dogłębnie penetrują zabrudzenia w tapicerce,
+        3. <strong>Aplikacja specjalistycznych środków</strong> – używam
+        odpowiednich środków, które dogłębnie penetrują zabrudzenia w tapicerce,
         rozpuszczając je od wewnątrz.
         <br />
-        4. **Impregnacja i zabezpieczenie** – nakładam warstwy ochronne, które
-        tworzą barierę hydrofobową i utrwalają efekt czyszczenia.
+        4. <strong>Impregnacja i zabezpieczenie</strong> – nakładam warstwy
+        ochronne, które tworzą barierę hydrofobową i utrwalają efekt
+        czyszczenia.
         <br />
-        5. **Ostateczna kontrola jakości** – sprawdzam efektywność impregnacji
-        (np. test wodoodporności) i dbam o najmniejsze detale wykończenia.
+        5. <strong>Ostateczna kontrola jakości</strong> – sprawdzam efektywność
+        impregnacji (np. test wodoodporności) i dbam o najmniejsze detale
+        wykończenia.
       </p>
 
-      <h2>Lokalizacja i Obszar Działania</h2>
-      <p>
-        Jako lokalny ekspert, obsługuję klientów z **Opola** i okolic, w tym
-        także z **Ozimka, Prószkowa, Komprachcic i Lubnian**. Działam również
-        mobilnie, dojeżdżając z pełnym, profesjonalnym wyposażeniem do dzielnic
-        takich jak **Zaodrze, Wrzoski, Malina i Półwieś**, co zapewnia
-        maksymalną wygodę i oszczędność Twojego czasu.
+      <h2 className={classes.blogTitle}>Lokalizacja i Obszar Działania</h2>
+      <p className={classes.textShadow}>
+        Jako lokalny ekspert, obsługuję klientów z <strong>Opola</strong> i
+        okolic, w tym także z{" "}
+        <strong>Ozimka, Prószkowa, Komprachcic i Lubnian</strong>. Działam
+        również mobilnie, dojeżdżając z pełnym, profesjonalnym wyposażeniem do
+        dzielnic takich jak <strong>Zaodrze, Wrzoski, Malina i Półwieś</strong>,
+        co zapewnia maksymalną wygodę i oszczędność Twojego czasu.
       </p>
-
-      <h2>Gwarancja jakości i zaufania</h2>
-      <p>
+      <h2 className={classes.blogTitleC}>Gwarancja jakości i zaufania</h2>
+      <p className={classes.textShadowC}>
         Moje doświadczenie i zaangażowanie w każdy projekt są gwarancją
         satysfakcji. Pracuję wyłącznie na profesjonalnych produktach
-        renomowanych marek, takich jak **Tenzi, ProElite, Gyeon, ADBL**, co
-        zapewnia bezpieczeństwo dla Twojego samochodu i trwały, estetyczny
-        efekt.
+        renomowanych marek, takich jak{" "}
+        <strong>Tenzi, ProElite, Gyeon, ADBL</strong>, co zapewnia
+        bezpieczeństwo dla Twojego samochodu i trwały, estetyczny efekt.
       </p>
 
-      <h2>Co mówią o mnie zaufani klienci?</h2>
-      <p>
+      <h2 className={classes.blogTitleC}>Co mówią o mnie zaufani klienci?</h2>
+      <p className={classes.textShadowC}>
         Zaufanie moich klientów buduję na jakości i rzetelności. Poniżej
         znajdziesz kilka opinii, które pokazują, że moje usługi są wysoko
         oceniane.
       </p>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Zdecydowanie polecam MK Studio ! Profesjonalna obsługa i skuteczne
           usługi. Mój samochód niczym nowy po wizycie u was :) Dzięki !”
         </p>
         <cite>– Łukasz Kuś</cite>
       </blockquote>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Oddałam zakupiony samochód do czyszczenia. Panowie kontaktowali się i
           informowali co i jak, sprawdzili każde miejsce w samochodzie. W
           momencie sprawdzania bagażnika, okazało się, że w miejscu koła
@@ -169,7 +183,9 @@ export default function PreventStainsPost() {
         </p>
         <cite>– Dominika Suchodolska</cite>
       </blockquote>
-      <h2>Masz pytania? Skontaktuj się z ekspertem od tapicerki</h2>
+      <h2 className={classes.blogContactTitle}>
+        Masz pytania? Skontaktuj się z ekspertem od tapicerki
+      </h2>
       <p className={classes.contactInfo}>
         Jeśli potrzebujesz indywidualnej wyceny, chcesz dowiedzieć się więcej o
         procesie zabezpieczania tapicerki lub masz inne pytania, zapraszam do

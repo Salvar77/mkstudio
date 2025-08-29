@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import classes from "../../app/oferta/[slug]/page.module.scss";
-import Link from "next/link"; // Dodany import Link do linkowania wewnętrznego
+import Link from "next/link";
 
 export const meta = {
   title:
-    "Renowacja i Czyszczenie Skór w Opolu – Przywróć Blask Tapicerce | MK Studio Detailing",
+    "Renowacja i Czyszczenie Skór w Opolu – Przywróć Blask Tapicerce | MK Studio Auto Detailing",
   hero: "/logo-mkstudio-auto-detailing-opole.jpg",
   heroAltText:
     "Renowacja i czyszczenie skór w Opolu. Logo MK Studio Detailing.",
@@ -103,8 +103,7 @@ export default function RenowacjaCzyszczenieSkorPage() {
             <li>
               <strong>Specjalistyczne Produkty:</strong> Korzystam wyłącznie z
               profesjonalnych, certyfikowanych produktów renomowanych marek (np.
-              Colourlock, Gliptone, Leatherique - jeśli możesz wymienić
-              konkretne, będzie to atut E-E-A-T).
+              Colourlock, Gliptone, Leatherique).
             </li>
             <li>
               <strong>Osobiste Zaangażowanie Właściciela:</strong> Każdą usługa
@@ -134,7 +133,7 @@ export default function RenowacjaCzyszczenieSkorPage() {
           <h3>Osobiste podejście i precyzja – klucz do sukcesu</h3>
           <div>
             <p className={classes.contentSection__textP}>
-              Jako <strong>Kamil</strong>, właściciel MK Studio Detailing,
+              Jako <strong>Kamil</strong>, właściciel MK Studio Auto Detailing,
               osobiście dbam o to, aby każda{" "}
               <Link href="/blog/renowacja-i-czyszczenie-skorzanej-tapicerki-opole">
                 tapicerka skórzana

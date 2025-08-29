@@ -4,10 +4,11 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 import Image from "next/image";
 
 export const meta = {
-  title: "Folia PPF w Opolu – Najlepsza Ochrona Lakieru | MK Studio Detailing",
+  title:
+    "Folia PPF w Opolu – Najlepsza Ochrona Lakieru | MK Studio Auto Detailing",
   hero: "/logo-mkstudio-auto-detailing-opole.jpg",
   heroAltText: "Folia PPF w Opolu. Logo MK Studio Detailing.",
-  lead: "Zabezpiecz lakier swojego samochodu folią PPF (Paint Protection Film) w MK Studio Detailing w Opolu. Oferuję profesjonalny montaż bezbarwnej folii ochronnej, która skutecznie chroni przed zarysowaniami, odpryskami, promieniami UV i drobnymi uszkodzeniami. Długotrwała ochrona i nieskazitelny wygląd Twojego auta.",
+  lead: "Zabezpiecz lakier swojego samochodu folią PPF (Paint Protection Film) w MK Studio Auto Detailing w Opolu. Oferuję profesjonalny montaż bezbarwnej folii ochronnej, która skutecznie chroni przed zarysowaniami, odpryskami, promieniami UV i drobnymi uszkodzeniami. Długotrwała ochrona i nieskazitelny wygląd Twojego auta.",
   slug: "folia-ppf-ochrona-lakieru",
 };
 
@@ -42,7 +43,7 @@ export default function FoliaPpfOchronaLakieruPage() {
               lakierze.
             </li>
             <li>
-              <strong>Ochrona przed Chemikaliami i Zanieczyszczeniami:</strong>
+              <strong>Ochrona przed Chemikaliami i Zanieczyszczeniami:</strong>{" "}
               Chronię Twój lakier przed szkodliwym działaniem ptasich odchodów,
               soków z drzew, owadów, soli drogowej i innych agresywnych
               substancji.
@@ -85,9 +86,9 @@ export default function FoliaPpfOchronaLakieruPage() {
           <h2>Proces Aplikacji Folii PPF w Moim Studio Detailingowym</h2>
           <p>
             Aplikacja folii PPF to precyzyjny proces, który wymaga
-            profesjonalnego przygotowania i doświadczenia. W MK Studio Detaling
-            dbam o każdy szczegół, aby zapewnić idealne przyleganie folii i
-            maksymalną ochronę.
+            profesjonalnego przygotowania i doświadczenia. W MK Studio Auto
+            Detaling dbam o każdy szczegół, aby zapewnić idealne przyleganie
+            folii i maksymalną ochronę.
           </p>
           <ul>
             <li>
@@ -125,11 +126,11 @@ export default function FoliaPpfOchronaLakieruPage() {
             </footer>
           </blockquote>
 
-          <h3>Usługę Wykonuję Osobiście – Kamil z MK Studio Detailing</h3>
+          <h3>Usługę Wykonuję Osobiście – Kamil z MK Studio Auto Detailing</h3>
           <div>
             <p className={classes.contentSection__textP}>
               Wszystkie usługi detailingu wnętrza i prania tapicerki wykonuję
-              osobiście – <strong>Kamil</strong>, właściciel MK Studio
+              osobiście – <strong>Kamil</strong>, właściciel MK Studio Auto
               Detailing. Dzięki temu masz pewność, że Twoje auto trafia w moje
               ręce jako fachowca z pasją i wieloletnim doświadczeniem w branży.
             </p>

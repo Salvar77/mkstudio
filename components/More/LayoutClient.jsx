@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import classes from "./LayoutClient.module.scss";
 import { usePathname } from "next/navigation";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
-import classes from "./LayoutClient.module.scss";
+import ContactBubble from "../More/ContactBubble";
 
 export default function LayoutClient({ children }) {
   const pathname = usePathname();
@@ -28,6 +29,7 @@ export default function LayoutClient({ children }) {
       )}
 
       <Footer />
+      <ContactBubble />
     </>
   );
 }

@@ -42,7 +42,9 @@ export default function Nav({ isOpen, toggleNav }) {
           <ul className={classes.links}>
             {items.map((it) => (
               <li key={it.href}>
-                <Link href={it.href}>{it.label}</Link>
+                <Link href={it.href} className={classes.navLink}>
+                  {it.label}
+                </Link>
               </li>
             ))}
           </ul>

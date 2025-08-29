@@ -40,39 +40,44 @@ export const meta = {
 export default function PaintCorrectionPost() {
   return (
     <>
-      <h2>Dlaczego warto zainwestować w korektę lakieru?</h2>
-      <p>
+      <h2 className={classes.blogTitle}>
+        Dlaczego warto zainwestować w korektę lakieru?
+      </h2>
+      <p className={classes.textShadow}>
         Nawet minimalne zarysowania i matowe wykończenie obniżają estetykę auta
-        i jego wartość rynkową. W **MK Studio Auto Detailing** stosuję
-        precyzyjne techniki{" "}
+        i jego wartość rynkową. W <strong>MK Studio Auto Detailing</strong>{" "}
+        stosuję precyzyjne techniki{" "}
         <Link href="/oferta/korekta-lakieru">polerowania</Link>, aby wyrównać
         powierzchnię, usunąć hologramy i przywrócić fabryczny połysk lakierowi.
       </p>
 
-      <h2>Proces korekty – krok po kroku</h2>
+      <h2 className={classes.blogTitle}>Proces korekty – krok po kroku</h2>
       <ul>
         <li>
-          <Wrench className="icon" /> **Analiza lakieru** – badam grubość
-          powłoki, rodzaj defektów i optymalizuję dobór past.
+          <Wrench className="icon" /> <strong>Analiza lakieru</strong> – badam
+          grubość powłoki, rodzaj defektów i optymalizuję dobór past.
         </li>
         <li>
-          <Droplet className="icon" /> **Oczyszczanie** – usuwam zabrudzenia i
-          stare powłoki ochronne.
+          <Droplet className="icon" /> <strong>Oczyszczanie</strong> – usuwam
+          zabrudzenia i stare powłoki ochronne.
         </li>
         <li>
-          <Wrench className="icon" /> **
-          <Link href="/oferta/korekta-lakieru">Polerowanie wielostopniowe</Link>
-          ** – od grubych past ściernych do ultrajemnych, by uzyskać gładką
-          taflę.
+          <Wrench className="icon" />{" "}
+          <strong>
+            <Link href="/oferta/korekta-lakieru">
+              Polerowanie wielostopniowe
+            </Link>
+          </strong>{" "}
+          – od grubych past ściernych do ultrajemnych, by uzyskać gładką taflę.
         </li>
         <li>
-          <Droplet className="icon" /> **Wykończenie** – nadanie głębokiego
-          połysku i usunięcie mikrorys na lakierze.
+          <Droplet className="icon" /> <strong>Wykończenie</strong> – nadanie
+          głębokiego połysku i usunięcie mikrorys na lakierze.
         </li>
       </ul>
 
-      <h2>Korzyści dla Twojego samochodu</h2>
-      <p>
+      <h2 className={classes.blogTitle}>Korzyści dla Twojego samochodu</h2>
+      <p className={classes.textShadow}>
         - Przywrócenie lustrzanego połysku i intensywności koloru.
         <br />
         - Usunięcie rys i hologramów.
@@ -81,16 +86,17 @@ export default function PaintCorrectionPost() {
         <br />- Wyższa wartość odsprzedaży.
       </p>
 
-      <h2>Gdzie wykonuję usługę?</h2>
-      <p>
+      <h2 className={classes.blogTitle}>Gdzie wykonuję usługę?</h2>
+      <p className={classes.textShadow}>
         Studio MK Studio Auto Detailing znajduje się w Opolu przy ul.
-        Częstochowskiej 44. Dojeżdżam również do Ozimka, Prószkowa, Komprachcic,
-        Lubnian i okolic.
+        Częstochowskiej 44. Dojeżdżam również do <strong>Ozimka</strong>,{" "}
+        <strong>Prószkowa</strong>, <strong>Komprachcic</strong>,{" "}
+        <strong>Lubnian</strong> i okolic.
       </p>
 
-      <h2>Opinie zadowolonych klientów</h2>
+      <h2 className={classes.blogTitle}>Opinie zadowolonych klientów</h2>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Szanowni! Jestem bardzo zadowolony z usług firmy MK Studio… itd. 😜
           skóry w samochodzie wyglądają, jakby nikt na nich nie siadał 🤯
           totalnie jak nowe! Lakier, pomimo że samochód nie jest nowy to super
@@ -100,19 +106,23 @@ export default function PaintCorrectionPost() {
         <cite>– Mateusz Korzeniowski</cite>
       </blockquote>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Renowacja tapicerki skorzanej na 5+. Przy okazji Pan Kamil umyl i
           nawoskowal samochod. lakier błyszczy pięknie! Polecam!”
         </p>
         <cite>– Wojtek Lipczynski</cite>
       </blockquote>
 
-      <h2>Masz pytania? Skontaktuj się ze mną</h2>
+      <h2 className={classes.blogContactTitle}>
+        Masz pytania? Skontaktuj się ze mną
+      </h2>
       <p className={classes.contactInfo}>
         Jeśli chcesz uzyskać indywidualną wycenę{" "}
-        <Link href="/oferta/korekta-lakieru">korekty lakieru</Link> lub masz
-        dodatkowe pytania, zapraszam do kontaktu w celu omówienia szczegółów i
-        wyceny usługi:
+        <Link href="/oferta/korekta-lakieru" className={classes.textLink}>
+          korekty lakieru
+        </Link>{" "}
+        lub masz dodatkowe pytania, zapraszam do kontaktu w celu omówienia
+        szczegółów i wyceny usługi:
       </p>
       <div className={classes.contactDetails}>
         <div className={classes.contactItem}>

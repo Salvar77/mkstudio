@@ -40,8 +40,10 @@ export const meta = {
 export default function LeatherRenewalPost() {
   return (
     <>
-      <h2>Kim jestem i dlaczego warto mi zaufać?</h2>
-      <p>
+      <h2 className={classes.blogTitle}>
+        Kim jestem i dlaczego warto mi zaufać?
+      </h2>
+      <p className={classes.textShadow}>
         Nazywam się Kamil z <strong>MK Studio Auto Detailing</strong> i od ponad
         dekady specjalizuję się w{" "}
         <Link href="/oferta/renowacja-i-czyszczenie-skor">
@@ -52,8 +54,8 @@ export default function LeatherRenewalPost() {
         renomowanych marek.
       </p>
 
-      <h2>Dlaczego skóra wymaga renowacji?</h2>
-      <p>
+      <h2 className={classes.blogTitle}>Dlaczego skóra wymaga renowacji?</h2>
+      <p className={classes.textShadow}>
         Skórzana tapicerka pod wpływem promieni UV, ciepła i zabrudzeń traci
         oleje naturalne, blaknie i pęka. Regularna{" "}
         <Link href="/oferta/renowacja-i-czyszczenie-skor">renowacja</Link>{" "}
@@ -61,7 +63,9 @@ export default function LeatherRenewalPost() {
         utrzymuje elegancki wygląd wnętrza na lata.
       </p>
 
-      <h2>Proces profesjonalnej renowacji i czyszczenia</h2>
+      <h2 className={classes.blogTitle}>
+        Proces profesjonalnej renowacji i czyszczenia
+      </h2>
       <ul>
         <li>
           <strong>Odkurzanie i czyszczenie wstępne</strong> – usuwam kurz i
@@ -85,8 +89,8 @@ export default function LeatherRenewalPost() {
         </li>
       </ul>
 
-      <h2>Korzyści dla Twojego auta</h2>
-      <p>
+      <h2 className={classes.blogTitle}>Korzyści dla Twojego auta</h2>
+      <p className={classes.textShadow}>
         - Odzyskanie głębi koloru i miękkości skóry.
         <br />
         - Wyrównanie i ukrycie drobnych uszkodzeń.
@@ -95,17 +99,17 @@ export default function LeatherRenewalPost() {
         <br />- Zachowanie wartości pojazdu dzięki profesjonalnej pielęgnacji.
       </p>
 
-      <h2>Gdzie działam?</h2>
-      <p>
+      <h2 className={classes.blogTitle}>Gdzie działam?</h2>
+      <p className={classes.textShadow}>
         Usługi{" "}
         <Link href="/oferta/renowacja-i-czyszczenie-skor">renowacji skóry</Link>{" "}
         wykonuję w Opolu i okolicach: Ozimek, Prószków, Komprachcice, Lubniany
         oraz w dzielnicach Zaodrze, Wrzoski, Malina i Półwieś.
       </p>
 
-      <h2>Opinie klientów</h2>
+      <h2 className={classes.blogTitle}>Opinie klientów</h2>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           Gorąco polecam usługi czyszczenia tapicerki w samochodzie. Mój
           samochód po czyszczeniu wygląda jak nowy, materiały czyste , plastiki
           czarne, wszystkie szczelinki wyczyszczone naprawdę jestem pod
@@ -114,7 +118,7 @@ export default function LeatherRenewalPost() {
         <cite>– Katarzyna Nowak</cite>
       </blockquote>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Korzystałem z usług firmy MK Studio, która zadbała o kompleksowe
           czyszczenie wnętrza oraz polerkę mojego auta, i jestem naprawdę pod
           wrażeniem! Tapicerka po praniu wygląda jak nowa – wszystkie plamy,
@@ -131,10 +135,17 @@ export default function LeatherRenewalPost() {
         <cite>– Szymon</cite>
       </blockquote>
 
-      <h2>Masz pytania? Skontaktuj się ze mną</h2>
+      <h2 className={classes.blogContactTitle}>
+        Masz pytania? Skontaktuj się ze mną
+      </h2>
       <p className={classes.contactInfo}>
         Jeśli chcesz dowiedzieć się więcej lub umówić usługę{" "}
-        <Link href="/oferta/renowacja-i-czyszczenie-skor">renowacji skóry</Link>
+        <Link
+          href="/oferta/renowacja-i-czyszczenie-skor"
+          className={classes.textLink}
+        >
+          renowacji skóry
+        </Link>
         , skontaktuj się ze mną:
       </p>
       <div className={classes.contactDetails}>

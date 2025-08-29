@@ -5,11 +5,11 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 
 export const meta = {
   title:
-    "Korekta Lakieru w Opolu – Usuwanie Rys i Hologramów | MK Studio Detailing",
+    "Korekta Lakieru w Opolu – Usuwanie Rys i Hologramów | MK Studio Auto Detailing",
   hero: "/logo-mkstudio-auto-detailing-opole.jpg",
   heroAltText:
     "Logo MK Studio Auto Detailing. Profesjonalna korekta lakieru w Opolu.",
-  lead: "Oferuję profesjonalną jedno- i wieloetapową korektę lakieru w Opolu. Skutecznie usuwam rysy, hologramy i zmatowienia, przywracając karoserii idealną gładkość i głębię koloru. Zabezpiecz swój lakier na lata z MK Studio Detailing.",
+  lead: "Oferuję profesjonalną jedno- i wieloetapową korektę lakieru w Opolu. Skutecznie usuwam rysy, hologramy i zmatowienia, przywracając karoserii idealną gładkość i głębię koloru. Zabezpiecz swój lakier na lata z MK Studio Auto Detailing.",
   slug: "korekta-lakieru",
 };
 
@@ -84,7 +84,7 @@ export default function KorektaLakieruPage() {
         <div className={classes.contentSection__text}>
           <h2>Dlaczego Warto Wybrać Korektę Lakieru w Moim Studio w Opolu?</h2>
           <p>
-            Perfekcyjny lakier to wizytówka każdego samochodu. W MK Studio
+            Perfekcyjny lakier to wizytówka każdego samochodu. W MK Studio Auto
             Detailing, dzięki wieloletniemu doświadczeniu i precyzyjnemu
             podejściu, gwarantuję efekty, które przerosną Twoje oczekiwania.
           </p>
@@ -135,7 +135,7 @@ export default function KorektaLakieruPage() {
           <h3>Osobiste zaangażowanie – gwarancja perfekcji</h3>
           <div>
             <p className={classes.contentSection__textP}>
-              Jako <strong>Kamil</strong>, właściciel MK Studio Detailing,
+              Jako <strong>Kamil</strong>, właściciel MK Studio Auto Detailing,
               osobiście nadzoruję i wykonuję każdą korektę lakieru. Moim celem
               jest nie tylko usunięcie defektów, ale także zapewnienie
               długotrwałego efektu i pełnej satysfakcji klienta.

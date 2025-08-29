@@ -4,11 +4,11 @@ import classes from "../../app/oferta/[slug]/page.module.scss";
 
 export const meta = {
   title:
-    "Pranie Tapicerki i Detailing Wnętrza w Opolu – Świeżość i Czystość | MK Studio Detailing",
+    "Pranie Tapicerki i Detailing Wnętrza w Opolu – Świeżość i Czystość | MK Studio Auto Detailing",
   hero: "/logo-mkstudio-auto-detailing-opole.jpg",
   heroAltText:
-    "Pranie tapicerki i detailing wnętrza w Opolu. Logo MK Studio Detailing.",
-  lead: "Oferuję profesjonalne pranie tapicerki samochodowej i kompleksowy detailing wnętrza w Opolu. Usuwam plamy, nieprzyjemne zapachy i bakterie, przywracając świeżość i higienę. Zadbaj o komfort i zdrowie w swoim aucie z MK Studio Detailing.",
+    "Pranie tapicerki i detailing wnętrza w Opolu. Logo MK Studio Auto Detailing.",
+  lead: "Oferuję profesjonalne pranie tapicerki samochodowej i kompleksowy detailing wnętrza w Opolu. Usuwam plamy, nieprzyjemne zapachy i bakterie, przywracając świeżość i higienę. Zadbaj o komfort i zdrowie w swoim aucie z MK Studio Auto Detailing.",
   slug: "pranie-tapicerki",
 };
 
@@ -26,7 +26,7 @@ export default function PranieTapicerkiPage() {
           <p>
             Wnętrze samochodu to Twoja osobista przestrzeń, która z czasem
             gromadzi kurz, brud, alergeny i nieprzyjemne zapachy. W MK Studio
-            Detailing w Opolu oferuję profesjonalne pranie tapicerki
+            Auto Detailing w Opolu oferuję profesjonalne pranie tapicerki
             samochodowej oraz kompleksowy detailing wnętrza, który przywróci
             Twojemu autu higieniczną czystość, świeżość i komfort.
           </p>
@@ -90,8 +90,8 @@ export default function PranieTapicerkiPage() {
           <h2>Dlaczego Warto Wybrać Detailing Wnętrza w MK Studio w Opolu?</h2>
           <p>
             Czyste i zadbane wnętrze samochodu to nie tylko estetyka, ale także
-            zdrowie i komfort podróżowania. W MK Studio Detailing dbam o każdy
-            szczegół, abyś mógł cieszyć się nieskazitelną czystością.
+            zdrowie i komfort podróżowania. W MK Studio Auto Detailing dbam o
+            każdy szczegół, abyś mógł cieszyć się nieskazitelną czystością.
           </p>
           <ul>
             <li>
@@ -134,7 +134,7 @@ export default function PranieTapicerkiPage() {
             </footer>
           </blockquote>
 
-          <h3>Usługę Wykonuje Właściciel – Kamil z MK Studio Detailing</h3>
+          <h3>Usługę Wykonuje Właściciel – Kamil z MK Studio Auto Detailing</h3>
           <div>
             <p className={classes.contentSection__textP}>
               Wszystkie usługi{" "}
@@ -142,8 +142,8 @@ export default function PranieTapicerkiPage() {
                 detailingu wnętrza i prania tapicerki
               </Link>{" "}
               wykonuję osobiście – <strong>Kamil</strong>, właściciel MK Studio
-              Detailing. Dzięki temu masz pewność, że Twoje auto trafia w ręce
-              fachowca z pasją i wieloletnim doświadczeniem w branży.
+              Auto Detailing. Dzięki temu masz pewność, że Twoje auto trafia w
+              ręce fachowca z pasją i wieloletnim doświadczeniem w branży.
             </p>
             <p className={classes.contentSection__textP}>
               Moja wiedza i umiejętności, doskonalone przez lata pracy z

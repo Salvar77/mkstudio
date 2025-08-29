@@ -33,11 +33,11 @@ export const meta = {
 export default function PpfProtectionPost() {
   return (
     <>
-      <h1>
+      <h2 className={classes.blogTitle}>
         Folia PPF w Opolu: Niewidzialna ochrona, która zachowuje wartość Twojego
         samochodu
-      </h1>
-      <p>
+      </h2>
+      <p className={classes.textShadow}>
         Jako Kamil z <strong>MK Studio Auto Detailing</strong>, wiem, że lakier
         to jeden z najcenniejszych elementów zewnętrznych każdego pojazdu. To on
         jest najbardziej narażony na uszkodzenia mechaniczne – odpryski od
@@ -53,8 +53,11 @@ export default function PpfProtectionPost() {
         niewidoczna.
       </p>
 
-      <h2>Proces montażu folii PPF w MK Studio – precyzja, która chroni</h2>
-      <p>
+      <h2 className={classes.blogTitle} s>
+        Proces montażu folii PPF w MK Studio Auto Detailing – precyzja, która
+        chroni
+      </h2>
+      <p className={classes.textShadow}>
         Montaż folii PPF to sztuka wymagająca nie tylko precyzji, doświadczenia
         ale i odpowiednich warunków. W moim studio w Opolu dbam o każdy
         szczegół, aby folia idealnie przylegała do powierzchni, bez pęcherzyków
@@ -91,10 +94,12 @@ export default function PpfProtectionPost() {
         </li>
       </ul>
 
-      <h2>Dlaczego folia PPF to najlepsza inwestycja w ochronę?</h2>
-      <p>
-        Aplikacja folii PPF w MK Studio to gwarancja długotrwałej ochrony.
-        Kluczowe zalety to:
+      <h2 className={classes.blogTitle}>
+        Dlaczego folia PPF to najlepsza inwestycja w ochronę?
+      </h2>
+      <p className={classes.textShadow}>
+        Aplikacja folii PPF w <strong>MK Studio Auto Detailing</strong> to
+        gwarancja długotrwałej ochrony. Kluczowe zalety to:
         <br />- <strong>Samoregenerująca powłoka</strong>: Folie nowej generacji
         posiadają zdolność do samoregeneracji – drobne rysy i zarysowania
         znikają pod wpływem ciepła, np. słońca lub ciepłej wody.
@@ -111,8 +116,10 @@ export default function PpfProtectionPost() {
         folii jest hydrofobowa, co ułatwia mycie i pielęgnację.
       </p>
 
-      <h2>Gdzie świadczę usługę montażu folii PPF?</h2>
-      <p>
+      <h2 className={classes.blogTitleD}>
+        Gdzie świadczę usługę montażu folii PPF?
+      </h2>
+      <p className={classes.textShadowB}>
         Kompleksowy montaż{" "}
         <Link href="/oferta/folia-ppf-ochrona-lakieru">
           folii ochronnej PPF
@@ -124,19 +131,23 @@ export default function PpfProtectionPost() {
         warunki.
       </p>
 
-      <h2>Opinie klientów</h2>
+      <h2 className={classes.blogTitleD}>Opinie klientów</h2>
       <blockquote>
-        <p>„Auto czyściutkie. Mega polecam napewno jeszcze skorzystam 😍”</p>
+        <p className={classes.textShadowD}>
+          „Auto czyściutkie. Mega polecam napewno jeszcze skorzystam 😍”
+        </p>
         <cite>– Karolina Idziorek</cite>
       </blockquote>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Bardzo polecam. Idealnie wykonana praca bez żadnych zastrzeżeń.👍”
         </p>
         <cite>– krzysiek feliks</cite>
       </blockquote>
 
-      <h2>Chcesz zabezpieczyć swój samochód na lata? Skontaktuj się ze mną!</h2>
+      <h2 className={classes.blogContactTitle}>
+        Chcesz zabezpieczyć swój samochód na lata? Skontaktuj się ze mną!
+      </h2>
       <p className={classes.contactInfo}>
         Jeśli chcesz dowiedzieć się więcej o folii PPF, omówić opcje jej montażu
         lub uzyskać indywidualną wycenę dla swojego samochodu, zapraszam do

@@ -33,12 +33,13 @@
     }
 
     ul {
+      text-shadow: 0.15rem 0.15rem 0.2rem $dark-smooth;
       li {
         a {
-          color: $gold-main;
+          color: lighten($gold-main, 10%);
           transition: color 0.3s ease, text-decoration 0.3s ease;
           &:hover {
-            color: darken($gold-main, 10%);
+            color: darken($gold-main, 1%);
             text-decoration: underline;
           }
         }
@@ -48,11 +49,11 @@
     p,
     li {
       a {
-        color: $gold-main;
+        color: lighten($gold-main, 10%);
         transition: color 0.3s ease, text-decoration 0.3s ease;
 
         &:hover {
-          color: darken($gold-main, 10%);
+          color: darken($gold-main, 1%);
           text-decoration: underline;
         }
       }
@@ -105,15 +106,12 @@
   }
 
   h2 {
-    padding: 0.5rem;
+    padding: 1rem;
     border-bottom: 2px solid $white-smooth;
-    text-shadow: 0.15rem 0.15rem 0.2rem $dark-smooth;
   }
 
   p {
-    padding: 2rem;
-    box-shadow: 0.2rem 0.2rem 0.4rem $grey-smooth;
-    text-shadow: 0.1rem 0.1rem 0.15rem $dark-smooth;
+    padding: 1.5rem;
 
     & > strong {
       display: inline;
@@ -125,6 +123,7 @@
 
   ul {
     li {
+      padding: 1rem;
       list-style: none;
     }
   }
@@ -260,7 +259,6 @@
     display: block;
     margin-top: 2rem;
     font-weight: 600;
-    // color: $blue-after;
     font-size: 1.4rem;
     font-style: normal;
     text-align: right;
@@ -275,8 +273,13 @@
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid rgba($white-smooth, 0.2);
-  color: $white-smooth;
+  color: $dark-smooth;
   text-align: center;
+  font-weight: bold;
+
+  .textLink {
+    color: $white-smooth;
+  }
 }
 
 .contactDetails {
@@ -296,7 +299,7 @@
 .contactItem {
   display: flex;
   align-items: center;
-  color: $white-smooth;
+  color: $dark-smooth;
   font-weight: bold;
   margin-bottom: 1rem;
 
@@ -346,6 +349,58 @@
   margin-right: 0.7rem;
   width: 2.3rem;
   height: 2.3rem;
+}
+
+.blogTitle {
+  padding: 1rem;
+  text-shadow: 0.15rem 0.15rem 0.2rem $dark-smooth;
+
+  &C {
+    color: $white-smooth;
+  }
+
+  &D {
+    color: $dark-smooth;
+  }
+}
+
+.blogContactTitle {
+  text-align: center;
+  color: $dark-smooth;
+}
+
+.textShadow {
+  line-height: 1.6;
+  text-shadow: 0.15rem 0.15rem 0.3rem $dark-smooth;
+  box-shadow: 0 0.5rem 1rem rgba($new-black, 0.2),
+    0 0.1rem 0.2rem rgba($gold-main, 0.15);
+
+  &B {
+    color: $dark-smooth;
+    box-shadow: 0 0.5rem 1rem rgba($new-black, 0.2),
+      0 0.1rem 0.2rem rgba($gold-main, 0.15);
+    font-weight: bold;
+  }
+
+  &C {
+    box-shadow: 0 0.5rem 1rem rgba($new-black, 0.2),
+      0 0.1rem 0.2rem rgba($gold-main, 0.15);
+    color: $white-smooth;
+  }
+
+  &D {
+    color: $dark-smooth;
+    text-shadow: none;
+    font-weight: bold;
+
+    .textLink {
+      color: $white-smooth;
+    }
+  }
+}
+
+.hours {
+  color: $new-black;
 }
 
 @media (min-width: 992px) {
@@ -404,7 +459,6 @@
       img {
         display: none;
       }
-      // background-image: url("https://placehold.co/1200x800/2a3541/ffffff?text=Wstaw+tutaj+adres+swojego+obrazka");
       background-size: cover;
       background-attachment: fixed;
       height: 60rem;
@@ -483,6 +537,30 @@
 
     .backButton {
       font-size: 2rem;
+    }
+  }
+
+  .blogTitle {
+    text-align: left;
+    &C {
+      color: $dark-smooth;
+    }
+  }
+  .blogContactTitle {
+    text-align: left;
+  }
+
+  .contactInfo {
+    text-align: left;
+
+    .textLink {
+      color: $white-smooth;
+    }
+  }
+  .textShadow {
+    &C {
+      color: $dark-smooth;
+      font-weight: bold;
     }
   }
 }

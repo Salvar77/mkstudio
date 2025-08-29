@@ -22,6 +22,18 @@ const Footer = () => {
             Korekta lakieru
           </p>
         </div>
+        <div className={classes.footer__poweredBy}>
+          <p className={classes.footer__poweredByInfo}>
+            Powered by{" "}
+            <a
+              href="https://www.searchit.pl/"
+              className={classes.poweredByLink}
+            >
+              Search IT
+            </a>{" "}
+            - Strony i Sklepy WWW
+          </p>
+        </div>
       </div>
       <div className={classes.policy}>
         <Link

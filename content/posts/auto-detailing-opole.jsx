@@ -41,10 +41,12 @@ export const meta = {
 export default function AutoDetailingPost() {
   return (
     <>
-      <h2>Kompleksowy Auto Detailing w Opolu: Co Obejmuje Moja Oferta?</h2>
-      <p>
-        Nazywam się Kamil i w MK Studio w Opolu doskonale rozumiem, że
-        kompleksowy{" "}
+      <h2 className={classes.blogTitle}>
+        Kompleksowy Auto Detailing w Opolu: Co Obejmuje Moja Oferta?
+      </h2>
+      <p className={classes.textShadow}>
+        Nazywam się Kamil i w <strong>MK Studio Auto Detailing</strong> w Opolu
+        doskonale rozumiem, że kompleksowy{" "}
         <strong>
           <Link href="/oferta/auto-detailing">auto detailing</Link>
         </strong>{" "}
@@ -55,8 +57,8 @@ export default function AutoDetailingPost() {
         zewnętrze Twojego pojazdu, aby każdy element był perfekcyjnie zadbany.
       </p>
 
-      <h2>
-        Specjalistyczne Usługi Auto Detailingu – Gwarancja Jakości ode Mnie
+      <h2 className={classes.blogTitle}>
+        Specjalistyczne Usługi Auto Detailingu – Jakość Gwarantowana Przeze Mnie
       </h2>
       <ul>
         <li>
@@ -109,10 +111,10 @@ export default function AutoDetailingPost() {
         </li>
       </ul>
 
-      <h2>
+      <h2 className={classes.blogTitle}>
         Dlaczego warto wybrać MK Studio w Opolu? Korzyści z Mojego Detailingu
       </h2>
-      <p>
+      <p className={classes.textShadow}>
         Wybór profesjonalnego auto detailingu w MK Studio to inwestycja w wygląd
         i trwałość Twojego pojazdu. Gwarantuję pełną ochronę i znacznie
         łatwiejsze utrzymanie czystości, co przekłada się na oszczędność czasu.
@@ -121,8 +123,10 @@ export default function AutoDetailingPost() {
         jego wartość rynkową.
       </p>
 
-      <h2>Lokalizacja i Obszar Mojego Działania</h2>
-      <p>
+      <h2 className={classes.blogTitleC}>
+        Lokalizacja i Obszar Mojego Działania
+      </h2>
+      <p className={classes.textShadowC}>
         Jestem dumny, że mogę służyć mieszkańcom Opola i okolic jako zaufany
         warsztat auto detailingu. Działam na terenie miasta oraz w
         miejscowościach takich jak Ozimek, Prószków, Komprachcice i Lubniany.
@@ -130,13 +134,13 @@ export default function AutoDetailingPost() {
         profesjonalnym wyposażeniem.
       </p>
 
-      <h2>Oceny i Opinie Zaufanych Klientów</h2>
-      <p>
+      <h2 className={classes.blogTitleC}>Oceny i Opinie Zaufanych Klientów</h2>
+      <p className={classes.textShadowC}>
         Zaufanie moich klientów jest dla mnie najważniejsze. Sprawdź, co mówią
         osoby, które powierzyły mi swoje samochody.
       </p>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Z całego serca polecam Salon. Samochód zyskał blask, tapicerka jak
           nowa. Fachowość, kompetencja, czas wykonania i życzliwość szczerze
           mnie ujęły. 👍👍”
@@ -144,7 +148,7 @@ export default function AutoDetailingPost() {
         <cite>– Andreas Krefft</cite>
       </blockquote>
       <blockquote>
-        <p>
+        <p className={classes.textShadowD}>
           „Oddałem do czyszczenia wnętrza drugie auto i tak jak w pierwszym
           przypadku, jestem bardzo zadowolony z jakości wykonanej usługi.
           Szybko, profesjonalnie i w przyzwoitej cenie. Polecam.”
@@ -152,7 +156,9 @@ export default function AutoDetailingPost() {
         <cite>– Marcin Rozycki</cite>
       </blockquote>
 
-      <h2>Skontaktuj się ze Mną, Ekspertem od Auto Detailingu w Opolu</h2>
+      <h2 className={classes.blogContactTitle}>
+        Skontaktuj się ze Mną, Ekspertem od Auto Detailingu w Opolu
+      </h2>
       <p className={classes.contactInfo}>
         Gotowy, aby doświadczyć różnicy? Potrzebujesz szczegółowej wyceny lub
         chcesz omówić plan pielęgnacji Twojego samochodu? Zapraszam do kontaktu:
