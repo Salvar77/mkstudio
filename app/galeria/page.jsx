@@ -24,57 +24,48 @@ const Galeria = () => {
     <div className={classes.background}>
       <section id="galeria" className={classes.realizations}>
         <h1>Galeria</h1>
-        <motion.div
-          variants={staggerContainer(0.2, 0.3)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className={classes.realizations__wrapper}
-        >
-          {realizationsData.map((realization, index) => (
-            <TiltedCard
-              key={realization.id}
-              realization={realization}
-              index={index}
-              isDesktop={isDesktop}
-            />
-          ))}
-        </motion.div>
+
+        <div className={classes.realizations__wrapper}>
+          {realizationsData.map((realization, index) => {
+            if (isDesktop) {
+              return (
+                <AnimatedCard
+                  key={realization.id}
+                  realization={realization}
+                  index={index}
+                />
+              );
+            } else {
+              return (
+                <MobileCard key={realization.id} realization={realization} />
+              );
+            }
+          })}
+        </div>
       </section>
     </div>
   );
 };
 
-// Nowy komponent TiltedCard
-const TiltedCard = ({ realization, index, isDesktop }) => {
+const AnimatedCard = ({ realization, index }) => {
   const cardRef = useRef(null);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-
   const rotateX = useSpring(0, { damping: 30, stiffness: 100, mass: 2 });
   const rotateY = useSpring(0, { damping: 30, stiffness: 100, mass: 2 });
   const scale = useSpring(1, { damping: 30, stiffness: 100, mass: 2 });
 
   const handleMouseMove = (e) => {
-    if (!cardRef.current || !isDesktop) return;
+    if (!cardRef.current) return;
     const rect = cardRef.current.getBoundingClientRect();
     const offsetX = e.clientX - rect.left - rect.width / 2;
     const offsetY = e.clientY - rect.top - rect.height / 2;
-
     const rotationX = (offsetY / rect.height) * -30;
     const rotationY = (offsetX / rect.width) * 30;
-
     rotateX.set(rotationX);
     rotateY.set(rotationY);
   };
 
-  const handleMouseEnter = () => {
-    if (!isDesktop) return;
-    scale.set(1.1);
-  };
-
+  const handleMouseEnter = () => scale.set(1.1);
   const handleMouseLeave = () => {
-    if (!isDesktop) return;
     scale.set(1);
     rotateX.set(0);
     rotateY.set(0);
@@ -86,7 +77,10 @@ const TiltedCard = ({ realization, index, isDesktop }) => {
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      variants={slideRotateY(index * 0.1, 0.5, index, 100, 30, isDesktop)}
+      variants={slideRotateY(index * 0.1, 0.5, index, 100, 30)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
       className={classes.realizations__item}
       style={{
         transformStyle: "preserve-3d",
@@ -98,11 +92,7 @@ const TiltedCard = ({ realization, index, isDesktop }) => {
     >
       <div
         className={`${classes.realizations__imageWrapper} ${
-          isDesktop && realization.customClass
-            ? classes[realization.customClass]
-            : realization.mobileClass
-            ? classes[realization.mobileClass]
-            : ""
+          realization.customClass ? classes[realization.customClass] : ""
         }`}
         style={{ backgroundImage: realization.gradient }}
       >
@@ -114,7 +104,7 @@ const TiltedCard = ({ realization, index, isDesktop }) => {
         />
         <motion.div
           className={classes.realizations__content}
-          style={{ transform: "translateZ(20px)" }} // Usunięto warunek na opacity
+          style={{ transform: "translateZ(20px)" }}
         >
           <p>{realization.description}</p>
           <Link
@@ -127,6 +117,36 @@ const TiltedCard = ({ realization, index, isDesktop }) => {
         </motion.div>
       </div>
     </motion.div>
+  );
+};
+
+const MobileCard = ({ realization }) => {
+  return (
+    <div className={classes.realizations__item}>
+      <div
+        className={`${classes.realizations__imageWrapper} ${
+          realization.mobileClass ? classes[realization.mobileClass] : ""
+        }`}
+        style={{ backgroundImage: realization.gradient }}
+      >
+        <Image
+          src={realization.image}
+          alt={`Realizacja w Opolu- ${realization.description} - profesjonalny auto detailing, czyszczenie samochodu`}
+          width={400}
+          height={300}
+        />
+        <div className={classes.realizations__content}>
+          <p>{realization.description}</p>
+          <Link
+            href={`/galeria/${realization.id}`}
+            className={classes.realizations__button}
+            aria-label={`Zobacz więcej o realizacji: ${realization.description}`}
+          >
+            &#10132;
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
 
