@@ -1,153 +1,38 @@
-"use client";
-import React, { useState, useEffect, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import classes from "./galeria.module.scss";
-import { motion, useMotionValue, useSpring } from "framer-motion";
-import { staggerContainer, slideRotateY } from "../../utils/motion";
 import { realizationsData } from "./realizationsData";
+import dynamic from "next/dynamic";
 
-const Galeria = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
-  const ref = useRef(null);
+const Galeria = dynamic(() => import("./clientGaleria"), {
+  ssr: false,
+});
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 992);
-    };
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+export async function generateMetadata() {
+  const pageTitle = "Galeria Realizacji | MK Studio Auto Detailing Opole";
+  const pageDescription =
+    "Przeglądaj naszą galerię realizacji detailingowych: auto detailing, korekcja lakieru, pranie tapicerki, renowacja skór i folie PPF w Opolu.";
+  const url = "/galeria";
 
-  return (
-    <div className={classes.background}>
-      <section id="galeria" className={classes.realizations}>
-        <h1>Galeria</h1>
+  const ogImage =
+    realizationsData[0]?.image?.src ||
+    "/logo-mkstudio-auto-detailing-opole.jpg";
+  const ogImageWidth = 1200;
+  const ogImageHeight = 630;
 
-        <div className={classes.realizations__wrapper}>
-          {realizationsData.map((realization, index) => {
-            if (isDesktop) {
-              return (
-                <AnimatedCard
-                  key={realization.id}
-                  realization={realization}
-                  index={index}
-                />
-              );
-            } else {
-              return (
-                <MobileCard key={realization.id} realization={realization} />
-              );
-            }
-          })}
-        </div>
-      </section>
-    </div>
-  );
-};
-
-const AnimatedCard = ({ realization, index }) => {
-  const cardRef = useRef(null);
-  const rotateX = useSpring(0, { damping: 30, stiffness: 100, mass: 2 });
-  const rotateY = useSpring(0, { damping: 30, stiffness: 100, mass: 2 });
-  const scale = useSpring(1, { damping: 30, stiffness: 100, mass: 2 });
-
-  const handleMouseMove = (e) => {
-    if (!cardRef.current) return;
-    const rect = cardRef.current.getBoundingClientRect();
-    const offsetX = e.clientX - rect.left - rect.width / 2;
-    const offsetY = e.clientY - rect.top - rect.height / 2;
-    const rotationX = (offsetY / rect.height) * -30;
-    const rotationY = (offsetX / rect.width) * 30;
-    rotateX.set(rotationX);
-    rotateY.set(rotationY);
+  return {
+    title: pageTitle,
+    description: pageDescription,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      url,
+      title: pageTitle,
+      description: pageDescription,
+      images: [{ url: ogImage, width: ogImageWidth, height: ogImageHeight }],
+      type: "website",
+    },
   };
+}
 
-  const handleMouseEnter = () => scale.set(1.1);
-  const handleMouseLeave = () => {
-    scale.set(1);
-    rotateX.set(0);
-    rotateY.set(0);
-  };
-
-  return (
-    <motion.div
-      ref={cardRef}
-      onMouseMove={handleMouseMove}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      variants={slideRotateY(index * 0.1, 0.5, index, 100, 30)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className={classes.realizations__item}
-      style={{
-        transformStyle: "preserve-3d",
-        perspective: "1000px",
-        rotateX: rotateX,
-        rotateY: rotateY,
-        scale: scale,
-      }}
-    >
-      <div
-        className={`${classes.realizations__imageWrapper} ${
-          realization.customClass ? classes[realization.customClass] : ""
-        }`}
-        style={{ backgroundImage: realization.gradient }}
-      >
-        <Image
-          src={realization.image}
-          alt={`Realizacja w Opolu- ${realization.description} - profesjonalny auto detailing, czyszczenie samochodu`}
-          width={400}
-          height={300}
-        />
-        <motion.div
-          className={classes.realizations__content}
-          style={{ transform: "translateZ(20px)" }}
-        >
-          <p>{realization.description}</p>
-          <Link
-            href={`/galeria/${realization.id}`}
-            className={classes.realizations__button}
-            aria-label={`Zobacz więcej o realizacji: ${realization.description}`}
-          >
-            &#10132;
-          </Link>
-        </motion.div>
-      </div>
-    </motion.div>
-  );
-};
-
-const MobileCard = ({ realization }) => {
-  return (
-    <div className={classes.realizations__item}>
-      <div
-        className={`${classes.realizations__imageWrapper} ${
-          realization.mobileClass ? classes[realization.mobileClass] : ""
-        }`}
-        style={{ backgroundImage: realization.gradient }}
-      >
-        <Image
-          src={realization.image}
-          alt={`Realizacja w Opolu- ${realization.description} - profesjonalny auto detailing, czyszczenie samochodu`}
-          width={400}
-          height={300}
-        />
-        <div className={classes.realizations__content}>
-          <p>{realization.description}</p>
-          <Link
-            href={`/galeria/${realization.id}`}
-            className={classes.realizations__button}
-            aria-label={`Zobacz więcej o realizacji: ${realization.description}`}
-          >
-            &#10132;
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Galeria;
+export default function GaleriaPage() {
+  return <Galeria />;
+}
