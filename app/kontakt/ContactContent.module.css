@@ -1,0 +1,103 @@
+.contactContent {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(195deg, #171a21, #171a21, #fcfcfc);
+  color: #fcfcfc;
+}
+@media screen and (min-width: 992px) {
+  .contactContent {
+    padding: 3rem 2rem;
+  }
+}
+.contactContent > * {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+.contactContent__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .contactContent__wrapper {
+    flex-direction: row;
+    gap: 4rem;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+}
+.contactContent__h1 {
+  text-align: center;
+  color: #fcfcfc;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+@media screen and (min-width: 992px) {
+  .contactContent__h1 {
+    display: none;
+  }
+}
+.contactContent__textWrapper {
+  background: #171a21;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 1.5rem rgba(23, 26, 33, 0.4);
+  color: #fcfcfc;
+  padding: 2rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .contactContent__textWrapper {
+    margin-top: 0;
+    box-shadow: 0 0.6rem 2rem rgba(23, 26, 33, 0.5);
+    flex: 1.2;
+  }
+  .contactContent__textWrapper p {
+    font-size: 2rem;
+  }
+}
+.contactContent .icon1 {
+  margin-right: 0.9rem;
+}
+.contactContent .icon {
+  margin-right: 0.5rem;
+}
+.contactContent h3 {
+  background-image: linear-gradient(to right, #d4af37, #d4af37);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.contactContent p {
+  margin-bottom: 1rem;
+}
+.contactContent a {
+  text-decoration: none;
+  color: #d4af37;
+  transition: color 0.3s ease-in-out;
+}
+.contactContent a:hover {
+  color: rgb(221.024691358, 191.7901234568, 96.975308642);
+}
+.contactContent .socialList {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+.contactContent .socialList li a {
+  color: #d4af37;
+  transition: color 0.3s ease-in-out;
+  font-size: 2rem;
+}
+.contactContent .socialList li a:hover {
+  color: rgb(239.0740740741, 225.3703703704, 180.9259259259);
+}
+.contactContent .bold {
+  font-weight: 700;
+  color: #d4af37;
+}/*# sourceMappingURL=ContactContent.module.css.map */

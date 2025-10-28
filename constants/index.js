@@ -114,16 +114,7 @@ export const exteriorServices = [
       "Powłoka hydrofobowa na szyby",
     ],
   },
-  {
-    id: "polerowanie",
-    title: "Polerowanie",
-    priceRange: "100 – 400 zł",
-    items: [
-      "Wymaga wcześniejszego mycia ręcznego",
-      "Polerowanie słupków Piano Black ",
-      "Polerowanie reflektorów ",
-    ],
-  },
+
   {
     id: "zabezpieczenie-lakieru",
     title: "Zabezpieczenie lakieru",
@@ -132,7 +123,7 @@ export const exteriorServices = [
       "Wszystkie zabezpieczenia wymagają zaawansowanego mycia",
       "Wosk twardy (8–12 miesięcy) – 250 zł",
       "Aqua 9H Self Healing (trwałość 2 lata) – 400–800 zł",
-      "ClintAdmire (trwałość 2 lata)",
+      "Cleantle Admire (trwałość 2 lata)",
     ],
   },
   {
