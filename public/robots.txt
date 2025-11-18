@@ -1,3 +1,7 @@
+User-agent: Googlebot
+Disallow: /_next/static/media/
+Disallow: /favicon.ico
+
 User-agent: *
 Allow: /
 Sitemap: https://www.mkstudio.opole.pl/sitemap.xml
