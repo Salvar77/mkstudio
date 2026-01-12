@@ -1,0 +1,566 @@
+@import "../../../styles/colors";
+
+.blogPost {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    $new-black 0%,
+    darken($new-black, 10%) 25%,
+    $gold-main 55%,
+    lighten($gold-main, 20%) 25%,
+    $white-smooth 100%
+  );
+
+  .heroWrapper {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  }
+
+  &__box {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    color: rgba($white-smooth, 0.85);
+    padding: 1.5rem;
+
+    strong {
+      color: $gold-main;
+      font-weight: 700;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+    }
+
+    ul {
+      text-shadow: 0.15rem 0.15rem 0.2rem $dark-smooth;
+      li {
+        a {
+          color: lighten($gold-main, 10%);
+          transition: color 0.3s ease, text-decoration 0.3s ease;
+          &:hover {
+            color: darken($gold-main, 1%);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    p,
+    li {
+      a {
+        color: lighten($gold-main, 10%);
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+
+        &:hover {
+          color: darken($gold-main, 1%);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__imageWrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10rem;
+      background: linear-gradient(to top, $new-black, transparent);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: 50% 50%;
+      border-radius: 2rem;
+      padding: 1rem;
+      display: block;
+    }
+  }
+
+  img {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1.25rem;
+    color: $gold-main;
+    font-weight: 700;
+    line-height: 1.3;
+    padding: 0.6rem;
+    border-bottom: 2px solid $white-smooth;
+  }
+
+  h2 {
+    padding: 1rem;
+    border-bottom: 2px solid $white-smooth;
+  }
+
+  p {
+    padding: 1.5rem;
+
+    & > strong {
+      display: inline;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  ul {
+    li {
+      padding: 1rem;
+      list-style: none;
+    }
+  }
+  .backButton {
+    display: inline-block;
+    margin: 0 auto 1.25rem;
+    padding: 0.9rem 1.25rem;
+    background-color: $gold-main;
+    text-align: center;
+    color: $white-smooth;
+    align-self: center;
+    margin: 1.25rem auto 0;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    width: 15.5rem;
+    transition: color 0.3s, background-color 0.3s;
+
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+
+    &:hover {
+      background-color: darken($new-black, 10%);
+      color: $gold-main;
+    }
+  }
+
+  &__imageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    img {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      width: 100%;
+      height: 100%;
+
+      @media screen and (min-width: 992px) {
+        width: calc(33.33% - 1rem);
+      }
+
+      &:hover {
+        transform: scale(1.015);
+        box-shadow: 0.1rem 0.4rem 1.5rem rgba($new-black, 0.7);
+      }
+    }
+  }
+
+  blockquote {
+    background-color: rgba($white-smooth, 0.15);
+    border-left: 0.6rem solid $grey-smooth;
+    border-right: 0.6rem solid $grey-smooth;
+    border-bottom: 0.6rem solid $grey-smooth;
+    padding: 2rem 2.5rem;
+    margin: 3rem 0;
+    font-style: italic;
+    color: $white-smooth;
+    border-radius: 0.75rem;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-shadow: 0.15rem 0.15rem 0.3rem $dark-smooth;
+
+    &::before {
+      content: open-quote;
+      font-family: serif;
+      font-size: 4rem;
+      color: rgba($gold-main, 0.3);
+      position: absolute;
+      top: -1rem;
+      left: 1rem;
+      z-index: 0;
+    }
+
+    p {
+      margin: 0 0 1.5rem;
+      position: relative;
+      z-index: 1;
+      line-height: 1.8;
+    }
+
+    cite,
+    strong {
+      display: block;
+      text-align: left;
+      margin-top: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  cite,
+  strong {
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+    color: $white-smooth;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+.testimonial {
+  background: rgba($white-smooth, 0.85);
+  border-left: 4px solid $blue-after;
+  padding: 2.5rem 2rem;
+  margin: 3rem 0;
+  border-radius: 0.4rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: $dark-smooth;
+  font-style: normal;
+  transition: box-shadow 0.3s ease;
+
+  &::before {
+    content: "“";
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    font-size: 8rem;
+    color: $blue-after;
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  strong {
+    display: block;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-style: normal;
+    text-align: right;
+  }
+
+  &:hover {
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.contactInfo {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba($white-smooth, 0.2);
+  color: $dark-smooth;
+  text-align: center;
+  font-weight: bold;
+
+  .textLink {
+    color: $white-smooth;
+  }
+}
+
+.contactDetails {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 0;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  color: $dark-smooth;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+  .icon {
+    display: inline-block;
+    margin-right: 0.3rem;
+    color: $gold-main;
+  }
+
+  a {
+    color: $new-black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.9rem 1.9rem;
+  background-color: $gold-main;
+  color: $white-smooth;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  &:hover {
+    background-color: darken($new-black, 10%);
+    color: $gold-main;
+  }
+}
+
+.icon {
+  margin-top: 1rem;
+}
+
+.iconDown {
+  margin-right: 0.7rem;
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.iconDownP {
+  margin-right: 0.7rem;
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.blogTitle {
+  padding: 1rem;
+  text-shadow: 0.15rem 0.15rem 0.2rem $dark-smooth;
+
+  &C {
+    color: $white-smooth;
+  }
+
+  &D {
+    color: $dark-smooth;
+  }
+}
+
+.blogContactTitle {
+  text-align: center;
+  color: $dark-smooth;
+}
+
+.textShadow {
+  line-height: 1.6;
+  text-shadow: 0.15rem 0.15rem 0.3rem $dark-smooth;
+  box-shadow: 0 0.5rem 1rem rgba($new-black, 0.2),
+    0 0.1rem 0.2rem rgba($gold-main, 0.15);
+
+  &B {
+    color: $dark-smooth;
+    box-shadow: 0 0.5rem 1rem rgba($new-black, 0.2),
+      0 0.1rem 0.2rem rgba($gold-main, 0.15);
+    font-weight: bold;
+  }
+
+  &C {
+    box-shadow: 0 0.5rem 1rem rgba($new-black, 0.2),
+      0 0.1rem 0.2rem rgba($gold-main, 0.15);
+    color: $white-smooth;
+  }
+
+  &D {
+    color: $dark-smooth;
+    text-shadow: none;
+    font-weight: bold;
+
+    .textLink {
+      color: $white-smooth;
+    }
+  }
+}
+
+.hours {
+  color: $new-black;
+}
+
+@media (min-width: 992px) {
+  .iconDown {
+    margin-right: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .iconDownP {
+    margin-right: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.ctaWrapper {
+  text-align: center;
+  margin-top: 2rem;
+
+  @media (min-width: 992px) {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blogPost {
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    .section {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    .backButton {
+      font-size: 1.8rem;
+      width: 20rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blogPost {
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    &__imageWrapper {
+      img {
+        display: none;
+      }
+      background-size: cover;
+      background-attachment: fixed;
+      height: 60rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba($new-black, 0) 0%,
+          rgba($new-black, 0.4) 50%,
+          rgba($new-black, 0.8) 100%
+        );
+        z-index: 1;
+        border-radius: 2rem;
+      }
+
+      &.specialImage {
+        background-position: 75% 25%;
+      }
+
+      &.anotherSpecialImage {
+        background-position: 50% 55%;
+      }
+
+      &.specialImage2 {
+        background-position: 75% 45%;
+      }
+
+      &.styleThree {
+        background-position: 70% 95.7%;
+      }
+
+      &.styleFour {
+        background-position: 70% 50%;
+      }
+
+      &.largeImage img {
+        min-height: 30rem;
+        display: block;
+      }
+    }
+
+    .foliaMaxWidth {
+      display: flex;
+      justify-content: center;
+
+      img {
+        object-fit: cover;
+        filter: brightness(0.8);
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .section {
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    .imageGrid {
+      img {
+        height: auto;
+      }
+    }
+
+    .backButton {
+      font-size: 2rem;
+    }
+  }
+
+  .blogTitle {
+    text-align: left;
+    &C {
+      color: $dark-smooth;
+    }
+  }
+  .blogContactTitle {
+    text-align: left;
+  }
+
+  .contactInfo {
+    text-align: left;
+
+    .textLink {
+      color: $white-smooth;
+    }
+  }
+  .textShadow {
+    &C {
+      color: $dark-smooth;
+      font-weight: bold;
+    }
+  }
+}

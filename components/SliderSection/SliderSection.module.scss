@@ -1,0 +1,152 @@
+@import "../../styles/colors";
+
+.titleSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white-smooth;
+  text-shadow: 0.15rem 0.15rem 0.25rem $dark-smooth;
+  font-size: 2.9rem;
+  padding: 2rem;
+  font-weight: bold;
+  z-index: 1;
+  text-shadow: 0 0 6px rgba($new-black, 0.9);
+  transform: translateY(13rem);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -0.6rem;
+    height: 0.35rem;
+    border-radius: 9999px;
+    background: linear-gradient(
+      90deg,
+      $gold-main 0%,
+      lighten($gold-main, 20%) 100%
+    );
+    background-size: 200% 100%;
+    animation: slideGlow 4s linear infinite;
+  }
+}
+
+.sliderSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 2000;
+  margin-bottom: -6rem;
+  background: linear-gradient(
+    135deg,
+    $new-black 0%,
+    darken($new-black, 10%) 25%,
+    $gold-main 55%,
+    lighten($gold-main, 20%) 25%,
+    $white-smooth 100%
+  );
+}
+
+.sliderGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  margin-bottom: 1rem;
+  transform: translateY(17rem);
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.realizationButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: $gold-main;
+  color: $new-black;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  transition: color 0.3s, background-color 0.3s ease-in-out;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  transform: translateY(17rem);
+
+  &:hover {
+    background-color: darken($new-black, 10%);
+    text-decoration: none;
+    color: $gold-main;
+  }
+}
+
+.sliderDescription {
+  max-width: 62ch;
+  margin: 0 1rem 3rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.015em;
+  text-align: center;
+  padding: 1.8rem 2.2rem;
+  transform: translateY(16rem);
+  color: $white-smooth;
+  border-bottom-right-radius: 2px solid rgba($gold-main, 0.45);
+  background-color: rgba(0, 0, 0, 0.2);
+  line-height: 2;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba($dark-smooth, 0.95);
+  box-shadow: -6px 6px 14px rgba($dark-smooth, 0.25),
+    6px -6px 14px rgba($gold-main, 0.2);
+  backdrop-filter: blur(4px);
+
+  strong {
+    color: $gold-main;
+    font-weight: bold;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(#fff, 0.06);
+    border-radius: inherit;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+}
+
+@media (min-width: 768px) {
+  .titleSlide {
+    font-size: 2.8rem;
+  }
+
+  .realizationButton {
+    font-size: 2rem;
+  }
+
+  .sliderDescription {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .sliderSection {
+    background-color: $new-black;
+  }
+
+  .titleSlide {
+    font-size: 3rem;
+  }
+
+  .realizationButton {
+    font-size: 2.3rem;
+  }
+
+  .fiveColumnsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .defaultGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

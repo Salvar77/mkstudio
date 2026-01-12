@@ -1,0 +1,8 @@
+@import "../../styles/colors";
+
+.blog {
+  background: linear-gradient(195deg, $new-black, $new-black, $white-smooth);
+  text-align: center;
+  color: $white-smooth;
+  padding-top: 1rem;
+}

@@ -1,0 +1,115 @@
+@import "../../styles/colors";
+
+.contactContent {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(195deg, $new-black, $new-black, $white-smooth);
+  color: $white-smooth;
+
+  @media screen and (min-width: 992px) {
+    padding: 3rem 2rem;
+  }
+
+  & > * {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+      gap: 4rem;
+      align-items: flex-start;
+
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__h1 {
+    text-align: center;
+    color: $white-smooth;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__textWrapper {
+    background: $new-black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 1.5rem rgba($new-black, 0.4);
+    color: $white-smooth;
+    padding: 2rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+
+    @media screen and (min-width: 992px) {
+      margin-top: 0;
+      box-shadow: 0 0.6rem 2rem rgba($new-black, 0.5);
+      flex: 1.2;
+
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .icon1 {
+    margin-right: 0.9rem;
+  }
+
+  .icon {
+    margin-right: 0.5rem;
+  }
+
+  h3 {
+    background-image: linear-gradient(to right, $gold-main, $gold-main);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $gold-main;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: lighten($gold-main, 10%);
+    }
+  }
+
+  .socialList {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+
+    li a {
+      color: $gold-main;
+      transition: color 0.3s ease-in-out;
+      font-size: 2rem;
+      &:hover {
+        color: lighten($gold-main, 30%);
+      }
+    }
+  }
+
+  .bold {
+    font-weight: 700;
+    color: $gold-main;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../styles/colors";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  background-color: $new-black;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-chakra-petch), sans-serif;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

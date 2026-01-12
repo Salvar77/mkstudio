@@ -1,0 +1,12 @@
+@import "../../styles/colors";
+
+.oferta {
+  background-color: $new-black;
+  color: $white-smooth;
+  padding-top: 2rem;
+
+  &__title {
+    text-align: center;
+    text-decoration: underline;
+  }
+}

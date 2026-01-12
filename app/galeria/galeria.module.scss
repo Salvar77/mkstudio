@@ -1,0 +1,174 @@
+@import "../../styles/colors";
+
+.background {
+  background: linear-gradient(
+    135deg,
+    $dark-smooth 0%,
+    darken($new-black, 10%) 40%,
+    $gold-main 55%,
+    lighten($gold-main, 20%) 75%,
+    $white-smooth 100%
+  );
+}
+
+.realizations {
+  gap: 2rem;
+  padding: 2rem;
+  color: $white-smooth;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin: 2rem 0;
+    color: $white-smooth;
+    padding-top: 1rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba($white-smooth, 0.15);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  &__item {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    cursor: pointer;
+    will-change: transform;
+    transform-style: preserve-3d;
+  }
+
+  &__imageWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 2rem;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: inherit;
+      z-index: 1;
+    }
+
+    img {
+      max-width: 100%;
+      height: 35rem;
+      object-fit: cover;
+      z-index: 0;
+      transform: translateZ(10px);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__button {
+    padding: 1rem 2rem;
+    background-color: $white-smooth;
+    color: $dark-smooth;
+    text-decoration: none;
+    flex-direction: column;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    opacity: 1;
+    transform: scale(1) translateZ(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: darken($gold-main, 10%);
+      text-decoration: none;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    transform: translateZ(20px);
+
+    p {
+      font-size: 2rem;
+      padding: 1rem;
+      text-shadow: 0.2rem 0.2rem 0.4rem rgba($dark-smooth, 0.7);
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .realizations {
+    h1 {
+      font-size: 3rem;
+    }
+
+    &__imageWrapper {
+      img {
+        max-width: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      &.korektaLakieru img {
+        object-position: 10%;
+      }
+
+      &.powlokaCeramiczna img {
+        object-position: 70% 30%;
+      }
+
+      &.foliaPPF img {
+        object-position: 50% 40%;
+      }
+
+      &.renowacjaSkor img {
+        object-position: 50% 50%;
+      }
+
+      &.pranieTapicerki img {
+        object-position: 50% 50%;
+      }
+
+      &.autoDetailing img {
+        object-position: 50% 50%;
+      }
+    }
+
+    &__wrapper {
+      flex-direction: row;
+      height: 70dvh;
+    }
+  }
+
+  .realizations__item {
+    .realizations__button {
+      opacity: 0;
+      transform: scale(0.8) translateZ(20px);
+    }
+    &:hover {
+      .realizations__button {
+        opacity: 1;
+        transform: scale(1) translateZ(20px);
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../styles/colors";
+
+.recenzje {
+  padding-top: 1rem;
+  text-align: center;
+  color: $white-smooth;
+
+  @media (min-width: 992px) {
+    background: linear-gradient(95deg, $new-black, $new-black, $white-smooth);
+  }
+}

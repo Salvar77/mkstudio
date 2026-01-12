@@ -1,0 +1,92 @@
+@import "../../styles/colors";
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $white-smooth;
+  overflow: hidden;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    height: 62rem;
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  background: linear-gradient(195deg, $new-black, $new-black, $grey-smooth);
+  text-shadow: 0.1rem 0.1rem 0.1rem $dark-smooth;
+
+  @media (min-width: 992px) {
+    font-size: 2rem;
+    width: 50%;
+    background: linear-gradient(295deg, $new-black, $new-black, $grey-smooth);
+  }
+}
+
+.about__title {
+  font-size: 2.9rem;
+  color: $gold-main;
+  margin-bottom: 1rem;
+}
+
+.about__subtitle {
+  color: $white-smooth;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.about__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.about__item {
+  display: flex;
+  align-items: center;
+  color: $white-smooth;
+  margin-bottom: 0.75rem;
+}
+
+.about__icon {
+  color: $gold-main;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.about__button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: $gold-main;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  text-shadow: 0.1rem 0.1rem 0.1rem $dark-smooth;
+  clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 100%, 0 100%);
+
+  &:hover {
+    background: darken($white-smooth, 10%);
+    color: $gold-main;
+    transform: translateY(-2px);
+  }
+}
+
+.about__image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+  @media (min-width: 992px) {
+    width: 50%;
+    height: auto;
+  }
+}

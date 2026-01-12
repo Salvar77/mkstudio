@@ -1,0 +1,142 @@
+@import "../../styles/colors";
+
+.section {
+  position: relative;
+  background-color: $new-black;
+  padding: 6rem 1rem;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+
+  &::before,
+  &::after {
+    content: "★";
+    position: absolute;
+    font-size: 7rem;
+    color: rgba($gold-main, 0.9);
+    z-index: 1;
+  }
+  &::before {
+    top: -1rem;
+    left: -1rem;
+    transform: rotate(-20deg);
+  }
+  &::after {
+    bottom: 1rem;
+    right: 1rem;
+    transform: rotate(10deg);
+  }
+}
+
+.wrapper {
+  position: relative;
+  max-width: 80rem;
+  width: 100%;
+  background: $new-black;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  padding: 3rem 2rem;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba($gold-main, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 15px 50px rgba(0, 0, 0, 0.9),
+      0 0 35px rgba($gold-main, 0.5);
+  }
+
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+  }
+}
+
+.content {
+  flex: 1;
+  // text-align: center;
+}
+
+.title {
+  font-weight: 900;
+  color: $gold-main;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.iconQuestion {
+  margin-right: 0.75rem;
+  color: $gold-main;
+}
+
+.text {
+  color: $white-smooth;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.name {
+  color: $gold-main;
+  font-weight: bold;
+}
+
+.buttonText {
+  text-shadow: none;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(90deg, $gold-main, darken($gold-main, 10%));
+  color: $new-black;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  @media (min-width: 768px) {
+    margin-left: 2rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.icon {
+  margin-right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+@keyframes animateStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+.stars .star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  animation: animateStars linear infinite;
+}

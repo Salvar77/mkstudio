@@ -1,0 +1,11 @@
+@import "../../styles/colors";
+
+.contact {
+  background: linear-gradient(195deg, $new-black, $new-black, $white-smooth);
+  color: $white-smooth;
+
+  &__title {
+    padding-top: 1rem;
+    text-align: center;
+  }
+}

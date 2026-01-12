@@ -1,0 +1,220 @@
+/* Contact.module.scss */
+
+@import "../../styles/colors";
+
+.contact {
+  position: relative;
+  padding: 4rem 1rem;
+  background-color: $new-black;
+  font-size: 1.9rem;
+  background: linear-gradient(325deg, $new-black, $new-black, $grey-smooth);
+}
+
+.contact__container {
+  display: flex;
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact__info,
+.contact__form {
+  flex: 1;
+  background: transparent;
+  box-shadow: none;
+  padding: 2rem;
+}
+
+.contact__separator {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  width: 1rem;
+  background: $gold-main;
+  transform: translateX(-50%);
+}
+
+.contact__info {
+  margin-right: 2rem;
+  color: $white-smooth;
+
+  .contact__info-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .contact__info_phone {
+    margin-bottom: 0.2rem;
+  }
+  .contact__phone_link,
+  .contact__email_link {
+    color: $gold-main;
+    text-decoration: none;
+  }
+
+  .icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    min-width: 2.2rem;
+    vertical-align: middle;
+    margin-top: -0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+  a {
+    color: $gold-main;
+    text-decoration: none;
+  }
+
+  .contact__address {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact__divider {
+    border: none;
+    border-bottom: 1px solid $gold-main;
+    margin: 1.5rem 0;
+  }
+  .contact__hours {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.25rem 0;
+      .contact__day {
+        font-weight: bold;
+      }
+      .contact__time {
+        color: $gold-main;
+      }
+    }
+  }
+}
+
+.contact__form {
+  margin-left: 2rem;
+  h2 {
+    margin-bottom: 1rem;
+    color: $white-smooth;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input,
+  textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $white-smooth;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    color: $white-smooth;
+    &::placeholder {
+      color: darken($white-smooth, 20%);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .contact__checkbox {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.95rem;
+    color: $white-smooth;
+    margin-bottom: 1.5rem;
+
+    input {
+      flex-shrink: 0;
+      margin-right: 0.75rem;
+      margin-top: 0.25rem;
+    }
+  }
+
+  button {
+    align-self: flex-start;
+    padding: 0.8rem 1.6rem;
+    background: $gold-main;
+    color: $white-smooth;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-shadow: 0.1rem 0.1rem 0.1rem $dark-smooth;
+    &:hover {
+      background: darken($white-smooth, 10%);
+      color: $gold-main;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $green;
+  z-index: 2000;
+
+  .modalContent {
+    position: relative;
+    color: $dark-smooth;
+    background-color: $white-smooth;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(44, 28, 28, 0.25);
+  }
+
+  .modalCloseButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding: 0;
+    color: white;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__separator {
+    display: none;
+  }
+  .contact__info,
+  .contact__form {
+    margin: 1rem 0;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    background: linear-gradient(165deg, $new-black, $new-black, $grey-smooth);
+    height: 61rem;
+    display: flex;
+    align-items: center;
+  }
+}
