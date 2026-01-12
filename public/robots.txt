@@ -1,14 +1,10 @@
 User-agent: *
 Allow: /
-Disallow: /_next/static/media/
-Disallow: /favicon.ico
 Disallow: /_next/static/chunks/
 Disallow: /_next/static/css/
 
 User-agent: Googlebot
 Allow: /
-Disallow: /_next/static/media/
-Disallow: /favicon.ico
 
 Sitemap: https://www.mkstudio.opole.pl/sitemap.xml
 Host: https://www.mkstudio.opole.pl
